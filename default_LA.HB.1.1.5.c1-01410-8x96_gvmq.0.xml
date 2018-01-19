@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="git://codeaurora.org/quic/la" name="caf" review="codeaurora.org"/>
+  <remote fetch="git://codeaurora.org/" name="caf" review="codeaurora.org"/>
   <default remote="caf" revision="LA.HB.1.1.5.c1_rb1.6"/>
   <project name="device/common"/>
   <project name="device/generic/arm64"/>
@@ -585,5 +585,5 @@
   <project name="platform/vendor/qcom/thulium_gvmq" path="device/qcom/msm8996_gvmq"/>
   <project name="platform/vendor/qcom/titanium_32" path="device/qcom/msm8953_32"/>
   <project name="platform/vendor/qcom/titanium_64" path="device/qcom/msm8953_64"/>
-  <project name="toolchain/binutils"/>
+  <project name="quic/la/toolchain/binutils" path="toolchain/binutils"/>
 </manifest>
