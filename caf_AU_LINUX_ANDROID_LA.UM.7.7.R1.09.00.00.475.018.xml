@@ -1,0 +1,711 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
+  <default remote="caf" revision="refs/heads/LA.UM.7.7.r1"/>
+  <project groups="p-fs-release,pdk,pdk-cw-fs" name="device/common" revision="770294e776b4b76387c16f508c47e9be3a6b63bb" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/arm64" revision="0c87deab3b1d561f314ae12eed7e8681071ee93a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/armv7-a-neon" revision="9e96e041bf3c9d5b57b11f921c6339e076478a7a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/car" revision="f01c75fb5afef17bb6c0f7738a00e1522e6aef73" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/common" revision="d1cf4c5ce9ba3c310c851ee0cb93ab13891a23b9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/goldfish" revision="7947b69180125a9f7c10f9079c9f2c400b2f04fc" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/goldfish-opengl" revision="32d6477218d5c272f611a3b2960eedf6fc6b1223" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/lionhead" revision="2632d2f2e3565494e2ee3668e93195dc7bba6128" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/mini-emulator-arm64" revision="77d394326f7fc17831ee7702cb8b750fe0b21443" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/mini-emulator-armv7-a-neon" revision="258706fc0ddcf2c9be48967f4766ec90efb736a5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/mini-emulator-x86" revision="65d59e2be2cfd713513a05d80a0f75794ab60579" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/mini-emulator-x86_64" revision="b62205d75073783e171fbcd5f675e25e57833479" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/qemu" revision="f8ec4bbb98272866a64508d3af5866f96425c459" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="device,p-fs-release,pdk" name="device/generic/uml" revision="68fd8b897bf915fbf6017d23e24053effe3426c9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/x86" revision="5e00241fc73152cac7406a32caaab0ea3f0c6ee6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/x86_64" revision="506952733fdebb5a2ef086b519ceebe86a95ae31" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="device,p-fs-release,pdk" name="device/google/accessory/arduino" revision="abc5159a3ca9dbb5c7e364a1eab99901a4440ac5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="device,p-fs-release,pdk" name="device/google/accessory/demokit" revision="7dfe7f89a3b174709c773fe319531006e46440d9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="broadcom_pdk,device,generic_fs,p-fs-release,pdk" name="device/google/atv" revision="692b55963694bc3772bea26d804cbf61bd681c89" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="device,marlin,p-fs-release,pdk" name="device/google/contexthub" revision="1a603f339f5c216e5fee1aaa2d673ad6bb68b035" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="device,muskie,p-fs-release,pdk" name="device/google/muskie" revision="c3cef72aa1bad84ebe2b1c54cba9763a3af6e6e4" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="device,p-fs-release,pdk,taimen" name="device/google/taimen" revision="a538c09e3401a142cc26e3a4c4ce61e4c9f9a8bd" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="device/google/vrservices" revision="5a724230386bd7a2176ddae612f79dd3caefc6ce" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="device,p-fs-release,pdk,wahoo" name="device/google/wahoo" revision="f67b8a62b68a1d64518f72457ba070d47de5b50d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="device,p-fs-release,pdk,wahoo" name="device/google/wahoo-kernel" revision="6d9ec637c13a2e9210b83d08f1a1229cda2596a0" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project name="device/qcom/common" revision="57bf1c0f442fe2470531267f1dc307d38c6827fb" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel">
+    <copyfile dest="build.sh" src="build.sh"/>
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
+  </project>
+  <project name="device/qcom/qssi" revision="1f6c7a1f2c6b98905a089959a6a4dfcc62c994ec" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="device/qcom/sepolicy" revision="f85d1099dc8d61167ea9c1ffddfc6e2872b63bcf" upstream="refs/heads/sepolicy.lnx.4.0.r13-rel"/>
+  <project groups="p-fs-release,pdk" name="device/sample" revision="e6d9f5047dde76279e6e8ccc87f51032dc469d35" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="kernel/configs" revision="e629609088571bd0c12395e6719d57a4b9e831f7" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project name="kernel/lk" path="bootable/bootloader/lk" revision="f6bea7a00c5e0e70fa7233295d4dbfecec2cd899" upstream="refs/heads/lk.lnx.1.0.r31-rel"/>
+  <project name="kernel/msm-3.18" revision="d916439dcf66990ab8761f18b32bd41cbad1f94b" upstream="refs/heads/kernel.lnx.3.18.r36-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/art" path="art" revision="2376f7f7abf003af77051bad4f3d4d316d4ae284" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/bionic" path="bionic" revision="82d4171710aba293d25c774796f299126b56bf12" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="b7d552439ad23ae856b5a1ba9351dff7286bc035" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/build" path="build/make" revision="6315db08570dd244ae4ff9f1d7520bda37ca0f5f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+  <project groups="p-fs-release,pdk,tradefed" name="platform/build/blueprint" path="build/blueprint" revision="e3f4d48e10198100d7e4579145b0f25419d3124f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,tradefed" name="platform/build/kati" path="build/kati" revision="8e1815177aeabfd67a0aac63e58248e6823a5ffa" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,tradefed" name="platform/build/soong" path="build/soong" revision="d6976fe8eb676af1b0942c94f45656f318467bd1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel">
+    <linkfile dest="Android.bp" src="root.bp"/>
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
+  </project>
+  <project groups="p-fs-release,pdk" name="platform/compatibility/cdd" path="compatibility/cdd" revision="1b85af485589a8d8020489322d60ac85e0d71b68" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="cts,p-fs-release,pdk-cw-fs,pdk-fs" name="platform/cts" path="cts" revision="dd328540d4b98a79cb33e50c026de8e65faa6ee4" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/dalvik" path="dalvik" revision="b7a3c1368931255d466c23e2d845dbbd48c422f3" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/developers/build" path="developers/build" revision="6f1bbd6b9589818154d555f216e800223ce5d063" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/developers/demos" path="developers/demos" revision="7bd7834eee082f32ae8eaab9bf014d77c6cf521a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/developers/samples/android" path="developers/samples/android" revision="531c36448304929a1fcd0b11aa7a1e2dcd795c3f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="developers,p-fs-release,pdk-cw-fs,pdk-fs" name="platform/development" path="development" revision="73c9059776778ae07091ad027e42f48d9ffb0231" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/ImageMagick" path="external/ImageMagick" revision="f37bbae70a8921b2dd59ef6ae03a227dd7489c6d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/Microsoft-GSL" path="external/Microsoft-GSL" revision="71bc518c490daefa372debca3ab65b437b38d0ac" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/aac" path="external/aac" revision="e27c03e080d7714043bf3b845a633dc1dd5515e6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/abi-compliance-checker" path="external/abi-compliance-checker" revision="aaf26f78ca48460d17c89b2611907eb73f8779e9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/abi-dumper" path="external/abi-dumper" revision="a09d92824e65d7abe68882e613a859b425d8940c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/adhd" path="external/adhd" revision="a18b818c04f9c0fa82997be86c5ad7d3356a7577" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="adt-infra,notdefault,p-fs-release,pdk-fs" name="platform/external/adt-infra" path="external/adt-infra" revision="1eb0cb14f675d3d3cc5b4c4ec9be409c13f0da64" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/android-clat" path="external/android-clat" revision="80b0a4b923ce042562f4005d836014632752c832" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/androidplot" path="external/androidplot" revision="355d0ec81d2a50e5334bdf6ba9dc4635baa13706" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/annotation-tools" path="external/annotation-tools" revision="9966c7aa3ccd2fd0cfc76598c2bfe6d77016b2ad" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/ant-glob" path="external/ant-glob" revision="a73228afa9540b9c5518d360c5ae630bb634f975" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" revision="f1c66a70052c914e416bb93031b10dc783cf5c0b" upstream="refs/heads/ant.lnx.2.9.1.r32-rel"/>
+  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" revision="c998217ba48e0a47aeeaadebb9496ac668ef3b8d" upstream="refs/heads/ant.lnx.2.9.1.r32-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/antlr" path="external/antlr" revision="2d2bc6f9c2959f787364826de5c40743aad3d586" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/apache-commons-math" path="external/apache-commons-math" revision="5b92751071356eef97c50dbeccc3874b51847afb" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/apache-harmony" path="external/apache-harmony" revision="22534a36875e8c3785ee2e376a719123db895cd9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/apache-http" path="external/apache-http" revision="2692c757f2d30a52a85016a1991a5809535b1f9f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/apache-xml" path="external/apache-xml" revision="259517ca97039fbf3162ee1fde395ac04c9fce4e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/archive-patcher" path="external/archive-patcher" revision="39952ff4eb9f7d2ea719b05ca55f0e07137daaa0" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/external/autotest" path="external/autotest" revision="953464c540241ea8ab0a27ada8d717d67b2c783a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/avb" path="external/avb" revision="4a9cc824892a0c77403646c6a20939976e8d2507" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/bart" path="external/bart" revision="33469ab89c301657d93ce94e77fb76edac2ee4c1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/blktrace" path="external/blktrace" revision="d345431f16b8f76f30a58193ff2b26d5853e1109" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/boringssl" path="external/boringssl" revision="5d7839b5cb962cd317209e15f89b3df5bca6f2ff" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/bouncycastle" path="external/bouncycastle" revision="f4c51330e46dceb842252b061ddfc63496710777" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/brotli" path="external/brotli" revision="7c6f32759e28e863757a1d360b1260a1125881d8" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/bsdiff" path="external/bsdiff" revision="6a9549abe889dd94562175680f179474d1848983" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/bzip2" path="external/bzip2" revision="58f86bc3cb04a95bdf32f6a7f16e118ae8f45b14" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/caliper" path="external/caliper" revision="64f1dc56aef4997b1fe7af5ae0229a33c3233853" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/capstone" path="external/capstone" revision="0537e9c5d95846c6ce5eaade40d20aeb3e78593c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/cblas" path="external/cblas" revision="26a64928c28abcde21b7dfbd4bd8d1df12d3efc5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/chromium-libpac" path="external/chromium-libpac" revision="b653e80d3043b0298c31e333b050dcc414c83ce2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/chromium-trace" path="external/chromium-trace" revision="f412fc8b100ec2ff2b6bc7b9c10a7658f6b29572" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/chromium-webview" path="external/chromium-webview" revision="8b5e3e1fe7fc219650388f68eac75456a9a17e2f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/clang" path="external/clang" revision="d900a8bc501b15cd96d28c3ec2fdc471995270a5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/cmockery" path="external/cmockery" revision="9199c7bfafefea32d1884182fa655b6e4578c1c4" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/cn-cbor" path="external/cn-cbor" revision="7fe9f01990a97be4df5e46d2decd894c06678072" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/compiler-rt" path="external/compiler-rt" revision="2881d6bcecfe060ea72566493bd5d1d9c8d6f989" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/conscrypt" path="external/conscrypt" revision="70a062137136c9cba476ecd672fa9194d7083777" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/crcalc" path="external/crcalc" revision="431518179dd150e3d9a6a0d2a14050341c1e7f55" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/cros/system_api" path="external/cros/system_api" revision="02ec310017dc1654df2181969efd4b0574d21d8b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/curl" path="external/curl" revision="1f358f3763461c2e798551d5498e8ac5e3bb4556" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/dagger2" path="external/dagger2" revision="6854ed4be79b47d15a1da23b9ea5a86dc8a860b6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/external/deqp" path="external/deqp" revision="d2bb3c44d57ccd3f482338e3d562f451d24a35e0" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/desugar" path="external/desugar" revision="41ed5a79bbb8e9bf81cb3f9b952e4fc74a78857b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/devlib" path="external/devlib" revision="f21788bbd4388b752c49b69b9c994545de846d28" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/dexmaker" path="external/dexmaker" revision="7d13be0edf4efb40e0926cdb3c1b97d1e45aab1e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/dhcpcd-6.8.2" path="external/dhcpcd-6.8.2" revision="6496d3c3358363fc632107c8c838e3ca9478fbc6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/dlmalloc" path="external/dlmalloc" revision="6661f3ca66b55d8f5a57b96fec97efaf8f3897a5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/dng_sdk" path="external/dng_sdk" revision="2e4ab79628bf8c2f20d4c7e74e7cb2ffd62f70f7" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/dnsmasq" path="external/dnsmasq" revision="23f2764cf87308cd49b443ba0cf00ac09767fd76" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/doclava" path="external/doclava" revision="79a1ee389c70c59236c7b37d6130b2b64f250f88" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/donuts" path="external/donuts" revision="005389fb31a67841b5de42f0d25fbfab843e208c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/drm_gralloc" path="external/drm_gralloc" revision="5a1d7decd7bf60ba0c389687d2fc9210363eb922" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="drm_hwcomposer,p-fs-release,pdk-fs" name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" revision="c5e1b9e8310d189a61e587c9e69b52419fc10022" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/droiddriver" path="external/droiddriver" revision="ef618d981947f6d8242755516269a0026c07126c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/drrickorang" path="external/drrickorang" revision="f73472b744112992ff93d416720e0ed43b0d7686" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/dtc" path="external/dtc" revision="69e9b5af97fe901a73e4fc26a4728e5c0607b871" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="3c398ad74b28daa60e041c01013d1fab4aadc54a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/easymock" path="external/easymock" revision="2c11f9a552bccff6e343c3e4eda6dafbc6a68741" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/eigen" path="external/eigen" revision="b7cbcae4e0f9c7610bcf4d90113f7f1289cd8b01" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/elfutils" path="external/elfutils" revision="44ed130c44cd13477985eac0dd4c9f2a6d3ded18" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/emma" path="external/emma" revision="991149a93c80e6553d71083d50270248441dba04" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/error_prone" path="external/error_prone" revision="a1be95eb65e8a5e1273bd5feda39407a010bf921" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/esd" path="external/esd" revision="943c42b6f8e9afe821744aa4c039f4943ebf29f5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/expat" path="external/expat" revision="f03507f075bede8c108c1f748a01a87946a2b216" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/eyes-free" path="external/eyes-free" revision="16bd4c7a4d1bfe229068b637614dad7c48dd2ceb" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/f2fs-tools" path="external/f2fs-tools" revision="63a70897633056ad84ab32a94796a606b898a193" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/fdlibm" path="external/fdlibm" revision="ee4b91d455ddf7960f76a4271894aeb14c5f5dd4" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/fec" path="external/fec" revision="43b75a302b9fa7e290c3f376dcdc3423efe3a6fc" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/fio" path="external/fio" revision="b18087f7cc6ee96042b88e3f485031929a61a58d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/flac" path="external/flac" revision="887cfcc159c2d6b2560277fd3517a4a9e2603bbb" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/flatbuffers" path="external/flatbuffers" revision="c5dba8d91b0acdfc815c616868dda35bdc3a78ec" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/fmtlib" path="external/fmtlib" revision="fb0b658172ed39edf9781a239ed4142161541f99" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/fonttools" path="external/fonttools" revision="ce0e93ce00959ca467a4d6d8b63a9f988d0f3bd6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/freetype" path="external/freetype" revision="279a94ba8db79f4cc2384764de41ba51c5e6d73a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/fsck_msdos" path="external/fsck_msdos" revision="3ce0a8bfca714c73bf27e8deb483de5fc0d8e9c6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/gemmlowp" path="external/gemmlowp" revision="1cf0f53466cc98420d083345bc21d7eca10f9643" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/gflags" path="external/gflags" revision="3957d379914c5f18ca3dec8f6bdf366e1bb5b291" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,qcom_msm8x26" name="platform/external/giflib" path="external/giflib" revision="6726c28a2acc465fa09bf1b32ed64a507d0c4792" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/glide" path="external/glide" revision="72e95efc80c209eabb6791d6ce7951c3292af0d1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/golang-protobuf" path="external/golang-protobuf" revision="cd48dbf68638ca5e663d5f99f59e890189fe76fb" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/google-api-services-storage" path="external/google-api-services-storage" revision="29b36ffc866ec32ea01f92ab55100f16bb4b2157" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/google-benchmark" path="external/google-benchmark" revision="c1e609b3cb4ccf1da3e0747c5dbd9feb411d1333" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/external/google-breakpad" path="external/google-breakpad" revision="45fffffa044d245ca435abbaeaeec479375ed860" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/google-fonts/carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" revision="0062a10458d4c357f3082d66bcb129d11913aaae" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/google-fonts/coming-soon" path="external/google-fonts/coming-soon" revision="2c5cb418c690815545bbb0316eae5fd33b9fc859" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/google-fonts/cutive-mono" path="external/google-fonts/cutive-mono" revision="bce2136662854076023066602526ba299e6556b2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/google-fonts/dancing-script" path="external/google-fonts/dancing-script" revision="7b6623bd54cee3e48ae8a4f477f616366643cc78" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/google-styleguide" path="external/google-styleguide" revision="749f7ae008c0d2dd9767fdfe202e6873e864a956" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/google-tv-pairing-protocol" path="external/google-tv-pairing-protocol" revision="c731915e80d9e2ccb755b97e7fdd280bbea07f70" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/googletest" path="external/googletest" revision="7b3ee2ca4574e4153c22d0a0892340a1908809ad" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/gptfdisk" path="external/gptfdisk" revision="6e8a1efc1877016ea996ee72e1bac86f508bd076" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/guava" path="external/guava" revision="4185a8f244a55149efb00be6157a75c6cbf6502a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/guice" path="external/guice" revision="0ee3093e9b5fff1de81a8bd2c5b684b2301fbcfa" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/hamcrest" path="external/hamcrest" revision="b8abc75725254d186586c0d7d09d23eb2bd0871f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,qcom_msm8x26" name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng" revision="9668921c5e284dd5301ecff4d3a355434fa309dc" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/honggfuzz" path="external/honggfuzz" revision="d1078bd4d8431906b452fa9fef6e5d681a844b08" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" revision="a41e5636de6ca516121f08dbc7f129e2f71fc408" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/icu" path="external/icu" revision="e854363b35de9775d63eb681a38babd4b0b23544" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/ims" path="external/ims" revision="edbda66abb04c06c67b83837142318a03e37f5b1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/iproute2" path="external/iproute2" revision="807fdd4696379187ba6396222e55b3254cf7ad23" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/ipsec-tools" path="external/ipsec-tools" revision="16477a409310e8daa3ec5c8ecaa7a2f2d471fb93" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/iptables" path="external/iptables" revision="a577ecb8483df0a80e4556b732d638e0a40d93b8" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/iputils" path="external/iputils" revision="4c2cb2e5a81c64bb5c80cc6841a9b1c931f66beb" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/iw" path="external/iw" revision="24fac39cfa6edf6e00b20a9254c3917fa0e0ccea" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/jacoco" path="external/jacoco" revision="5d40d6ce686481ee4a8fa77954c229f0c103d0cf" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/jarjar" path="external/jarjar" revision="fe24ebbd8564283f8e75c942d98fc9c2f18ae498" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/javaparser" path="external/javaparser" revision="b4c1397d5df9370f6358d4f8e9efd27e0f67dec1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/javasqlite" path="external/javasqlite" revision="caf5bec98ef93e197c2cf114f290e51daea18bde" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/javassist" path="external/javassist" revision="f7c4b954072e563b75f6910c25bb689bbf38a3d1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/jcommander" path="external/jcommander" revision="a77201c975f3f0bcd2cc2b95bd0fd63818402a2e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/jdiff" path="external/jdiff" revision="0393b0b86e398b8716aa1805456733d832880d06" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/jemalloc" path="external/jemalloc" revision="f1df06c9b25685e61e991e254dfd9b91a9b58d5b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,pdk-fs,tradefed" name="platform/external/jline" path="external/jline" revision="74812032f8d8eddbef387f18c96de9e5c38b8fdb" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/jmdns" path="external/jmdns" revision="0c71647deb7f7835c473fd3dfb45943083e47794" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/jsilver" path="external/jsilver" revision="5eba49af088628bd0d0bb23a992e7f09f0892e11" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/jsmn" path="external/jsmn" revision="460be51a89d82b89159d1ccd67c07199b23ba925" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/json-c" path="external/json-c" revision="1509b55c68721360c2431a46d1a1eaab84846e90" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/jsoncpp" path="external/jsoncpp" revision="1d665bb05acfc7810a05fceb55a8b23ef602ac54" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/jsr305" path="external/jsr305" revision="da800f6cfda5f8ccb277cd5136ad3584c4100e48" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/jsr330" path="external/jsr330" revision="ef3a2d74af63d90085bb3cbb2898ad3586dcac6c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/junit" path="external/junit" revision="9018952fa732cd622284cebdaec3122b2f7bd2e7" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/junit-params" path="external/junit-params" revision="4f0b0c84c6d6b1f462849fe7a10fb56309e1f9aa" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/kernel-headers" path="external/kernel-headers" revision="1f2bbe4c0f9e6cdc581f291c55e09a1dc39350b2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/kmod" path="external/kmod" revision="d9a1fb142988334a139175131e167b6c190026eb" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/kotlinc" path="external/kotlinc" revision="8c9df8fc0a8b689357270604e1657cfb1334ea3a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/ksoap2" path="external/ksoap2" revision="9fdc4a6bb2b882bd1d6c822d2ad0c66585d66ba9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libavc" path="external/libavc" revision="a6883624339d01d27b51e52cb67d883c5cefaef3" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libbackup" path="external/libbackup" revision="0731e91b1b15194981c29990c7aa0c28428a379c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libbrillo" path="external/libbrillo" revision="4550d0218311736e463de460fd5c6bcc5176e631" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libcap" path="external/libcap" revision="d8602bf693a5cb6d9613f99f8be7b7262425a2ff" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libcap-ng" path="external/libcap-ng" revision="df51f14448d6c660324f8853c41f48564a8fcc6f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libchrome" path="external/libchrome" revision="ed187412f1f38caf730ed4f23b961ef6e270e0d5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libconstrainedcrypto" path="external/libconstrainedcrypto" revision="d9be68f1362631e4707700e28998c325ab3e2c03" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/external/libcups" path="external/libcups" revision="5ba10651e17ac28e5449619c05ec12e329047efc" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libcxx" path="external/libcxx" revision="84ec2bc49b3d6e51d4f290241a70e5ae2d5fb1ed" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libcxxabi" path="external/libcxxabi" revision="028dc0406ae5d5f4b2968538ae5569ab4a3af58f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libdaemon" path="external/libdaemon" revision="e12941a3c3b44addb0d02b9c869cd8ef8ceda37b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libdivsufsort" path="external/libdivsufsort" revision="fcee868119b5eac60a8cd9fc9ddebb9627ffd172" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libdrm" path="external/libdrm" revision="2c61f718269831116bc79f386ac1f3475d1c08ff" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libedit" path="external/libedit" revision="67e14dfc833aafa400a3aad8cb329cbaec503445" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libese" path="external/libese" revision="092b6e8f4f8091428693f15071586f2624bb4baa" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libevent" path="external/libevent" revision="becbc79be28cd4f92d14c3f395d562995fc73bf9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libexif" path="external/libexif" revision="eeeee64a7922a7e33d8bc09f66a1a4e6c3e01596" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libffi" path="external/libffi" revision="6f31af2b858c06ea1e48c1659bbdcee60b9674d1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libgsm" path="external/libgsm" revision="bb4b5292111db421e4720a045c7f54afef13b368" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libhevc" path="external/libhevc" revision="0a32c2d2356eaaca232953d5b07966691ea43c17" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libjpeg-turbo" path="external/libjpeg-turbo" revision="8a3a0f2b699bb11056459b873b02a2973f901557" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libldac" path="external/libldac" revision="83f41c73bb55ffaa0e278fef6664583a4c07d200" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/liblzf" path="external/liblzf" revision="0fdf3f9a85f564f48f6ce72aed9a2642391f2afa" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libmicrohttpd" path="external/libmicrohttpd" revision="fa5e1bc827f2afea8b2fa63e4da8683d3fb74178" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libmojo" path="external/libmojo" revision="295cfd3aac4bcd9a851be83c250a7a3402141a07" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libmpeg2" path="external/libmpeg2" revision="25f769ec032b78ec159643f3ee40939632103880" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libmtp" path="external/libmtp" revision="ab31b17c72d1ee81f6961cf15deb50448cc61a34" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libnetfilter_conntrack" path="external/libnetfilter_conntrack" revision="7d547dc585795dc2263b00bdbbb3ff4b4432d312" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libnfnetlink" path="external/libnfnetlink" revision="f637d31fb9a58e8e694cace77c3719e759425e54" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libnl" path="external/libnl" revision="305652174681b382088f8d7be83328613840d772" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libogg" path="external/libogg" revision="2f6fe5555198104e904e2bbf283dbc3b0d71cadb" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libopus" path="external/libopus" revision="10ce6fe7ba7f89997ad9277907d763b9a5445a35" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libpcap" path="external/libpcap" revision="26991453edb938b971863f8bc99cffcd2af2d564" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libphonenumber" path="external/libphonenumber" revision="f7b3a84b6906716bee46169c15b2b6327c323e87" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libpng" path="external/libpng" revision="d74efc2eb6fffac4b3ecf1a92c3a08ee2fa36a1a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libtextclassifier" path="external/libtextclassifier" revision="f53ba591a29585e12277e60181d1ac9a8d117038" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libunwind" path="external/libunwind" revision="e8fd6a87d14ddf46f99821fa0a9f0100ccaff636" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libunwind_llvm" path="external/libunwind_llvm" revision="7d6ae5950106647641d45d6daba9d3411f930dce" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libusb" path="external/libusb" revision="cf2a3883c8b996cf3efed7a5792fa5086109a036" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libusb-compat" path="external/libusb-compat" revision="759481ae400d02fe99488dcdcd653b4f8139a39c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libvncserver" path="external/libvncserver" revision="8cc7a903681c1242897383436d013741d2de4893" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="pdk,qcom-LA.UM.7.3-incoming,vendor" name="platform/external/libvorbis" path="external/libvorbis" revision="69bf3dd8fe497d9a3f7c39e41c405c987c48a488" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libvpx" path="external/libvpx" revision="3132c9e3f7c99bbf9cb3c59aa500e30264b5cad3" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libvterm" path="external/libvterm" revision="378bbf9352e68351e2a97ed31ce461ac2e46545d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libxaac" path="external/libxaac" revision="8032cfdacdfd16a61d0347ffa569239228272ab7" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libxcam" path="external/libxcam" revision="97f8476916e67917026de4c6e43c12d2fa1d68c7" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/libxkbcommon" path="external/libxkbcommon" revision="aff0063a858d01e0b6769c5a47cef4405f5baa43" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="libxml2,p-fs-release,pdk" name="platform/external/libxml2" path="external/libxml2" revision="ee5a1394f6e9b594aefb9a56f04940bdde9e8ce3" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="libyuv,p-fs-release,pdk" name="platform/external/libyuv" path="external/libyuv" revision="78bcb0e4d6f6ff4f465aa2ce548b154a8f7afc59" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/linux-kselftest" path="external/linux-kselftest" revision="9e3ba68a73ecc7f94153cc8b5d407cd4a802df5e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/lisa" path="external/lisa" revision="973c06e326bd45732ec3a5301dde01b054440bc8" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/littlemock" path="external/littlemock" revision="4dd43c74801149ded3e18eaba7d43ff6dfa192c8" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/lld" path="external/lld" revision="26c9bb3b51a7ac4bc45f73d532a03cfd9982043a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/llvm" path="external/llvm" revision="eabe9bedac8109dd2273ec870f5bb0114af148e7" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/lmfit" path="external/lmfit" revision="ff75e29326d9fdff9395b544df6e8efda2e62429" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/ltp" path="external/ltp" revision="30858b58bcc8f9a9b2b85a2abe547b06f3451f20" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/lz4" path="external/lz4" revision="419ef7d383f939bd538fef859850aa8623a53407" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/lzma" path="external/lzma" revision="db6f69a8a1ba3fedbd403a03667f3dd6460ab9bb" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/markdown" path="external/markdown" revision="06a8f8b914d477183f68b84424bce8ff4dae7e84" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/mdnsresponder" path="external/mdnsresponder" revision="b836ea6e7e1bfd2495d6ed0846a85f6a9721b654" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/external/mesa3d" path="external/mesa3d" revision="ac5392bcb034fbbf7c02833af427ddcc50901d36" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/messageformat" path="external/messageformat" revision="7941896999a8a623683b888fd39095f32a7f49b6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/minijail" path="external/minijail" revision="817729e2a1b6fceda332e49294b4b0c46d5e7f64" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/mksh" path="external/mksh" revision="a33a63f9d4a5a40b86049b3423ed7d266b9eebc2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/mmc-utils" path="external/mmc-utils" revision="f105db5bd1934f0c3e5f74bbc9a5aaeac7a6bf2b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/mockftpserver" path="external/mockftpserver" revision="3adbe6682586f0253672b4c4631e8c181cbd0285" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/mockito" path="external/mockito" revision="dd85ed517bd4ea380b918fc68c925a65c697cf05" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/mockwebserver" path="external/mockwebserver" revision="53862ae061e5ede04a9c51c4a60541722fc12dc1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/modp_b64" path="external/modp_b64" revision="6f11b5c9b4ffb38dc9375f3cf344da4300a2741a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/mp4parser" path="external/mp4parser" revision="88bd0c6cfa7fcfbbebcc15c2c565f714cb36b065" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/mtpd" path="external/mtpd" revision="5edadcb75b4e54783392e8ccaa8f2046ab6fa34b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/nanohttpd" path="external/nanohttpd" revision="c6783c32331b3fe78ffd5077e7f180995d0e268e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/nanopb-c" path="external/nanopb-c" revision="ace6fa2be426f78d335bc260d4454e7001a887af" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/naver-fonts" path="external/naver-fonts" revision="91e6e9f94d1d769a8f742649674149ba98ce7d45" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/netcat" path="external/netcat" revision="7a4052e339795a7d39eda25dd7633bba101a1d1c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/netperf" path="external/netperf" revision="934f370815c2fb112367f8d2009b33c12ac6318a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/neven" path="external/neven" revision="11e893b51e6cb7e01f6d9d59ae9fd4486612e6af" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/nfacct" path="external/nfacct" revision="88e80ccb5f2fa69920de799146d1e82d11fc28b3" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/nist-pkits" path="external/nist-pkits" revision="db15a602791f6a47e90645bb0b724376ebb0ef20" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/nist-sip" path="external/nist-sip" revision="2a593361503da0dbb8cfcd2dc523df4ae7eaf284" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/nos/host/android" path="external/nos/host/android" revision="eacaf6605e2ffe5743a967d1c39b63ea789f141d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/nos/host/generic" path="external/nos/host/generic" revision="5a48f1874265a7fbabb4a9f96dc2ad7053c74d4f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/nos/test/system-test-harness" path="external/nos/test/system-test-harness" revision="2db408948f11c039127250b680335106e2501ddf" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/noto-fonts" path="external/noto-fonts" revision="5ca972b5bfa72b71f1d0e5e2d4970beed671bd3d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/oauth" path="external/oauth" revision="49f3624a6d3307b640a012f15b94d04174473501" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/objenesis" path="external/objenesis" revision="925f6d3014943356d7cb6ac2cd1599f65adb4b52" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/oj-libjdwp" path="external/oj-libjdwp" revision="90c311cff3f77ef105824aba7df2776af7488197" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/okhttp" path="external/okhttp" revision="ade2ed20495eef66a80307920b217e6713592df1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/one-true-awk" path="external/one-true-awk" revision="b221ebdcd9ade2e830f3fba17bdffbc2747e9aa9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/external/opencv" path="external/opencv" revision="c04ab0df40846f7c0bbb5acd4843ae4d5c3b2c20" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/openssh" path="external/openssh" revision="71a6e69889cd7d4a4ea578a8ddbceb6cebbd1ce3" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" revision="bbfb25464ff30c5a62dce351d719a8c533afb2a3" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/parameter-framework" path="external/parameter-framework" revision="7e4bda0dfab9cc5894003df3bc9cffc222ff438a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/pcre" path="external/pcre" revision="98ab71ee53a87339c1807bf06813024ef559f750" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/pdfium" path="external/pdfium" revision="c8a0db7d7c3e0017de4eeeb69e434b5f3b6ee386" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/perf_data_converter" path="external/perf_data_converter" revision="77162c97e59b1e6b3895a97b3b9dfbe45422ad3f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/perfetto" path="external/perfetto" revision="e334d87b67faad17e36cbb1fd8abf8a9b536987b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/piex" path="external/piex" revision="091e1771e9f25d80b66f1e9384ea4770a337627c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/ply" path="external/ply" revision="2d977f82c407dd320e1a171e90a37b9e15bd4d9e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/ppp" path="external/ppp" revision="90da8c8f15db2c82aece6e4085aaf9c116d481f2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/proguard" path="external/proguard" revision="dc5e6bd29d75591f93d0db40cf07b6299aae4dc5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/protobuf" path="external/protobuf" revision="824412747da66476a94d86ee3b746300aee973f1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/puffin" path="external/puffin" revision="1b591230d50aca64c844d95ac881137f952ebe72" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/Pillow" path="external/python/Pillow" revision="d9c0fcc955e4fe0662cd0580a412a20cb328f039" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/appdirs" path="external/python/appdirs" revision="0d9b51147cd55a9ee45382c534bcfa4df4a2e3fa" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/cachetools" path="external/python/cachetools" revision="ee4588a2a8743a550de2a7e18d306d5f6a436702" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/python/cpython2" path="external/python/cpython2" revision="ac9e6c1d6843fccb106695789809c8aafbd45578" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/python/cpython3" path="external/python/cpython3" revision="1fefb61be13ddcb8a082d0e14d7598f8f3b1b9f4" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/dill" path="external/python/dill" revision="01988c5fa063836e457bdb7134d4d300d1276e5e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/enum" path="external/python/enum" revision="6706fcd5d4054a9dcbd517142f2be8c9498fcecc" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/enum34" path="external/python/enum34" revision="ed56821ca06c8ba80bc083069c9f5672cf834e2a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/future" path="external/python/future" revision="fa8e703fd259f8056cb817219041eb0e20c00ada" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/futures" path="external/python/futures" revision="e6c5f3e55ad54f4987ea0e81478858d007211cb0" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/gapic-google-cloud-pubsub-v1" path="external/python/gapic-google-cloud-pubsub-v1" revision="44cde1e4892ce518b1927ab3f8f45a22f0f67a1d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/google-api-python-client" path="external/python/google-api-python-client" revision="6e0c0af3fa414387cd2ecc22ba6cb4eca47f171e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/google-auth" path="external/python/google-auth" revision="51bbd38e9129785729a71abea8ae0bae1ac9784c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/google-auth-httplib2" path="external/python/google-auth-httplib2" revision="c4201f1bd596e5b17b7e461af2dd8b0d676834a6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/google-cloud-core" path="external/python/google-cloud-core" revision="1b76945730adf9762a680dde8facca6acd864df0" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/google-cloud-pubsub" path="external/python/google-cloud-pubsub" revision="0f0dec2c3076169da00aadb6de8f621da301b908" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/google-gax" path="external/python/google-gax" revision="70dddff9a898e0ea662d27451f13f4262c43b1ef" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/googleapis" path="external/python/googleapis" revision="67d384ef2d9bad424bce05c79899a1c6e6baee25" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/grpc-google-iam-v1" path="external/python/grpc-google-iam-v1" revision="6ce59f644bd5e99279b020b6fa9b8851fccb7c50" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/grpcio" path="external/python/grpcio" revision="c059a54af916df11ead84a19bb4e2faca19e3682" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/httplib2" path="external/python/httplib2" revision="90f880038c1d7bd50fa7b0538954b24fd12da231" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/matplotlib" path="external/python/matplotlib" revision="bbaf4f40479b90f583faf080bb472499439ee2fa" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/numpy" path="external/python/numpy" revision="b12e87119e636214f5d41688ec4ea9ba4b4e58b5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/oauth2client" path="external/python/oauth2client" revision="ea7213cdc8de40a4887a68aff85a1729884461d0" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/olefile" path="external/python/olefile" revision="1221d9b12619499cd798e73598a074b8cb6d7b31" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/packaging" path="external/python/packaging" revision="28b23ad183cfe53c9f848e1cd55595dcd11b22f8" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/parse" path="external/python/parse" revision="aebfe77d79bd5f84e82bbb23bc3f0e7ce817064e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/ply" path="external/python/ply" revision="2b3c386a04f92d292ea289ea10d6508a3bae2c2d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/proto-google-cloud-pubsub-v1" path="external/python/proto-google-cloud-pubsub-v1" revision="ea95753aa8bc0d8d7766a36917b488b331dbabee" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/protobuf" path="external/python/protobuf" revision="6e9cbd59578771e8005e4d3ca73c167521f4e4d5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/pyasn1" path="external/python/pyasn1" revision="060cf6916bdf4a137c20fab13ad81f84c99941e2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/pyasn1-modules" path="external/python/pyasn1-modules" revision="52eef53175cb9e051125555c187fd7ac95464654" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/pyparsing" path="external/python/pyparsing" revision="349ddcef3f7641faf4d11327c959da6568b84635" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/requests" path="external/python/requests" revision="f51a28912b8571f0276a633a85578a8ded94d37c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/rsa" path="external/python/rsa" revision="dbe61a7ce8c6b3a1ffbf632590ea05c61231b687" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/scipy" path="external/python/scipy" revision="626da5975f8d3d1ee9de56180b57b6dee8ede15d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/setuptools" path="external/python/setuptools" revision="e493fcf90483ade4b2a5ac331a4f89cb15ae3fd2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/six" path="external/python/six" revision="f91473d8b8dabb218500dd05582fc2d5c5481143" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/external/python/uritemplates" path="external/python/uritemplates" revision="4edb22282e4cfaa9250d3fdb2d2f7be9c0a34fb4" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/rappor" path="external/rappor" revision="9f9abd94c58037124281918c8ecf0a3cf8c3fbdd" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/replicaisland" path="external/replicaisland" revision="d06499599cb5c1ab1f8d93a1ff1f87822f3364e2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/rmi4utils" path="external/rmi4utils" revision="d396cec8d5947849fe3ba17a1a92ba1d89b03b1d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/external/robolectric" path="external/robolectric" revision="f77746a7e4cd34340ca1adf7533c4caf92c8a1f1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/external/robolectric-shadows" path="external/robolectric-shadows" revision="67c1eb884363248872cf843857cc1898bd019834" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/roboto-fonts" path="external/roboto-fonts" revision="a49bcc0972b3772872e36ca06817e950e26593bf" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/rootdev" path="external/rootdev" revision="6bbf57183ef969e629c7ad5d4aec94a89b11eb08" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/safe-iop" path="external/safe-iop" revision="1f10ecc6aabb295947735f8c14b7b60915613d3d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/external/scapy" path="external/scapy" revision="6e298c87d2b6b858d02f55e01356f4b804aeac12" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/scrypt" path="external/scrypt" revision="1bcd68e1eb76f7ed62002d437f7c26cb1ab6c7dd" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/seccomp-tests" path="external/seccomp-tests" revision="4f2d187cc5514e6cd99fdf418e592d0501cb9ece" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/selinux" path="external/selinux" revision="1aca5d8a0e691d0145ab1b58623bbf3587410182" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,qcom_msm8x26" name="platform/external/sfntly" path="external/sfntly" revision="0bad802dc17fc283171923479960d6dab6342d3c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/shaderc/spirv-headers" path="external/shaderc/spirv-headers" revision="492abb45bbdfc0c5b9ffd00f16e53ab628305da9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/shflags" path="external/shflags" revision="c4876e01829b8cf110ee33267bb1bad1f8ebb51d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,qcom_msm8x26" name="platform/external/skia" path="external/skia" revision="26645e398249139fd771abc7c67b9e9fe20a01e6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/sl4a" path="external/sl4a" revision="868aa899d21a6fea4aba44676d82b6ff3eac291f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/slf4j" path="external/slf4j" revision="68dedf4cda0627f9fdde25ddee887361dd00928a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/smali" path="external/smali" revision="108e211f529be926296a7113bf530d358b710c12" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/snakeyaml" path="external/snakeyaml" revision="1bc636a306795fc40770bdd73ee01477ce1cb189" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/sonic" path="external/sonic" revision="8e98560ce192d2dc785091726b311dca05d94ef5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/sonivox" path="external/sonivox" revision="5c5360c9610992568de5e069c5ecd5d6482bab77" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/speex" path="external/speex" revision="ab04d14cb55467062a76f468b157db2add36ed2c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/spirv-llvm" path="external/spirv-llvm" revision="3bf979d401421b917242264b0db66ff61e9a4138" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/sqlite" path="external/sqlite" revision="c500f385f9162238cb2fd24babe8fe10da6ce670" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/squashfs-tools" path="external/squashfs-tools" revision="d6769b940d6d7b074d2188a78e7a3f0cceee8e05" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/strace" path="external/strace" revision="5e9aa40d5e2d23377abb779a233806fa2199742a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/stressapptest" path="external/stressapptest" revision="425df8dc79256c211847f2873ee37d52418aa84f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/swiftshader" path="external/swiftshader" revision="fbd771b85e246db04738637fb7d99796fbb9b68b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/syslinux" path="external/syslinux" revision="8cdd7c0cd2f07203e49bb1f9fc5e38bf5d1adb5b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/tagsoup" path="external/tagsoup" revision="33167693e133b365838a9950d08b07564052cf1f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/tcpdump" path="external/tcpdump" revision="3eb84b57334dfabfef469348409ec29e5cff68bd" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/tensorflow" path="external/tensorflow" revision="e5a536fbd36ed64a7a63516299a3061944864080" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/testng" path="external/testng" revision="232826a29199755858c2c5ea020117b413cfaf6d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/timezonepicker-support" path="external/timezonepicker-support" revision="99e91a76fd74bad10266623d67cdb98d011f709e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/tinyalsa" path="external/tinyalsa" revision="ed77311b46ed0175af5db1ee3376692b671d8aef" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/tinycompress" path="external/tinycompress" revision="e57182e307665bcfde4c2b8e9829d54b7df15a92" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/tinyxml" path="external/tinyxml" revision="5994c56e84766cc467d1ec1c226a9671da4038f4" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/tinyxml2" path="external/tinyxml2" revision="fc3a54ab2ef7b14ad03c8de3bf6a936f92f23ebe" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/toybox" path="external/toybox" revision="80a75a51166b6b70b8e429af136c122eb9e3ff6b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/tpm2" path="external/tpm2" revision="9395faf6ee41ccfb3f3364bb58727c27a027e35e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/trappy" path="external/trappy" revision="8f957f902b22daa0090516fcdf9ea110a3cc8d5a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/tremolo" path="external/tremolo" revision="27b5f639f211e1800da6bb5e8661727cd8b0dc24" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/turbine" path="external/turbine" revision="39d5e12d0bb57264fee7f456b8868239b5ccbbd9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/unicode" path="external/unicode" revision="93e64b7be3fb71fb6a71138ebb3160278c52c6a4" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/universal-tween-engine" path="external/universal-tween-engine" revision="75d2d4e1d27ca8ccf0fd7dc4456b0a3dcf509dd2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/v4l2_codec2" path="external/v4l2_codec2" revision="0c68ee414a2b4ee8ea776eb74ea6c5444fc3732f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/v8" path="external/v8" revision="e10afe4d67749d889f4b13ae001f30ae162fe2a3" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/valgrind" path="external/valgrind" revision="f516c4fb6fa0a42c1448a86dcc99a748dbae86ba" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs,vboot" name="platform/external/vboot_reference" path="external/vboot_reference" revision="3007a4c680f6122ee2f0e361778007dc19221589" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/vixl" path="external/vixl" revision="d9e30945a256c222c3e97465869b71ced3f0dca6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/vogar" path="external/vogar" revision="c8d647b757ae53a25c134c5d145a89d4a676f61e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/volley" path="external/volley" revision="7c298add104e1267b102ffe07327d8554d50af78" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" revision="1aad41c850cfd1e400cc06e29e9eb311ca482f56" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/walt" path="external/walt" revision="9ec429e798243c2ad67d779765dbe97814d5c25e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/wayland" path="external/wayland" revision="4c3e8e6003a5612ca3d92e7400a4e5e6726b2081" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/wayland-protocols" path="external/wayland-protocols" revision="6abfa6503b72890dc921f5ac19569f76ca219d43" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,qcom_msm8x26" name="platform/external/webp" path="external/webp" revision="b8a8cd5075860c44e6fd5d0d2e529ff2e0417d7d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/webrtc" path="external/webrtc" revision="1199eb57e5a0bef4e438a5a847ff1af165c4feed" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/webview_support_interfaces" path="external/webview_support_interfaces" revision="8ae24e5a50f1fd4eb3f72373139822872b3a39e8" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="03f198c33cc686db0398c3f7411c188c165e5369" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/wycheproof" path="external/wycheproof" revision="ba3228e3c24d419499d91c7aaabf5ce63b75fdd0" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/x264" path="external/x264" revision="1b633edcbf9847ac9fb46917c73bf8466ae71078" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/xmlrpcpp" path="external/xmlrpcpp" revision="c79d4eae757a81270915c2a7cf01c81b8d42785e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/xmlwriter" path="external/xmlwriter" revision="e95d92246ee35273dde2bee8b00485cc14c12be5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/xmp_toolkit" path="external/xmp_toolkit" revision="42ea4dc6d1fc2206a7778029070ed9213e3b0fbf" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/xz-embedded" path="external/xz-embedded" revision="180f9115008b00e7c1a2b35317f2bca709fce8a1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/zlib" path="external/zlib" revision="8a168240263489da42a83bbacf86b282c6fcb0e3" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/zopfli" path="external/zopfli" revision="76d7da2a87daf777c20078f647f78f776d981fd0" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/zxing" path="external/zxing" revision="8c79be4cc4084d0f508aefba40203383e6ca342c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/frameworks/av" path="frameworks/av" revision="e11d08a2fa9e8d4aeec8b5eb8cb90c8ef28a91e6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/base" path="frameworks/base" revision="ab1678db90e1bc37876ef5f9f07052af0485e893" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="79ec1c11e187864ffe62f8c7840d1a9ba363e9f4" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="58444cdff5e5b44ec4d40196ae37c5985b48e3b1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="fa48a94f0a5de970f939f625b63e5b51df35f7e4" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/data-binding" path="frameworks/data-binding" revision="a53fdf4a28693a8ebbc5d3fef1e44423a560dc90" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/ex" path="frameworks/ex" revision="0e34e38a5a99eb8ec1adcfd07e027620aca9596d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/frameworks/hardware/interfaces" path="frameworks/hardware/interfaces" revision="d7537cf1ca470073c67fa309d10d762512f283cd" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/layoutlib" path="frameworks/layoutlib" revision="21a90e156287d359e8a2f6ed509c63857301e84d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/minikin" path="frameworks/minikin" revision="a45c0cf8835e899318b0a8f778a76d016f645c0c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/frameworks/ml" path="frameworks/ml" revision="049e8d8cadb5c0d847c50f69d34c310779f7c803" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/multidex" path="frameworks/multidex" revision="842eea3f0b0dcfaa05d4252eb229dffc1e621d1b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/frameworks/native" path="frameworks/native" revision="914ac96a89ce266ae285d50705b7f301da8f1d86" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" revision="bbb23bc31518d87eea4b83d08e8d8ed9745c40ed" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="8a1a65aa6e2beddc6f4da0266581b9083b298b99" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/frameworks/opt/car/services" path="frameworks/opt/car/services" revision="de20d4252bfef553c07cf99825f0eacd8da1aad5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/frameworks/opt/car/setupwizard" path="frameworks/opt/car/setupwizard" revision="dafdc381066be23129af68318c977262ea902ccf" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/chips" path="frameworks/opt/chips" revision="fb31f8021d8d148f2ca32e76d3c9219016c50baf" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" revision="127c3834d854bb9355831eb12ac1fb4afda0cf97" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/datetimepicker" path="frameworks/opt/datetimepicker" revision="1a483be7f92c35a7d5c7bd81778fc7b8ed91e626" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/frameworks/opt/inputconnectioncommon" path="frameworks/opt/inputconnectioncommon" revision="3baece9b20fa480da46d860acd7320fd9eee3386" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/inputmethodcommon" path="frameworks/opt/inputmethodcommon" revision="990fcb1a6dbb5d1204cc8ec86e4bc3f691f4aeeb" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="2a0c8042e8d148f890914dc3c0ef1c7012ecbf12" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="frameworks_ims,p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" revision="61d3d4d3b41a78f0639f5e8c0ea60c5dccf860fe" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/frameworks/opt/net/lowpan" path="frameworks/opt/net/lowpan" revision="9e7c6bb6a72ae1bdfde8317f1b00eac4dd1c429f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" revision="721f757a4fef09790561bc0bc0cfcb721b4c957b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="9c6f37db14d44b985655a5fcf10b5c059b93b0dd" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" revision="68bd0314f020c968332670ca9aa9ddb8f4d6f05c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" revision="b0f9838cabfca60b137f500f8ec198547a771387" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" revision="55868057622dd2c31f441cbb1ea5e2217ca3f80a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" revision="36df0f5ca83ed9f8d1bf93c4ace5338138413010" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" revision="a9c7bcb3854a1cd9f6eb4c70159c1d2f36ca5b62" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/frameworks/rs" path="frameworks/rs" revision="67602c3e82a7b3cab19bd0ccf17df8c0fa836888" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/support" path="frameworks/support" revision="e3c4fbcb69cdb415b9ab3debd3116abfd3abe8a9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="b82635cc6cfe907586ac61756327339d58968a15" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/hardware/akm" path="hardware/akm" revision="54601271d21ad1712befbbac073249b168c31cbd" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/hardware/google/apf" path="hardware/google/apf" revision="348f7c3067f7822fdcb6f34eef9b41b23a960d12" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/hardware/google/av" path="hardware/google/av" revision="3b23099baf86e0dbb04cf395b384ccdb68ea24a1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="easel,p-fs-release,pdk" name="platform/hardware/google/easel" path="hardware/google/easel" revision="0824db9ef0067d85ba76ec088c6c3b175ccaf0ef" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/hardware/google/interfaces" path="hardware/google/interfaces" revision="6c622d5aba7565d827b89b8aeddac41c4c84e2fd" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/hardware/interfaces" path="hardware/interfaces" revision="0dcb4b4c8c303059afd506768d3a7bbd854803e3" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/hardware/invensense" path="hardware/invensense" revision="1022e3fde6744e8216a77f35c9b0534ceed93a5c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/hardware/libhardware" path="hardware/libhardware" revision="380d8104e253790e69d8c92621c6ebf403854d6f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="841e35e813e1f5a2f56bbe6b3321595c6b3793ec" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project name="platform/hardware/nxp/nfc" path="hardware/nxp/nfc" revision="c8c0e443171096c643bacb820546395d8a5c52ec" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project name="platform/hardware/nxp/secure_element" path="hardware/nxp/secure_element" revision="00b21e6132bd78229ae47ac29d43a4bec3a62dea" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project name="platform/hardware/qcom/audio" path="hardware/qcom/audio" revision="bb08ac7116a23cbc585edfcede39660ae107377d" upstream="refs/heads/audio-hal.lnx.5.0.r11-rel"/>
+  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" revision="7725a434f87c244a458cc9155368d331b63781ab" upstream="refs/heads/android-blast.lnx.3.0.r12-rel"/>
+  <project name="platform/hardware/qcom/bt" path="hardware/qcom/bt" revision="d546a4a0a05c00d22f6bb77ae5edd1bed24abf41" upstream="refs/heads/bt.lnx.4.0.r13-rel"/>
+  <project name="platform/hardware/qcom/camera" path="hardware/qcom/camera" revision="48798c5a6f22c625fb9e56ffb1af9ef92214b484" upstream="refs/heads/camera.lnx.1.0.r30-rel"/>
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="9f3d2ef94f6779decd49736152b1dcf4506992bf" upstream="refs/heads/display.lnx.3.2.r8-rel"/>
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="f0afe5e01728dc6330e56be0d91a04883621dc6d" upstream="refs/heads/location.lnx.3.9.r12-rel"/>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="ba97e93d7387abd0e2d4a96dd35657c859753154" upstream="refs/heads/video-userspace.lnx.2.9.1.r8-rel"/>
+  <project name="platform/hardware/qcom/sensors" path="hardware/qcom/sensors" revision="d586ff51fb0d3cd948af51f67080f9ff4654dccd" upstream="refs/heads/sensors-hal-native.lnx.2.0.r1-rel"/>
+  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" revision="a9916537b94d2c2c017f488c699cd949cabf53d5" upstream="refs/heads/qvr.lnx.3.0.r28-rel"/>
+  <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" revision="4ceb2ab027d094ea3483e068e6872dad28cfb53b" upstream="refs/heads/qvr.lnx.3.0.r28-rel"/>
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="bdc4ba133afc8ce3a956d372a8d9dbe12ec15e3a" upstream="refs/heads/wlan-aosp.lnx.4.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/hardware/ril" path="hardware/ril" revision="9e578a19e0e73c54e247f6b590c342740125b073" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/libcore" path="libcore" revision="41da27db7b61042a191a571e6b4cde6de6326dbc" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/libnativehelper" path="libnativehelper" revision="83ecef023b314d4d1feeed31d148fc2749d78852" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="a9b76fe045bafb0d4711461d071a7aa574196739" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="3fe0f6b367ff32b5fbb0b7d66bd5d5b65ad3c469" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Browser2" path="packages/apps/Browser2" revision="1c36af3ff9926814bd717586b00f006f68a8a735" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project name="platform/packages/apps/CMFileManager" path="packages/apps/CMFileManager" revision="33431c2e393e00f0d8c5a5bbb2bb94666824c2bf" upstream="refs/heads/android_ui.lnx.3.0.r13-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Calendar" path="packages/apps/Calendar" revision="fe9eba3b5623a34605004b11712781373528e30d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Camera2" path="packages/apps/Camera2" revision="84b63029f75555456bcc3ca24b4faf73181f76ca" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/Dialer" path="packages/apps/Car/Dialer" revision="d8dfc00e151920437dfa8661b97df5026992a79e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/Hvac" path="packages/apps/Car/Hvac" revision="12d410392cdf195ee025d6f9c21f283894c49e05" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/LatinIME" path="packages/apps/Car/LatinIME" revision="7017410bde8b74bb6899104a0f341f75980f546e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/Launcher" path="packages/apps/Car/Launcher" revision="f3cf94f3a27ace68e5feacf0233b5afb330237aa" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/LensPicker" path="packages/apps/Car/LensPicker" revision="2fae2818ed67f64dc815401b10696cf8a48b3568" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/LocalMediaPlayer" path="packages/apps/Car/LocalMediaPlayer" revision="63bb8f403e51da3fd8da2e7933f54eb38a454817" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/Media" path="packages/apps/Car/Media" revision="0df732e8b3035284d7b99a5516550c21e10de20e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/Messenger" path="packages/apps/Car/Messenger" revision="cacd25d014a148a5bf8fb090445c161c003f99e6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/Overview" path="packages/apps/Car/Overview" revision="f9ada7a6db8503ba695d3e577ece5e20d20455b2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/Radio" path="packages/apps/Car/Radio" revision="8367a119f0ca984b44a008ddf348a97ca7d2d2e9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/Settings" path="packages/apps/Car/Settings" revision="7f2fc7ee42fb66713dd2b014ffa1a89152d7fea2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/Stream" path="packages/apps/Car/Stream" revision="2f778282f7463f406a7557e2ab8ab848a8321ed3" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater" revision="ea49ffa94cb6816224562a1542151dc8ad808287" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/UserManagement" path="packages/apps/Car/UserManagement" revision="9391baedbf4ad645d7c125279a19d7a2b6b285f9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" revision="8978eba6ac5ab041ec6e4c51d9d32ec358bdb594" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" revision="928d6a59e9c5c28007cb8298fe105615f31fd95b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="3e3ab43c4d355940eba5da492435b054c30cfd87" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" revision="3b287a50e397d83c7aa01ddf1c8365e7f1d9b348" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Contacts" path="packages/apps/Contacts" revision="09b2df938d7c08a3da896d5360b4c30ee41b2262" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" revision="e0f9de27a6546048ae317fce0e47ba65f34331b5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/packages/apps/DevCamera" path="packages/apps/DevCamera" revision="90fdbf7460fbd255194455331c6a38a7b8f41dd2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Dialer" path="packages/apps/Dialer" revision="f8ca29a00ff312cf9d48edf5a7acb56c7c5a05fb" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/DocumentsUI" path="packages/apps/DocumentsUI" revision="bcf6de9e80c0275e1cd6b9abfd014605fa950c32" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Email" path="packages/apps/Email" revision="ae39c98788a9d5517aeb861d0a6e39e97fe8ddf3" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" revision="1641ad252b476d858559d9b9efe519bb632dc40f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator" revision="0b92a1aa16ae2d5d8a450792533ae3a7c47d088c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange" revision="fd4abb641be3a688b5d5e7cc744a72aa2e8d9e21" upstream="refs/heads/android_ui.lnx.3.0.r13-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Gallery" path="packages/apps/Gallery" revision="eeec8b66f1ebcca293809fb9438e73c9139aa303" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" revision="b4d48183653c5bcbe995ad47e0c5b54e473a7c51" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="01917ca67e254e75ec26481e7505392e099f8eaf" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" revision="356cf2795f5374b5bd76140eb1072031918da373" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2" revision="f08d14ad307f7b534e1bcf2340cb8665c4560114" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" revision="ac7d128e1b7caa7531e68407c9dfa82157745ee9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="2d8b5006aa9dc36a740978b1accca0185a09d0d4" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="14b05dce34ee1baa5ccca9b66fba46cdd11811d7" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Messaging" path="packages/apps/Messaging" revision="06f5b8a6ecd8ca626148a9bb66ca285c2ea47b5e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project name="platform/packages/apps/Mms" path="packages/apps/Mms" revision="a52bdf235edabc75d7a0051c8ad3a86ed235ab1b" upstream="refs/heads/android_ui.lnx.3.0.r13-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Music" path="packages/apps/Music" revision="6a4a02541f1dfafb92c6dd5272fbebc0bf2c60c6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" revision="309772338e08b69c819a75f2577d3534fbb8a169" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="apps_nfc,p-fs-release,pdk-fs" name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="39cf50cca4ccdabdd0cba6a00738e83b01014dbd" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" revision="7592de2d321004cfe5706bf2083ec3e7b95be6f6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" revision="d076b8c6bd21114575802200bf6f29cb4a6165d9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" revision="e4e88d1132840ac6b26361698378e496357e7d71" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="5894fc0597d34ea5ebab4c042f74c564cfd1c5a9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="bad73ad62568ab336ace0b67291b095338cfc1c3" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="fccbefd688cd587dea294c90c856edac178e4b37" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" revision="dd401c945da5a6a11e0701b2342c94a7ee3a2b54" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="apps_se,p-fs-release,pdk-fs" name="platform/packages/apps/SecureElement" path="packages/apps/SecureElement" revision="6a005c2eb0e848fd200b770922934581c5fcfe2b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="d859f82ad93fff2abbbdf165de6b8b0e4df3091a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/SettingsIntelligence" path="packages/apps/SettingsIntelligence" revision="49d13b8e65f7e596f7ef60827f4fa057f2b39dac" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService" revision="29eae320a4bd222b5ff1c092f84f1aebba88d0b7" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" revision="623e2095aed69cf0be6b9f6b21a6578e0b05201c" upstream="refs/heads/camera.lnx.1.0.r30-rel"/>
+  <project name="platform/packages/apps/SnapdragonGallery" path="packages/apps/SnapdragonGallery" revision="88d671774d7b4e45b8ab5a36a88b57d8d33ac225" upstream="refs/heads/android_ui.lnx.3.0.r13-rel"/>
+  <project name="platform/packages/apps/SnapdragonMusic" path="packages/apps/SnapdragonMusic" revision="c8f0ce16804db0b9d0a71eebdb4520de7fc436f4" upstream="refs/heads/android_ui.lnx.3.0.r13-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" revision="f168f5484b0e43d68211986fc9483c8a87f80546" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="81e684a820030a8290bfbb5d3e3de752751397d6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="apps_stk,p-fs-release,pdk-fs" name="platform/packages/apps/Stk" path="packages/apps/Stk" revision="ba689724a759d9eea2c7eeca01bc4de4fb878596" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/StorageManager" path="packages/apps/StorageManager" revision="483432a7888303b6df142e0ff4779008ec48f5e0" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/packages/apps/TV" path="packages/apps/TV" revision="d292a3dd09f47e0396262ab1eca218059243f25f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Tag" path="packages/apps/Tag" revision="1531c25008acb1e5f7df07d41e9d32817c7bec85" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Terminal" path="packages/apps/Terminal" revision="b1dd20f49f72bc847d8572e6a4c9a3552bf6d9f7" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/packages/apps/Test/connectivity" path="packages/apps/Test/connectivity" revision="9faea9ce6818bd1f918a5dcb354da6182d28ac80" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/packages/apps/TimeZoneData" path="packages/apps/TimeZoneData" revision="4e003709ecb4429e16724a6590fb280ddfd264b6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/packages/apps/TimeZoneUpdater" path="packages/apps/TimeZoneUpdater" revision="d8f8f274778643b6c620527590f2360085905f1d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/Traceur" path="packages/apps/Traceur" revision="117bd63727d78a0fc2a018efbad141261b1ab53f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" revision="d52aacb505a235a1d633183ca101aa570466647e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" revision="cd479ff7485a93a3e7687e0de0b9e351bde81b5e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker" revision="db3426b874c2b6ad67770309b5e26291193a9ace" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/packages/experimental" path="packages/experimental" revision="5d7d053652f2edbca5e6a0bbbee555df5405520a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" revision="ddd4d8464abf7afb74d711691687f048ccf9644a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/inputmethods/OpenWnn" path="packages/inputmethods/OpenWnn" revision="de1751eb5334f05ae3cd1b4bdd93dfc65ce26344" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/providers/ApplicationsProvider" path="packages/providers/ApplicationsProvider" revision="2363ba3adf478a807e7ec6a5fa7ed791d8cc7fbe" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/providers/BlockedNumberProvider" path="packages/providers/BlockedNumberProvider" revision="7901e117c283b45cc7a4e16a45a2904d05ffdd70" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/providers/BookmarkProvider" path="packages/providers/BookmarkProvider" revision="6961590f9f95282b05a90132d45d586b65974272" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider" revision="4704cc10482747b842abda99e347d133045a6ab7" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/providers/CallLogProvider" path="packages/providers/CallLogProvider" revision="b6c2e7583afb3a08cd74bcca4386c0d635cff503" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider" revision="88555b574e2fa45fc3a5105d5ca1176007911a25" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" revision="7027079b03d971aa61c4177653c8e4411be4c83e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider" revision="decf96c0bbc42bc3a9c6b382d12e2adaa8d5b50a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" revision="3e05e45effb47dc8a275e03acb7eb32ded1b817e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="26802fd5de7b89341cfacb11cbc4885014f95e8f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider" revision="77bbbae5a093ed3fde4b30d167c4876397232600" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="a86ac0158a45075b3d91a830e7db455ec512f8a6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic" revision="90420ae7f7385c3c89b3b45a7cdf8187d0c54955" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable" revision="f1cd5385a7f8901ed7e777d7228988f144dda718" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/screensavers/WebView" path="packages/screensavers/WebView" revision="37a877d938a378769992c9b619cbb104fbab72f9" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/BuiltInPrintService" path="packages/services/BuiltInPrintService" revision="41780a27c029ea0372811cbc2776429e640768f6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Car" path="packages/services/Car" revision="a8cb35a70310d8dffc79d58f845ab8c18e7bd907" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Mms" path="packages/services/Mms" revision="8c8e2fc3ab6e3092bd8e9936cfc12981446c7990" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/services/NetworkRecommendation" path="packages/services/NetworkRecommendation" revision="9d5f519d01ede690d632929beeb8160f5fd70df8" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Rcs" path="packages/services/Rcs" revision="16294256b1b2f2b6c369347122defb1bddcef5ca" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Telecomm" path="packages/services/Telecomm" revision="87efd64f0797ba908ec1103f1512fc81201fee81" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="2f483fafba7f082e4decb39ecc9f63500ac020ed" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" revision="21fc8ad409e2e9ccceac239257378f8c829c7767" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/pdk" path="pdk" revision="aab85bf0403e299fe2e9ed1edd8f9cac666dedab" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="cts,p-fs-release,pdk-cw-fs,pdk-fs" name="platform/platform_testing" path="platform_testing" revision="c4c6e77bca438736c0418784e77ec3982129d6f2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk" revision="c1d068d22a1cb875fd923df31cb6e2833b5f261f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk" revision="1d95e4e249309acbc595fc8cd43e78636b7b7912" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" revision="4bd842a22fbdd0b86805cd3fe5f52b43dc46aea2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="3a2f63cee6aec75e2dfbdca4f66f4f648c7c6961" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" revision="1be06cb8438d53765dbbebd5abe4e00b7e2417ee" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" revision="b5b811b79cc3de8817c15b981270b83e6305cf8f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/prebuilts/clang-tools" path="prebuilts/clang-tools" revision="89f2210159b28c570e33d47330581390c655344b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="602d656c20004480b26aa539f93d266303bafdf7" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/prebuilts/deqp" path="prebuilts/deqp" revision="8af42e346652a6a2b8b60fafecb2365068d6112a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/prebuilts/devtools" path="prebuilts/devtools" revision="ae774846ed7bf0861ee1fe1475c810a43d4d8445" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="arm,linux,p-fs-release,pdk" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="305ff1a8a4a7a16c71dbd9cbb90100a246926eb6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="arm,linux,pdk,qcom-LA.UM.7.3-incoming,vendor" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="arm,linux,p-fs-release,pdk" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="c71c05799a793e7e019ce64cd591e257e0a002e6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="linux,p-fs-release,pdk" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" revision="2ccb38af8c940f1feef62ff5986f4bbc5d899e66" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="e76a9a506d7ad132f107eb2f7c27b6a8ccb68b91" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="linux,p-fs-release,pdk,x86" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="9fc96b8b57290766a65ca4021ad4a33fc03b6d85" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" revision="4adfde8bc82dd39f59e0445588c3e599ada477d2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="linux,p-fs-release,pdk,tradefed" name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" revision="07a73a0a113f78777e205b2647e153d8ea609932" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" revision="52c626773599b5968af80c03e9b09109e06335a7" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/prebuilts/jdk/jdk8" path="prebuilts/jdk/jdk8" revision="9849e3160f4d6fb699878cb029dcbc6d462e26d6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/prebuilts/jdk/jdk9" path="prebuilts/jdk/jdk9" revision="6d45422516e4f8988d645b023759cf95fa466bf1" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/prebuilts/libs/libedit" path="prebuilts/libs/libedit" revision="d32685dba4011664b590b94ad156bc734c2c9bb5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="28ad0c564cc0af06df3935172d6148b085d5b9da" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" revision="3663e31802c077d42afc3d264989ca3f24a721bd" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/prebuilts/misc" path="prebuilts/misc" revision="4cab4b3dc4772318e02037393cc5bba69d8d28e8" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="31684eb7338231708b35dd84d42610fe9a1e6c8b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="linux,p-fs-release,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="489a03eec1b903740cef0f1368f0172d9e47f67c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="81ed015c62e41180045da610e101f6ad2b068111" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/prebuilts/r8" path="prebuilts/r8" revision="d76362f3ebbfbee157947b7723a54f70a6d5cfc7" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="eaf2cc08ec3a35fefcfeb4fac83ed984e0af3972" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="01572d197eb315395cc0970396a1b41bf8126980" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/prebuilts/vndk/v27" path="prebuilts/vndk/v27" revision="c79e4522e8ffb9a879d5fd74a94a60c326a4f4d8" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs" name="platform/sdk" path="sdk" revision="33b15f555af1b85c66d0c908c746b185706dc3ac" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/bt" path="system/bt" revision="416a814763448508fbacec55d5b78411839d181a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/ca-certificates" path="system/ca-certificates" revision="40c99a61c93a97365fa8ff05ec8dcbe9075226f6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/chre" path="system/chre" revision="93e5d04c7c6906f5e1ff358f0ebf83b8e3bf1c83" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="115f0a85db7d9ad7d51cee8d38d636fca8628d98" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="20cfc76d65b887d9f34917c6a506b6e9cc834d71" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/core" path="system/core" revision="093f24eade222432b3ee0a076481a13247ce3760" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/extras" path="system/extras" revision="5852ffde11c5ed75b147acd29089a1abc021758a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/gatekeeper" path="system/gatekeeper" revision="c9094ab08c48b47b1c055fff43bdc44c3346028c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="f792f2421cec3c194394a3332e8935858cdc81ef" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/hwservicemanager" path="system/hwservicemanager" revision="e3e904847b4fe60653f7f37cf8b9915d0eaffb1b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/iot/attestation" path="system/iot/attestation" revision="ef49ac80d9597a0536b4b4040c1280882f6630ac" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/keymaster" path="system/keymaster" revision="9f45a0ce8b52c7640b3d655b2ad89a70bcb59d2c" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/libfmq" path="system/libfmq" revision="c6147492721417ae79663fb736d4ff2027392bb0" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/libhidl" path="system/libhidl" revision="a15af63b7d8add097680795f5eb572d30236d9be" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/libhwbinder" path="system/libhwbinder" revision="4e7846603dd8aa259c7b333f70c1ff4e79e40fe5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/libufdt" path="system/libufdt" revision="f83eb5a3630ffd5842949451c4fe0c235d32defa" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/libvintf" path="system/libvintf" revision="3dcb14ef4b382eabe9757100f2ea7d03cdba06c6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/media" path="system/media" revision="398934fabdd0537c2303212e631b57b98de428ec" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/netd" path="system/netd" revision="c0fb08cf7fd986341fe96cde95b5608e13e18968" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/nfc" path="system/nfc" revision="76f739a3308aef13a7c349d9d468759a8efc1e7a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/nvram" path="system/nvram" revision="2d958246bbbbe74bfa35b0310b0f0924fdbc5916" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" revision="ccb2ac83c215740dcb3ed4e9005568bc1999eb62" upstream="refs/heads/wlan-service.lnx.4.0.r12-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/security" path="system/security" revision="8d1c2b89449dcb06acb3848507236c4311a354da" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/sepolicy" path="system/sepolicy" revision="cb90353179591639f4f2ad165694ab63ef16f6b6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/timezone" path="system/timezone" revision="1539a47c9082fa7fb840be32f94d8841a949f18a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/tools/aidl" path="system/tools/aidl" revision="39bf72d0664cd53e056252236b22b02b93fc05d6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/tools/hidl" path="system/tools/hidl" revision="576b1b0759e2509b637516de17d7979c9adb7434" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/system/tpm" path="system/tpm" revision="987689803d813efb9b011236a7853c8f3edba1f6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/update_engine" path="system/update_engine" revision="b7b126c9665891709c29a029f2aa108c2409670f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/system/vold" path="system/vold" revision="856fa72845120b1a0cf3c4729be6a6bdf78ec532" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/test/framework" path="test/framework" revision="4fb3309b6b9a4abbd8807522231204fee017a98f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,sts" name="platform/test/sts" path="test/sts" revision="9acda91edbf630e639535be6a42fdb1b6bb1c1f0" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="cts,p-fs-release,pdk-cw-fs,pdk-fs" name="platform/test/suite_harness" path="test/suite_harness" revision="ad635a147ba5d82d36cc309142cd10ac62e477b4" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/test/vti/alert" path="test/vti/alert" revision="2270d160e38f0623d708cce36754fe14168dce64" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/test/vti/dashboard" path="test/vti/dashboard" revision="589182a6fef6b10d1ee060e98fa72bab4aa12593" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/test/vti/fuzz_test_serving" path="test/vti/fuzz_test_serving" revision="53fc9e54cf820cf49ebafd757c95ae000c4cad5b" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/test/vti/test_serving" path="test/vti/test_serving" revision="dbbea845bbc2c32c0478874cac3a221dfed4e3af" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/test/vts" path="test/vts" revision="57c010e9fccf57ea9bc9612d340b2feafecf1151" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" revision="ca7a55e9b61988390c492fc754d0a3ebc39d62be" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="1be9fce5b01be4b7d75ffee29aa1eddde92dcd9f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/test/vts-testcase/hal-trace" path="test/vts-testcase/hal-trace" revision="0cecca8fe157883acca7d57717a089f63a269189" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel" revision="4cf0f63236cbf8ade718c2a15a682094d70f200f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/test/vts-testcase/nbu" path="test/vts-testcase/nbu" revision="7b09fd06b1cfd5d6b83905bb5ffb18c34aadcf8a" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance" revision="d3ab7c6ad9df52c256a9d5c24477c733e5296903" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/test/vts-testcase/security" path="test/vts-testcase/security" revision="2ca249bf4ffbcba603e21ab9663d090f6ae90f62" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,vts" name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" revision="bcce08ed1629b88db50d23c9279d16b2231c2b51" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,tools,tradefed,vts" name="platform/tools/acloud" path="tools/acloud" revision="d81f7582f760575075828b6332392cfb77c9b6ce" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,tradefed" name="platform/tools/apksig" path="tools/apksig" revision="ccc18082d8ca06771fda5f9f5d0301d37a9ee6bf" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,tradefed" name="platform/tools/apkzlib" path="tools/apkzlib" revision="3fbef9876b93755ed145c348de93ba36061d77be" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk-fs,tools" name="platform/tools/dexter" path="tools/dexter" revision="3112510b75da4ff7eb009aef30a087b43bb5eabc" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/tools/external/fat32lib" path="tools/external/fat32lib" revision="3880776e41ff7def06e351720f2d162f88b58a03" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/tools/external/gradle" path="tools/external/gradle" revision="01eafe283102ebb395c7cc0c22d258fd657c7af7" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="nopresubmit,p-fs-release,pdk,tradefed" name="platform/tools/loganalysis" path="tools/loganalysis" revision="c2cf47ab23db36412d1f6a5d1fef6d41b6bf4301" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,tools" name="platform/tools/metalava" path="tools/metalava" revision="6d1d7127253ac66994477dfad72a51380a1fa3d0" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="adt-infra,cts,developers,motodev,p-fs-release,pdk,tools,tradefed" name="platform/tools/repohooks" path="tools/repohooks" revision="bed96d7e1667067b0a0fda9d22e3926ac8711f75" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/tools/test/connectivity" path="tools/test/connectivity" revision="6b6559db49933e35a52007942837dab246cd8d58" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,tradefed" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="916a899a853eb67ca4486d1f7733714df1fcd5c2" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,tradefed" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="8ae8151d20301d6377066184351cb60764c2ef6e" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk,tools,vendor" name="platform/tools/vendor/google_prebuilts/arc" path="tools/vendor/google_prebuilts/arc" revision="b52c1a82b5360adeb6ee101e754825bbb888ab00" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="51d5806f2ab6f2105e5dfc35999fc446d6311af6" upstream="refs/heads/atel-prop.lnx.3.0.r9-rel"/>
+  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="c1141afd3abc42e57988556e4c5a305e1e2e4499" upstream="refs/heads/atel-prop.lnx.3.0.r9-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/vendor/google_easel" path="vendor/google_easel" revision="923fb98ae5047f2ad842bc19fb1b60111516970f" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/vendor/google_paintbox" path="vendor/google_paintbox" revision="706b437985a5853cab83f468f552c7a22d413db6" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" revision="58073532593367fd8bc7f2a0416c68c1a31caca2" upstream="refs/heads/nfc.lnx.4.0.r11-rel"/>
+  <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" revision="b7cd64405bde473220435b64c731999cd2f5faae" upstream="refs/heads/nfc.lnx.4.0.r11-rel"/>
+  <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" revision="0f2698a81536c43a127bdf1d9c28bdf0f4596fd2" upstream="refs/heads/nfc.lnx.4.0.r11-rel"/>
+  <project name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" revision="6e92a68a86390f80caad9ef9e49db4b0eae908dc" upstream="refs/heads/nfc.lnx.4.0.r11-rel"/>
+  <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" revision="5192012a0fd9f639bee3c26636bbb49a1327b995" upstream="refs/heads/nfc.lnx.4.0.r11-rel"/>
+  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" revision="977735dcdde7cb18cf9f9b6c2ba0ba7abf5de54e" upstream="refs/heads/nfc.lnx.4.0.r11-rel"/>
+  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/audio" revision="18e944091c0b9116775e3c7691cca8c4ec6487e1" upstream="refs/heads/av-aosp-qc.lnx.5.0.r11-rel"/>
+  <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth" revision="ab81fefb07d3f6fbcbd03876d90a51d20bc5de55" upstream="refs/heads/bt-qc.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/commonsys/bluetooth_ext" revision="b857b8f84f22b3ba847f7b3550698b359584a4f5" upstream="refs/heads/bt.lnx.4.0.r13-rel"/>
+  <project name="platform/vendor/qcom-opensource/core-modules" path="vendor/qcom/opensource/core-modules" revision="37ff8197e2894f486284af7d9773b0db53e535b9" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" revision="8194c76543dda57b360e86376c57e8665397d064" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/cryptfs_hw" revision="7e0b0bc535467bd5d17fe4533194f8d9494c3263" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" revision="f99007f1ef8ff20dcb5c7a71bde570826b99b72e" upstream="refs/heads/data.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="95ac72bf50cf30b8a2adcd05ca956511c59c337b" upstream="refs/heads/data.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" revision="0cb1df40dc3aa65b5f19b904c91924dd1892e524" upstream="refs/heads/data.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" revision="c8e1d30f7b23d66e8d56f441a78996831054a3e4" upstream="refs/heads/data.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" revision="c0997041bf370650a48a194a6b7a59f22c57a917" upstream="refs/heads/data.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/fm" path="vendor/qcom/opensource/fm" revision="0eb97369b2bcdfb31e422b8d44987f4016b58b68" upstream="refs/heads/fm.lnx.2.9.1.r33-rel"/>
+  <project name="platform/vendor/qcom-opensource/fm-commonsys" path="vendor/qcom/opensource/commonsys/fm" revision="8bc830641cd49a5e6396e322cdfba9d901695f6e" upstream="refs/heads/fm.lnx.2.9.1.r33-rel"/>
+  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" revision="fa4c85071c39743f3131c2b29077e3ffd966036c" upstream="refs/heads/wigig.lnx.1.9.r29-rel"/>
+  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" revision="2b1dbeeb6115a51e1080346efd9fa056c86e7916" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="da6904548c41672b7d7dfc0e0784af982fe253ab" upstream="refs/heads/android-vendor-hals.lnx.1.1.r13-rel"/>
+  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="87c3d88941e283b72677f385e8a62d5eb2a97c1d" upstream="refs/heads/location.lnx.3.9.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" revision="053754b3d2550699c3a70eedbe655268cfeeae6c" upstream="refs/heads/core-technologies.lnx.2.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" revision="055bccd6f6a7655da2e1b6e1e244d1f64680f502" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" revision="0c5ebdeb87ead4ea0389df5c27f45f4ca69d6f9b" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" revision="214ece874ced71fcbeb2fbc0a218b0824be60c34" upstream="refs/heads/data.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/system/bt" path="vendor/qcom/opensource/commonsys/system/bt" revision="2468b1228b359590b5386236383fc8c4ba3fe1bd" upstream="refs/heads/bt.lnx.4.0.r13-rel"/>
+  <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" revision="aa87d5029a78f6f988b42bdb734b62b3921ad415" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="fefe75b0a0f107d365ca3783e1b0ea53d5065235" upstream="refs/heads/core-technologies.lnx.2.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" revision="f587e36a50f61c39318641ea198ff9076ccd51d6" upstream="refs/heads/opensource-tools.lnx.1.0.r44-rel"/>
+  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" revision="9f9b06d702a24421fa4e6b023461aab6ce7df1db" upstream="refs/heads/core-technologies.lnx.2.0.r12-rel"/>
+  <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" revision="cd043cc22581f0b0023f192e7d75d5e47f6f1da9" upstream="refs/heads/wigig.lnx.1.9.r29-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="vendor/qcom/opensource/wlan/fw-api" revision="851e58f7966880b79cabcf599ac0ed544381b926" upstream="refs/heads/wlan-api.lnx.1.1.r53-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/prima" path="vendor/qcom/opensource/wlan/prima" revision="856f1e1cbc97b00bbbc463c3acdc4df61569a5e1" upstream="refs/heads/wlan-driver.lnx.1.0.r26-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="1f75c583a9205dd366e65628c209085a9f804dc2" upstream="refs/heads/wlan-cmn.driver.lnx.1.0.r49-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="8de603b174d3bd03dc41ccf668606fe76011f7d1" upstream="refs/heads/wlan-cld3.driver.lnx.1.1.r49-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="a63673bc45c7a115c181cba29ada88ac62fa8389" upstream="refs/heads/wlan-service.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom/apq8098_latv" path="device/qcom/apq8098_latv" revision="73780f2e47208d03199a43177a242b569af9276a" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom/cobalt" path="device/qcom/msm8998" revision="8a7f0b42dc683688935bd624f301e1339aee5484" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom/falcon_32" path="device/qcom/sdm660_32" revision="190e9a7ae38f71af95fe1a78454971927caae086" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom/falcon_64" path="device/qcom/sdm660_64" revision="2f690a2b4f5b2e5fd205cc2dd5716819d5e93716" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom/ferrum" path="device/qcom/msm8909" revision="5509f834dd0fdbcad6a3cbdc2c926f893d27b597" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom/msm8909go" path="device/qcom/msm8909go" revision="bf320f5ab9e863f7663c22d1eb086785401cfd86" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="d9fe3b0954a1ec3e137c02bfe172e6e23e584f26" upstream="refs/heads/qcom-devices.lnx.4.0.r12-rel"/>
+  <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="9470ce1c87efd84f531089f40cd37b83783e9e37" upstream="refs/heads/wlan-service.lnx.4.0.r12-rel"/>
+  <project groups="p-fs-release,pdk" name="toolchain/binutils" revision="3ccc3ec75f2f1f55af1e4966fd6a22c34af13b3d" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+  <project groups="p-fs-release,pdk" name="toolchain/pgo-profiles" revision="b0a14ad6b6761f0381f06c36b231d91b9a14d8c5" upstream="refs/heads/ks-aosp.lnx.1.0.r8-rel"/>
+</manifest>
