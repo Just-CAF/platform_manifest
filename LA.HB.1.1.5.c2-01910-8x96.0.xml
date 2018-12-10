@@ -610,5 +610,5 @@
   <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="7c638b13637e82a8797fc24f65e4ee58c715c520" upstream="LA.HB.1.1.5.c2_rb1.4">
     <annotation name="tracking" value="qcom-devices.lnx.2.0"/>
   </project>
-  <project name="qual/la/toolchain/binutils" path="toolchain/binutils" revision="dd7b632eac4d3d51c445f60bb87348b005691703" upstream="LA.HB.1.1.5.c2_rb1.4"/>
+  <project name="quic/la/toolchain/binutils" path="toolchain/binutils" revision="dd7b632eac4d3d51c445f60bb87348b005691703" upstream="LA.HB.1.1.5.c2_rb1.4"/>
 </manifest>
