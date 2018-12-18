@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
+  <remote fetch="https://source.codeaurora.org/" name="caf" review="codeaurora.org"/>
   <default remote="caf" revision="LA.HB.1.1.8_rb2.1"/>
   <project name="device/common" revision="68a1c1b00e3e58a10040b74dbfd6853b54ab18c2" upstream="LA.HB.1.1.8_rb2.1"/>
   <project name="device/generic/arm64" revision="3fd397464154b05b19137618625989ac1d0fdecd" upstream="LA.HB.1.1.8_rb2.1"/>
@@ -35,7 +35,7 @@
   </project>
   <project name="device/qcom/sepolicy" revision="7cfcfce1b55f2199de5e06aa698095e2b25fadb0" upstream="LA.HB.1.1.8_rb2.1"/>
   <project name="device/sample" revision="cdb22d4258c2ffa7279a3b55c65b0431fabc1200" upstream="LA.HB.1.1.8_rb2.1"/>
-  <project name="graphics/libgbm" path="disregard/display/libgbm" revision="6a2b9393cbceb0f9ce19d2eabd3057b15dfc36ad" upstream="LA.HB.1.1.8_rb2.1"/>
+  <project name="quic/la/graphics/libgbm" path="disregard/display/libgbm" revision="6a2b9393cbceb0f9ce19d2eabd3057b15dfc36ad" upstream="LA.HB.1.1.8_rb2.1"/>
   <project name="kernel/configs" revision="506b245cbbb1d06dd5b1a9ee2898988716a1f7d7" upstream="LA.HB.1.1.8_rb2.1"/>
   <project name="kernel/lk" path="bootable/bootloader/lk" revision="cef915f921413f453cebfefcf418d02a94d9a6ef" upstream="LA.HB.1.1.8_rb2.1"/>
   <project name="kernel/msm-4.4" revision="a5d23a4bde85fc105d089695ead0639715f11250" upstream="LA.HB.1.1.8_rb2.1"/>
@@ -661,6 +661,6 @@
   <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="3f39389d215527a60bbbdb82b0391cf93d2d4807" upstream="LA.HB.1.1.8_rb2.1"/>
   <project name="platform/vendor/qcom/thulium_gvmq" path="device/qcom/msm8996_gvmq" revision="ae978833c3177139da0cbe311b614c049e5f74fb" upstream="LA.HB.1.1.8_rb2.1"/>
   <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="68bba39d8fd03a02f16d84ca5a5c315f20f32bb9" upstream="LA.HB.1.1.8_rb2.1"/>
-  <project name="toolchain/binutils" revision="ce6f92c3c344f3db820ff3819b18c81a65b9a15d" upstream="LA.HB.1.1.8_rb2.1"/>
-  <project name="toolchain/pgo-profiles" revision="106785268baa337b3f3edf751dbbd83977891e4a" upstream="LA.HB.1.1.8_rb2.1"/>
+  <project name="quic/la/toolchain/binutils" path="toolchain/binutils" revision="ce6f92c3c344f3db820ff3819b18c81a65b9a15d" upstream="LA.HB.1.1.8_rb2.1"/>
+  <project name="quic/la/toolchain/pgo-profiles" path="toolchain/pgo-profiles" revision="106785268baa337b3f3edf751dbbd83977891e4a" upstream="LA.HB.1.1.8_rb2.1"/>
 </manifest>
