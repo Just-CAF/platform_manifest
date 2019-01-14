@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
+  <remote fetch="https://source.codeaurora.org/" name="caf" review="codeaurora.org"/>
   <default remote="caf" revision="LA.HB.1.1.8_rb1.5"/>
   <project name="device/common" revision="68a1c1b00e3e58a10040b74dbfd6853b54ab18c2" upstream="LA.HB.1.1.8_rb1.5"/>
   <project name="device/generic/arm64" revision="3fd397464154b05b19137618625989ac1d0fdecd" upstream="LA.HB.1.1.8_rb1.5"/>
