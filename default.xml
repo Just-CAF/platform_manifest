@@ -30,4 +30,5 @@
   <project name="platform-device-oneplus-msm8998-common" path="device/oneplus/msm8998-common" remote="aosp-caf" />
   <project name="platform-device-oneplus-cheeseburger" path="device/oneplus/cheeseburger" remote="aosp-caf" />
   <project name="platform-vendor-oneplus-op5" path="vendor/oneplus" remote="aosp-caf" />
+  <project name="platform-vendor-custom" path="vendor/custom" remote="aosp-caf" />
 </manifest>
