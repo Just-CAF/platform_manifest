@@ -24,7 +24,6 @@
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
-  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform-frameworks-hardware-interfaces" path="frameworks/hardware/interfaces" remote="aosp-caf" />
   <project name="platform-vendor-qcom-opensource-commonsys-system-bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="aosp-caf" />
   <project groups="mirror-aosp-pie-platform-release,pdk" name="platform-hardware-interfaces" path="hardware/interfaces" remote="aosp-caf" />
   <project name="platform-hardware-qcom-camera" path="hardware/qcom/camera" remote="aosp-caf" />
