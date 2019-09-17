@@ -9,7 +9,7 @@
     <copyfile dest="build.sh" src="build.sh"/>
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
-  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform-build" path="build/make" remote="aosp-caf">
+  <!--<project groups="mirror-aosp-pie-platform-release,pdk" name="platform-build" path="build/make" remote="aosp-caf">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
@@ -17,7 +17,7 @@
     <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
     <linkfile dest="build/target" src="target"/>
     <linkfile dest="build/tools" src="tools"/>
-  </project>
+  </project>-->
   <project groups="mirror-aosp-pie-platform-release,pdk,tradefed" name="platform-build-soong" path="build/soong" remote="aosp-caf">
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
