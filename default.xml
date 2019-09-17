@@ -5,7 +5,7 @@
   <include name="LA.UM.7.4.r1-05500-8x98.0.xml" />
   <include name="remove.xml" />
 
-  <project name="device-qcom-common" path="device/qcom/common" remote="aosp-caf">
+  <project name="platform-device-qcom-common" path="device/qcom/common" remote="aosp-caf">
     <copyfile dest="build.sh" src="build.sh"/>
     <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
