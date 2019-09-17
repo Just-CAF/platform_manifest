@@ -23,7 +23,7 @@
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
   <project groups="mirror-aosp-pie-platform-release,pdk" name="platform-frameworks-hardware-interfaces" path="frameworks/hardware/interfaces" remote="aosp-caf" />
-  <project name="platform-vendor-qcom-opensource-system-bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="aosp-caf" />
+  <project name="platform-vendor-qcom-opensource-commonsys-system-bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="aosp-caf" />
 
   <!-- device tree, kernel -->
   <project name="platform-kernel-oneplus-msm8998" path="kernel/oneplus/msm8998" remote="aosp-caf" revision="lineage-16.0" />
