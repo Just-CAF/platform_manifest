@@ -1,275 +1,708 @@
+<?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="git://codeaurora.org/" name="caf" review="codeaurora.org"/>
-  <default remote="caf" revision="ics_strawberry_rb5.3"/>
-  <project groups="default" name="device/common"/>
-  <project groups="default" name="device/generic/goldfish"/>
-  <project groups="default" name="device/google/accessory/arduino"/>
-  <project groups="default" name="device/google/accessory/demokit"/>
-  <project groups="default" name="device/qcom/common"/>
-  <project groups="default" name="device/sample"/>
-  <project groups="default" name="device/samsung/maguro"/>
-  <project groups="default" name="device/samsung/tuna"/>
-  <project groups="default" name="device/ti/panda"/>
-  <project groups="default" name="kernel/lk" path="bootable/bootloader/lk"/>
-  <project groups="default" name="kernel/msm" path="kernel"/>
-  <project groups="default" name="platform/abi/cpp" path="abi/cpp"/>
-  <project groups="default" name="platform/bionic" path="bionic"/>
-  <project groups="default" name="platform/bootable/bootloader/legacy" path="bootable/bootloader/legacy"/>
-  <project groups="default" name="platform/bootable/diskinstaller" path="bootable/diskinstaller"/>
-  <project groups="default" name="platform/bootable/recovery" path="bootable/recovery"/>
-  <project groups="default" name="platform/build" path="build">
-    <copyfile dest="Makefile" src="core/root.mk"/>
+  <remote fetch="https://source.codeaurora.org/quic/la/" name="caf" review="codeaurora.org"/>
+  <remote fetch="https://github.com/aosp-caf-cheeseburger/" name="aosp-caf" revision="p" />
+
+  <default remote="caf" revision="refs/heads/LA.UM.7.4.r1"/>
+  <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" revision="322d0c233c96a6e6bbe0bf097302092a95b6b1ac" upstream="refs/heads/uefi.lnx.1.9.r15-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,pdk-cw-fs" name="device/common" revision="54f94d1fa6b12b6975e406eac90e6076a090da3f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/generic/arm64" revision="0c87deab3b1d561f314ae12eed7e8681071ee93a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/generic/armv7-a-neon" revision="9e96e041bf3c9d5b57b11f921c6339e076478a7a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/generic/car" revision="4b198de81507b7d22412c0bbafa33dea3b38c357" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/generic/common" revision="9efcb35aeb37862806f87f2b3eecb34eca2a0846" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/generic/goldfish" revision="973a6e66e9230f745e54ce09f77ec28e20933cdc" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/generic/goldfish-opengl" revision="f2d2ef536d18a1d00280fbb126d11c43f4f49135" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="p-fs-release,pdk" name="device/generic/lionhead" revision="2632d2f2e3565494e2ee3668e93195dc7bba6128" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/generic/mini-emulator-arm64" revision="77d394326f7fc17831ee7702cb8b750fe0b21443" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/generic/mini-emulator-armv7-a-neon" revision="258706fc0ddcf2c9be48967f4766ec90efb736a5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/generic/mini-emulator-x86" revision="65d59e2be2cfd713513a05d80a0f75794ab60579" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/generic/mini-emulator-x86_64" revision="b62205d75073783e171fbcd5f675e25e57833479" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/generic/qemu" revision="f8ec4bbb98272866a64508d3af5866f96425c459" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="device,mirror-aosp-pie-platform-release,pdk" name="device/generic/uml" revision="68fd8b897bf915fbf6017d23e24053effe3426c9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/generic/x86" revision="5e00241fc73152cac7406a32caaab0ea3f0c6ee6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/generic/x86_64" revision="506952733fdebb5a2ef086b519ceebe86a95ae31" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="device,mirror-aosp-pie-platform-release,pdk" name="device/google/accessory/arduino" revision="abc5159a3ca9dbb5c7e364a1eab99901a4440ac5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="device,mirror-aosp-pie-platform-release,pdk" name="device/google/accessory/demokit" revision="7dfe7f89a3b174709c773fe319531006e46440d9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="broadcom_pdk,device,generic_fs,mirror-aosp-pie-platform-release,pdk" name="device/google/atv" revision="274b86c0bb7fc64b93c715605e6d82226af130d0" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="device,marlin,mirror-aosp-pie-platform-release,pdk" name="device/google/contexthub" revision="e6d11d42905e3907a0031f5bea62a3d5a5d7809c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="device,mirror-aosp-pie-platform-release,muskie,pdk" name="device/google/muskie" revision="ef0cc82b788f0eb64d381b0eb112e5ec4c9c310b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="device,mirror-aosp-pie-platform-release,pdk,taimen" name="device/google/taimen" revision="c2e692a9bc6f2f1c86b1081de281bc32ded39200" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/google/vrservices" revision="5a724230386bd7a2176ddae612f79dd3caefc6ce" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="device,mirror-aosp-pie-platform-release,pdk,wahoo" name="device/google/wahoo" revision="aa664676ddfadeb4a20e30368c11526fdd4e7f51" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="device,p-fs-release,pdk,wahoo" name="device/google/wahoo-kernel" revision="6d9ec637c13a2e9210b83d08f1a1229cda2596a0" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project name="device-qcom-common" path="device/qcom/common" remote="aosp-caf">
+    <copyfile dest="build.sh" src="build.sh"/>
+    <linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>
   </project>
-  <project groups="default" name="platform/cts" path="cts"/>
-  <project groups="default" name="platform/dalvik" path="dalvik"/>
-  <project groups="default" name="platform/development" path="development"/>
-  <project groups="default" name="platform/docs/source.android.com" path="docs/source.android.com"/>
-  <project groups="default" name="platform/external/alljoyn/alljoyn_core" path="external/alljoyn/alljoyn_core"/>
-  <project groups="default" name="platform/external/alljoyn/common" path="external/alljoyn/common"/>
-  <project groups="default" name="platform/external/android-mock" path="external/android-mock"/>
-  <project groups="default" name="platform/external/antlr" path="external/antlr"/>
-  <project groups="default" name="platform/external/apache-harmony" path="external/apache-harmony"/>
-  <project groups="default" name="platform/external/apache-http" path="external/apache-http"/>
-  <project groups="default" name="platform/external/apache-xml" path="external/apache-xml"/>
-  <project groups="default" name="platform/external/astl" path="external/astl"/>
-  <project groups="default" name="platform/external/bison" path="external/bison"/>
-  <project groups="default" name="platform/external/blktrace" path="external/blktrace"/>
-  <project groups="default" name="platform/external/bluetooth/bluez" path="external/bluetooth/bluez"/>
-  <project groups="default" name="platform/external/bluetooth/glib" path="external/bluetooth/glib"/>
-  <project groups="default" name="platform/external/bluetooth/hcidump" path="external/bluetooth/hcidump"/>
-  <project groups="default" name="platform/external/bouncycastle" path="external/bouncycastle"/>
-  <project groups="default" name="platform/external/bsdiff" path="external/bsdiff"/>
-  <project groups="default" name="platform/external/bson" path="external/bson"/>
-  <project groups="default" name="platform/external/bzip2" path="external/bzip2"/>
-  <project groups="default" name="platform/external/chromium" path="external/chromium"/>
-  <project groups="default" name="platform/external/clang" path="external/clang"/>
-  <project groups="default" name="platform/external/collada" path="external/collada"/>
-  <project groups="default" name="platform/external/compat-wireless" path="external/compat-wireless"/>
-  <project groups="default" name="platform/external/connectivity" path="external/connectivity"/>
-  <project groups="default" name="platform/external/curl" path="external/curl"/>
-  <project groups="default" name="platform/external/dbus" path="external/dbus"/>
-  <project groups="default" name="platform/external/dhcpcd" path="external/dhcpcd"/>
-  <project groups="default" name="platform/external/dnsmasq" path="external/dnsmasq"/>
-  <project groups="default" name="platform/external/doclava" path="external/doclava"/>
-  <project groups="default" name="platform/external/dropbear" path="external/dropbear"/>
-  <project groups="default" name="platform/external/e2fsprogs" path="external/e2fsprogs"/>
-  <project groups="default" name="platform/external/easymock" path="external/easymock"/>
-  <project groups="default" name="platform/external/elfutils" path="external/elfutils"/>
-  <project groups="default" name="platform/external/embunit" path="external/embunit"/>
-  <project groups="default" name="platform/external/emma" path="external/emma"/>
-  <project groups="default" name="platform/external/esd" path="external/esd"/>
-  <project groups="default" name="platform/external/expat" path="external/expat"/>
-  <project groups="default" name="platform/external/eyes-free" path="external/eyes-free"/>
-  <project groups="default" name="platform/external/fdlibm" path="external/fdlibm"/>
-  <project groups="default" name="platform/external/flac" path="external/flac"/>
-  <project groups="default" name="platform/external/freetype" path="external/freetype"/>
-  <project groups="default" name="platform/external/fsck_msdos" path="external/fsck_msdos"/>
-  <project groups="default" name="platform/external/genext2fs" path="external/genext2fs"/>
-  <project groups="default" name="platform/external/giflib" path="external/giflib"/>
-  <project groups="default" name="platform/external/google-diff-match-patch" path="external/google-diff-match-patch"/>
-  <project groups="default" name="platform/external/grub" path="external/grub"/>
-  <project groups="default" name="platform/external/gtest" path="external/gtest"/>
-  <project groups="default" name="platform/external/guava" path="external/guava"/>
-  <project groups="default" name="platform/external/harfbuzz" path="external/harfbuzz"/>
-  <project groups="default" name="platform/external/hostap" path="external/hostap"/>
-  <project groups="default" name="platform/external/hostap-06" path="external/hostap-06"/>
-  <project groups="default" name="platform/external/hyphenation" path="external/hyphenation"/>
-  <project groups="default" name="platform/external/icu4c" path="external/icu4c"/>
-  <project groups="default" name="platform/external/iproute2" path="external/iproute2"/>
-  <project groups="default" name="platform/external/ipsec-tools" path="external/ipsec-tools"/>
-  <project groups="default" name="platform/external/iptables" path="external/iptables"/>
-  <project groups="default" name="platform/external/javasqlite" path="external/javasqlite"/>
-  <project groups="default" name="platform/external/javassist" path="external/javassist"/>
-  <project groups="default" name="platform/external/jdiff" path="external/jdiff"/>
-  <project groups="default" name="platform/external/jhead" path="external/jhead"/>
-  <project groups="default" name="platform/external/jpeg" path="external/jpeg"/>
-  <project groups="default" name="platform/external/jsilver" path="external/jsilver"/>
-  <project groups="default" name="platform/external/jsr305" path="external/jsr305"/>
-  <project groups="default" name="platform/external/junit" path="external/junit"/>
-  <project groups="default" name="platform/external/kernel-headers" path="external/kernel-headers"/>
-  <project groups="default" name="platform/external/kissfft" path="external/kissfft"/>
-  <project groups="default" name="platform/external/libffi" path="external/libffi"/>
-  <project groups="default" name="platform/external/libgsm" path="external/libgsm"/>
-  <project groups="default" name="platform/external/liblzf" path="external/liblzf"/>
-  <project groups="default" name="platform/external/libnfc-nxp" path="external/libnfc-nxp"/>
-  <project groups="default" name="platform/external/libnl-headers" path="external/libnl-headers"/>
-  <project groups="default" name="platform/external/libpcap" path="external/libpcap"/>
-  <project groups="default" name="platform/external/libphonenumber" path="external/libphonenumber"/>
-  <project groups="default" name="platform/external/libpng" path="external/libpng"/>
-  <project groups="default" name="platform/external/libvpx" path="external/libvpx"/>
-  <project groups="default" name="platform/external/libxml2" path="external/libxml2"/>
-  <project groups="default" name="platform/external/libxslt" path="external/libxslt"/>
-  <project groups="default" name="platform/external/llvm" path="external/llvm"/>
-  <project groups="default" name="platform/external/lohit-fonts" path="external/lohit-fonts"/>
-  <project groups="default" name="platform/external/markdown" path="external/markdown"/>
-  <project groups="default" name="platform/external/mesa3d" path="external/mesa3d"/>
-  <project groups="default" name="platform/external/mksh" path="external/mksh"/>
-  <project groups="default" name="platform/external/mobicore" path="external/mobicore"/>
-  <project groups="default" name="platform/external/mockwebserver" path="external/mockwebserver"/>
-  <project groups="default" name="platform/external/mtpd" path="external/mtpd"/>
-  <project groups="default" name="platform/external/netcat" path="external/netcat"/>
-  <project groups="default" name="platform/external/netperf" path="external/netperf"/>
-  <project groups="default" name="platform/external/neven" path="external/neven"/>
-  <project groups="default" name="platform/external/nist-sip" path="external/nist-sip"/>
-  <project groups="default" name="platform/external/node" path="external/node/nodejs"/>
-  <project groups="default" name="platform/external/node-sqlite-async" path="external/node/modules/sqlite-async"/>
-  <project groups="default" name="platform/external/node-sqlite-sync" path="external/node/modules/sqlite-sync"/>
-  <project groups="default" name="platform/external/oauth" path="external/oauth"/>
-  <project groups="default" name="platform/external/opencv" path="external/opencv"/>
-  <project groups="default" name="platform/external/openssl" path="external/openssl"/>
-  <project groups="default" name="platform/external/oprofile" path="external/oprofile"/>
-  <project groups="default" name="platform/external/pcre" path="external/pcre"/>
-  <project groups="default" name="platform/external/ping" path="external/ping"/>
-  <project groups="default" name="platform/external/ping6" path="external/ping6"/>
-  <project groups="default" name="platform/external/powertop" path="external/powertop"/>
-  <project groups="default" name="platform/external/ppp" path="external/ppp"/>
-  <project groups="default" name="platform/external/proguard" path="external/proguard"/>
-  <project groups="default" name="platform/external/protobuf" path="external/protobuf"/>
-  <project groups="default" name="platform/external/qemu" path="external/qemu"/>
-  <project groups="default" name="platform/external/qemu-pc-bios" path="external/qemu-pc-bios"/>
-  <project groups="default" name="platform/external/qrngd" path="external/qrngd"/>
-  <project groups="default" name="platform/external/quake" path="external/quake"/>
-  <project groups="default" name="platform/external/replicaisland" path="external/replicaisland"/>
-  <project groups="default" name="platform/external/safe-iop" path="external/safe-iop"/>
-  <project groups="default" name="platform/external/skia" path="external/skia"/>
-  <project groups="default" name="platform/external/sonivox" path="external/sonivox"/>
-  <project groups="default" name="platform/external/speex" path="external/speex"/>
-  <project groups="default" name="platform/external/sqlite" path="external/sqlite"/>
-  <project groups="default" name="platform/external/srec" path="external/srec"/>
-  <project groups="default" name="platform/external/srtp" path="external/srtp"/>
-  <project groups="default" name="platform/external/stlport" path="external/stlport"/>
-  <project groups="default" name="platform/external/strace" path="external/strace"/>
-  <project groups="default" name="platform/external/svox" path="external/svox"/>
-  <project groups="default" name="platform/external/tagsoup" path="external/tagsoup"/>
-  <project groups="default" name="platform/external/tcpdump" path="external/tcpdump"/>
-  <project groups="default" name="platform/external/tinyalsa" path="external/tinyalsa"/>
-  <project groups="default" name="platform/external/tinyxml" path="external/tinyxml"/>
-  <project groups="default" name="platform/external/tremolo" path="external/tremolo"/>
-  <project groups="default" name="platform/external/tslib" path="external/tslib"/>
-  <project groups="default" name="platform/external/v8" path="external/v8"/>
-  <project groups="default" name="platform/external/valgrind" path="external/valgrind"/>
-  <project groups="default" name="platform/external/webkit" path="external/webkit"/>
-  <project groups="default" name="platform/external/webp" path="external/webp"/>
-  <project groups="default" name="platform/external/webrtc" path="external/webrtc"/>
-  <project groups="default" name="platform/external/wpa_supplicant" path="external/wpa_supplicant"/>
-  <project groups="default" name="platform/external/wpa_supplicant_6" path="external/wpa_supplicant_6"/>
-  <project groups="default" name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8"/>
-  <project groups="default" name="platform/external/xmlwriter" path="external/xmlwriter"/>
-  <project groups="default" name="platform/external/yaffs2" path="external/yaffs2"/>
-  <project groups="default" name="platform/external/zlib" path="external/zlib"/>
-  <project groups="default" name="platform/frameworks/base" path="frameworks/base"/>
-  <project groups="default" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc"/>
-  <project groups="default" name="platform/frameworks/compile/linkloader" path="frameworks/compile/linkloader"/>
-  <project groups="default" name="platform/frameworks/compile/slang" path="frameworks/compile/slang"/>
-  <project groups="default" name="platform/frameworks/ex" path="frameworks/ex"/>
-  <project groups="default" name="platform/frameworks/media/libvideoeditor" path="frameworks/media/libvideoeditor"/>
-  <project groups="default" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar"/>
-  <project groups="default" name="platform/frameworks/opt/emoji" path="frameworks/opt/emoji"/>
-  <project groups="default" name="platform/frameworks/opt/inputmethodcommon" path="frameworks/opt/inputmethodcommon"/>
-  <project groups="default" name="platform/frameworks/opt/mailcommon" path="frameworks/opt/mailcommon"/>
-  <project groups="default" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard"/>
-  <project groups="default" name="platform/frameworks/support" path="frameworks/support"/>
-  <project groups="default" name="platform/hardware/alsa_sound" path="hardware/qcom/alsa_sound"/>
-  <project groups="default" name="platform/hardware/broadcom/wlan" path="hardware/broadcom/wlan"/>
-  <project groups="default" name="platform/hardware/invensense" path="hardware/invensense"/>
-  <project groups="default" name="platform/hardware/libhardware" path="hardware/libhardware"/>
-  <project groups="default" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy"/>
-  <project groups="default" name="platform/hardware/msm7k" path="hardware/msm7k"/>
-  <project groups="default" name="platform/hardware/qcom/camera" path="hardware/qcom/camera"/>
-  <project groups="default" name="platform/hardware/qcom/display" path="hardware/qcom/display"/>
-  <project groups="default" name="platform/hardware/qcom/gestures" path="hardware/qcom/gestures"/>
-  <project groups="default" name="platform/hardware/qcom/gps" path="hardware/qcom/gps"/>
-  <project groups="default" name="platform/hardware/qcom/media" path="hardware/qcom/media"/>
-  <project groups="default" name="platform/hardware/ril" path="hardware/ril"/>
-  <project groups="default" name="platform/hardware/ti/omap3" path="hardware/ti/omap3"/>
-  <project groups="default" name="platform/hardware/ti/omap4xxx" path="hardware/ti/omap4xxx"/>
-  <project groups="default" name="platform/libcore" path="libcore"/>
-  <project groups="default" name="platform/ndk" path="ndk"/>
-  <project groups="default" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver"/>
-  <project groups="default" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth"/>
-  <project groups="default" name="platform/packages/apps/Browser" path="packages/apps/Browser"/>
-  <project groups="default" name="platform/packages/apps/Calculator" path="packages/apps/Calculator"/>
-  <project groups="default" name="platform/packages/apps/Calendar" path="packages/apps/Calendar"/>
-  <project groups="default" name="platform/packages/apps/Camera" path="packages/apps/Camera"/>
-  <project groups="default" name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver"/>
-  <project groups="default" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller"/>
-  <project groups="default" name="platform/packages/apps/Contacts" path="packages/apps/Contacts"/>
-  <project groups="default" name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock"/>
-  <project groups="default" name="platform/packages/apps/Email" path="packages/apps/Email"/>
-  <project groups="default" name="platform/packages/apps/Exchange" path="packages/apps/Exchange"/>
-  <project groups="default" name="platform/packages/apps/FM" path="packages/apps/FM"/>
-  <project groups="default" name="platform/packages/apps/Gallery" path="packages/apps/Gallery"/>
-  <project groups="default" name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2"/>
-  <project groups="default" name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer"/>
-  <project groups="default" name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain"/>
-  <project groups="default" name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2"/>
-  <project groups="default" name="platform/packages/apps/Mms" path="packages/apps/Mms"/>
-  <project groups="default" name="platform/packages/apps/Music" path="packages/apps/Music"/>
-  <project groups="default" name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX"/>
-  <project groups="default" name="platform/packages/apps/Nfc" path="packages/apps/Nfc"/>
-  <project groups="default" name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller"/>
-  <project groups="default" name="platform/packages/apps/Phone" path="packages/apps/Phone"/>
-  <project groups="default" name="platform/packages/apps/Protips" path="packages/apps/Protips"/>
-  <project groups="default" name="platform/packages/apps/Provision" path="packages/apps/Provision"/>
-  <project groups="default" name="platform/packages/apps/QualcommSoftAP" path="packages/apps/QualcommSoftAP"/>
-  <project groups="default" name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox"/>
-  <project groups="default" name="platform/packages/apps/Settings" path="packages/apps/Settings"/>
-  <project groups="default" name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder"/>
-  <project groups="default" name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts"/>
-  <project groups="default" name="platform/packages/apps/SpeechRecorder" path="packages/apps/SpeechRecorder"/>
-  <project groups="default" name="platform/packages/apps/Stk" path="packages/apps/Stk"/>
-  <project groups="default" name="platform/packages/apps/TSCalibration" path="packages/apps/TSCalibration"/>
-  <project groups="default" name="platform/packages/apps/Tag" path="packages/apps/Tag"/>
-  <project groups="default" name="platform/packages/apps/VideoEditor" path="packages/apps/VideoEditor"/>
-  <project groups="default" name="platform/packages/apps/VoiceDialer" path="packages/apps/VoiceDialer"/>
-  <project groups="default" name="platform/packages/apps/gestures" path="packages/apps/gestures"/>
-  <project groups="default" name="platform/packages/experimental" path="packages/experimental"/>
-  <project groups="default" name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME"/>
-  <project groups="default" name="platform/packages/inputmethods/OpenWnn" path="packages/inputmethods/OpenWnn"/>
-  <project groups="default" name="platform/packages/inputmethods/PinyinIME" path="packages/inputmethods/PinyinIME"/>
-  <project groups="default" name="platform/packages/providers/ApplicationsProvider" path="packages/providers/ApplicationsProvider"/>
-  <project groups="default" name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider"/>
-  <project groups="default" name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider"/>
-  <project groups="default" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider"/>
-  <project groups="default" name="platform/packages/providers/DrmProvider" path="packages/providers/DrmProvider"/>
-  <project groups="default" name="platform/packages/providers/GoogleContactsProvider" path="packages/providers/GoogleContactsProvider"/>
-  <project groups="default" name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider"/>
-  <project groups="default" name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider"/>
-  <project groups="default" name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider"/>
-  <project groups="default" name="platform/packages/wallpapers/Basic" path="packages/wallpapers/Basic"/>
-  <project groups="default" name="platform/packages/wallpapers/Galaxy4" path="packages/wallpapers/Galaxy4"/>
-  <project groups="default" name="platform/packages/wallpapers/HoloSpiral" path="packages/wallpapers/HoloSpiral"/>
-  <project groups="default" name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker"/>
-  <project groups="default" name="platform/packages/wallpapers/MagicSmoke" path="packages/wallpapers/MagicSmoke"/>
-  <project groups="default" name="platform/packages/wallpapers/MusicVisualization" path="packages/wallpapers/MusicVisualization"/>
-  <project groups="default" name="platform/packages/wallpapers/NoiseField" path="packages/wallpapers/NoiseField"/>
-  <project groups="default" name="platform/packages/wallpapers/PhaseBeam" path="packages/wallpapers/PhaseBeam"/>
-  <project groups="default" name="platform/prebuilt" path="prebuilt"/>
-  <project groups="default" name="platform/sdk" path="sdk"/>
-  <project groups="default" name="platform/system/bluetooth" path="system/bluetooth"/>
-  <project groups="default" name="platform/system/core" path="system/core"/>
-  <project groups="default" name="platform/system/extras" path="system/extras"/>
-  <project groups="default" name="platform/system/media" path="system/media"/>
-  <project groups="default" name="platform/system/netd" path="system/netd"/>
-  <project groups="default" name="platform/system/qcom" path="system/qcom"/>
-  <project groups="default" name="platform/system/vold" path="system/vold"/>
-  <project groups="default" name="platform/vendor/qcom-opensource/battery_monitor" path="vendor/qcom/opensource/battery_monitor"/>
-  <project groups="default" name="platform/vendor/qcom-opensource/bt-wlan-coex" path="vendor/qcom/opensource/bt-wlan-coex"/>
-  <project groups="default" name="platform/vendor/qcom-opensource/diag" path="vendor/qcom/opensource/diag"/>
-  <project groups="default" name="platform/vendor/qcom-opensource/kernel-tests/mm-audio" path="vendor/qcom/opensource/kernel-tests/mm-audio"/>
-  <project groups="default" name="platform/vendor/qcom-opensource/omx/mm-audio" path="vendor/qcom/opensource/omx/mm-audio"/>
-  <project groups="default" name="platform/vendor/qcom-opensource/omx/mm-core" path="vendor/qcom/opensource/omx/mm-core"/>
-  <project groups="default" name="platform/vendor/qcom-opensource/omx/mm-video" path="vendor/qcom/opensource/omx/mm-video"/>
-  <project groups="default" name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services"/>
-  <project groups="default" name="platform/vendor/qcom-opensource/v8" path="vendor/qcom/opensource/v8"/>
-  <project groups="default" name="platform/vendor/qcom-opensource/webkit" path="vendor/qcom/opensource/webkit"/>
-  <project groups="default" name="platform/vendor/qcom/android-open" path="vendor/qcom/android-open"/>
-  <project groups="default" name="platform/vendor/qcom/copper" path="device/qcom/copper"/>
-  <project groups="default" name="platform/vendor/qcom/msm7627_6x" path="device/qcom/msm7627_6x"/>
-  <project groups="default" name="platform/vendor/qcom/msm7627_surf" path="device/qcom/msm7627_surf"/>
-  <project groups="default" name="platform/vendor/qcom/msm7627a" path="device/qcom/msm7627a"/>
-  <project groups="default" name="platform/vendor/qcom/msm7630_fusion" path="device/qcom/msm7630_fusion"/>
-  <project groups="default" name="platform/vendor/qcom/msm7630_surf" path="device/qcom/msm7630_surf"/>
-  <project groups="default" name="platform/vendor/qcom/msm8660_surf" path="device/qcom/msm8660_surf"/>
-  <project groups="default" name="platform/vendor/qcom/msm8960" path="device/qcom/msm8960"/>
+  <project name="device/qcom/qssi" revision="cc9ed1e49e5064eda1c4377bf39a763673b9ff33" upstream="refs/heads/qcom-devices.lnx.4.0.r7-rel"/>
+  <project name="device/qcom/sepolicy" revision="02329ee74652a9b25f293ece910dde100ed0f3b0" upstream="refs/heads/sepolicy.lnx.4.0.r8-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="device/sample" revision="e6d9f5047dde76279e6e8ccc87f51032dc469d35" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="kernel/configs" revision="d20ee5d124422618d73ef04c74ab8e170883593c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project name="kernel/msm-4.4" revision="60123cd362a04e9c167833428796887f920c12c6" upstream="refs/heads/kernel.lnx.4.4.r35-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/art" path="art" revision="b692009d1ceafeebb4e1075db3e5482ab146eda4" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/bionic" path="bionic" revision="100cee91517d7a83382a149e9fb0455dc679b3b0" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/bootable/recovery" path="bootable/recovery" revision="84b6003fc75abb690ce71c7a736ff3226af2581c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform-build" path="build/make" remote="aosp-caf">
+    <copyfile dest="Makefile" src="core/root.mk"/>
+    <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
+    <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
+    <linkfile dest="build/core" src="core"/>
+    <linkfile dest="build/envsetup.sh" src="envsetup.sh"/>
+    <linkfile dest="build/target" src="target"/>
+    <linkfile dest="build/tools" src="tools"/>
+  </project>
+  <project groups="mirror-aosp-pie-platform-release,pdk,tradefed" name="platform/build/blueprint" path="build/blueprint" revision="ce7bdc58b34a872ba0ec3c7b8a95e02eb7b9e803" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,tradefed" name="platform/build/kati" path="build/kati" revision="08ffd43273858f7d87a25f69fb2839c9b05a44b8" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,tradefed" name="platform-build-soong" path="build/soong" remote="aosp-caf">
+    <linkfile dest="Android.bp" src="root.bp"/>
+    <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
+  </project>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/compatibility/cdd" path="compatibility/cdd" revision="1e2be20e4803840544f253cac96080742137b742" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="cts,mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/cts" path="cts" revision="9c074ad64b95ed2916850b1b2c7175711af5793a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/dalvik" path="dalvik" revision="4d4524fd0185a1c80ed09b2756cb0a15db095b87" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/developers/build" path="developers/build" revision="eccdc48f01241382e8f82a7086a9096e2be3b3a6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/developers/demos" path="developers/demos" revision="7bd7834eee082f32ae8eaab9bf014d77c6cf521a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/developers/samples/android" path="developers/samples/android" revision="aaa9c9cabfceec64c711cd83d68886ad158fc6a8" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="developers,mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/development" path="development" revision="0edd224d61b60a3bfbb1e3aed802a941303d4d2b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/ImageMagick" path="external/ImageMagick" revision="027aa3b88565853927ad7a55d7431d80a2c65aac" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/Microsoft-GSL" path="external/Microsoft-GSL" revision="71bc518c490daefa372debca3ab65b437b38d0ac" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/aac" path="external/aac" revision="a433144970ea8c8e7255c00cdf7667f88cec6f97" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/abi-compliance-checker" path="external/abi-compliance-checker" revision="aaf26f78ca48460d17c89b2611907eb73f8779e9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/abi-dumper" path="external/abi-dumper" revision="a09d92824e65d7abe68882e613a859b425d8940c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/adhd" path="external/adhd" revision="a18b818c04f9c0fa82997be86c5ad7d3356a7577" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="adt-infra,mirror-aosp-pie-platform-release,notdefault,pdk-fs" name="platform/external/adt-infra" path="external/adt-infra" revision="1eb0cb14f675d3d3cc5b4c4ec9be409c13f0da64" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/android-clat" path="external/android-clat" revision="fb6aff707e05c853bae16818e7e08fb7c15c3ce1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/androidplot" path="external/androidplot" revision="355d0ec81d2a50e5334bdf6ba9dc4635baa13706" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/annotation-tools" path="external/annotation-tools" revision="9966c7aa3ccd2fd0cfc76598c2bfe6d77016b2ad" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/ant-glob" path="external/ant-glob" revision="a73228afa9540b9c5518d360c5ae630bb634f975" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project name="platform/external/ant-wireless/ant_native" path="external/ant-wireless/ant_native" revision="7a9f61bab22d1221bba319fa97374aaa707dff3b" upstream="refs/heads/ant.lnx.2.9.1.r24-rel"/>
+  <project name="platform/external/ant-wireless/ant_service" path="external/ant-wireless/ant_service" revision="3023cdfabc3782dac30b681a8943d671b539c387" upstream="refs/heads/ant.lnx.2.9.1.r24-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/antlr" path="external/antlr" revision="2d2bc6f9c2959f787364826de5c40743aad3d586" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/apache-commons-math" path="external/apache-commons-math" revision="5b92751071356eef97c50dbeccc3874b51847afb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/apache-harmony" path="external/apache-harmony" revision="22534a36875e8c3785ee2e376a719123db895cd9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/apache-http" path="external/apache-http" revision="70fb4fd0b42a3e00024c4fecc019bec26e8bec9a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/apache-xml" path="external/apache-xml" revision="259517ca97039fbf3162ee1fde395ac04c9fce4e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/archive-patcher" path="external/archive-patcher" revision="39952ff4eb9f7d2ea719b05ca55f0e07137daaa0" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming" name="platform/external/arm-optimized-routines" path="external/arm-optimized-routines" revision="cfa02caa721e765913cefbeb96221a88fe8f567f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/external/autotest" path="external/autotest" revision="953464c540241ea8ab0a27ada8d717d67b2c783a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/avb" path="external/avb" revision="4a9cc824892a0c77403646c6a20939976e8d2507" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/bart" path="external/bart" revision="33469ab89c301657d93ce94e77fb76edac2ee4c1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/blktrace" path="external/blktrace" revision="d345431f16b8f76f30a58193ff2b26d5853e1109" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/boringssl" path="external/boringssl" revision="6d80f7129add032df967133c963f3d302cc5ca37" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/bouncycastle" path="external/bouncycastle" revision="ab71a3fce802abc453ac99d5c4908b89afd798cd" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/brotli" path="external/brotli" revision="7c6f32759e28e863757a1d360b1260a1125881d8" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/bsdiff" path="external/bsdiff" revision="6a9549abe889dd94562175680f179474d1848983" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/bzip2" path="external/bzip2" revision="58f86bc3cb04a95bdf32f6a7f16e118ae8f45b14" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/caliper" path="external/caliper" revision="64f1dc56aef4997b1fe7af5ae0229a33c3233853" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/capstone" path="external/capstone" revision="0537e9c5d95846c6ce5eaade40d20aeb3e78593c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/cblas" path="external/cblas" revision="26a64928c28abcde21b7dfbd4bd8d1df12d3efc5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/chromium-libpac" path="external/chromium-libpac" revision="4bc441fd2975fedd42dc075293af1603f7293c09" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/chromium-trace" path="external/chromium-trace" revision="f412fc8b100ec2ff2b6bc7b9c10a7658f6b29572" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/chromium-webview" path="external/chromium-webview" revision="8b5e3e1fe7fc219650388f68eac75456a9a17e2f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/clang" path="external/clang" revision="d900a8bc501b15cd96d28c3ec2fdc471995270a5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/cmockery" path="external/cmockery" revision="9199c7bfafefea32d1884182fa655b6e4578c1c4" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/cn-cbor" path="external/cn-cbor" revision="7fe9f01990a97be4df5e46d2decd894c06678072" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/compiler-rt" path="external/compiler-rt" revision="2881d6bcecfe060ea72566493bd5d1d9c8d6f989" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/conscrypt" path="external/conscrypt" revision="fbe45c8c3839957625b944ca77771ca2e545efca" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/crcalc" path="external/crcalc" revision="431518179dd150e3d9a6a0d2a14050341c1e7f55" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/cros/system_api" path="external/cros/system_api" revision="02ec310017dc1654df2181969efd4b0574d21d8b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/curl" path="external/curl" revision="c73d10f4951959414be00ddcaac341f91b83e142" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/dagger2" path="external/dagger2" revision="6854ed4be79b47d15a1da23b9ea5a86dc8a860b6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/external/deqp" path="external/deqp" revision="115bfc4cd6cf5b2c21e081b9d6979f7ef25af50c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/desugar" path="external/desugar" revision="41ed5a79bbb8e9bf81cb3f9b952e4fc74a78857b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/devlib" path="external/devlib" revision="f21788bbd4388b752c49b69b9c994545de846d28" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/dexmaker" path="external/dexmaker" revision="59383db425a8a835a38aacb4c31f8aa1d35f9819" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/dhcpcd-6.8.2" path="external/dhcpcd-6.8.2" revision="6496d3c3358363fc632107c8c838e3ca9478fbc6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/dlmalloc" path="external/dlmalloc" revision="6661f3ca66b55d8f5a57b96fec97efaf8f3897a5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/dng_sdk" path="external/dng_sdk" revision="22e4a08710e2bcdd94bded1371f856b445a6b480" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/dnsmasq" path="external/dnsmasq" revision="e16e70ed81c22829b661f1aa29d04e637d707aac" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/doclava" path="external/doclava" revision="740bf9c60cb7df4931d9fb95b55a2a69c57172b7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/donuts" path="external/donuts" revision="005389fb31a67841b5de42f0d25fbfab843e208c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/drm_gralloc" path="external/drm_gralloc" revision="5a1d7decd7bf60ba0c389687d2fc9210363eb922" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="drm_hwcomposer,mirror-aosp-pie-platform-release,pdk-fs" name="platform/external/drm_hwcomposer" path="external/drm_hwcomposer" revision="c5e1b9e8310d189a61e587c9e69b52419fc10022" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/droiddriver" path="external/droiddriver" revision="ef618d981947f6d8242755516269a0026c07126c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/drrickorang" path="external/drrickorang" revision="f73472b744112992ff93d416720e0ed43b0d7686" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/dtc" path="external/dtc" revision="bf7b14683575c40f6b47f3ae1c9ab10984b5e2f4" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/e2fsprogs" path="external/e2fsprogs" revision="c749e6c5986c932cf5fe550a0949f7c69ace9881" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/easymock" path="external/easymock" revision="2c11f9a552bccff6e343c3e4eda6dafbc6a68741" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/eigen" path="external/eigen" revision="b7cbcae4e0f9c7610bcf4d90113f7f1289cd8b01" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/elfutils" path="external/elfutils" revision="44ed130c44cd13477985eac0dd4c9f2a6d3ded18" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/emma" path="external/emma" revision="991149a93c80e6553d71083d50270248441dba04" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/error_prone" path="external/error_prone" revision="a1be95eb65e8a5e1273bd5feda39407a010bf921" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/esd" path="external/esd" revision="943c42b6f8e9afe821744aa4c039f4943ebf29f5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/expat" path="external/expat" revision="f03507f075bede8c108c1f748a01a87946a2b216" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/eyes-free" path="external/eyes-free" revision="16bd4c7a4d1bfe229068b637614dad7c48dd2ceb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/f2fs-tools" path="external/f2fs-tools" revision="e3e26cbcab79568838ba3ee958ac24c012eba7dc" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/fdlibm" path="external/fdlibm" revision="ee4b91d455ddf7960f76a4271894aeb14c5f5dd4" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/fec" path="external/fec" revision="43b75a302b9fa7e290c3f376dcdc3423efe3a6fc" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/fio" path="external/fio" revision="b18087f7cc6ee96042b88e3f485031929a61a58d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/flac" path="external/flac" revision="887cfcc159c2d6b2560277fd3517a4a9e2603bbb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/flatbuffers" path="external/flatbuffers" revision="f492bfbc155b4e69713cd6627438c70a335c826c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/fmtlib" path="external/fmtlib" revision="a4b937f5a6ea8ee7d52306641398cd52e06192c4" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/fonttools" path="external/fonttools" revision="ce0e93ce00959ca467a4d6d8b63a9f988d0f3bd6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/freetype" path="external/freetype" revision="279a94ba8db79f4cc2384764de41ba51c5e6d73a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/fsck_msdos" path="external/fsck_msdos" revision="3ce0a8bfca714c73bf27e8deb483de5fc0d8e9c6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/gemmlowp" path="external/gemmlowp" revision="1cf0f53466cc98420d083345bc21d7eca10f9643" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/gflags" path="external/gflags" revision="3957d379914c5f18ca3dec8f6bdf366e1bb5b291" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,qcom_msm8x26" name="platform/external/giflib" path="external/giflib" revision="6726c28a2acc465fa09bf1b32ed64a507d0c4792" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/glide" path="external/glide" revision="72e95efc80c209eabb6791d6ce7951c3292af0d1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/golang-protobuf" path="external/golang-protobuf" revision="cd48dbf68638ca5e663d5f99f59e890189fe76fb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/google-api-services-storage" path="external/google-api-services-storage" revision="29b36ffc866ec32ea01f92ab55100f16bb4b2157" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/google-benchmark" path="external/google-benchmark" revision="c1e609b3cb4ccf1da3e0747c5dbd9feb411d1333" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/external/google-breakpad" path="external/google-breakpad" revision="45fffffa044d245ca435abbaeaeec479375ed860" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/google-fonts/carrois-gothic-sc" path="external/google-fonts/carrois-gothic-sc" revision="0062a10458d4c357f3082d66bcb129d11913aaae" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/google-fonts/coming-soon" path="external/google-fonts/coming-soon" revision="2c5cb418c690815545bbb0316eae5fd33b9fc859" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/google-fonts/cutive-mono" path="external/google-fonts/cutive-mono" revision="bce2136662854076023066602526ba299e6556b2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/google-fonts/dancing-script" path="external/google-fonts/dancing-script" revision="7b6623bd54cee3e48ae8a4f477f616366643cc78" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/google-styleguide" path="external/google-styleguide" revision="749f7ae008c0d2dd9767fdfe202e6873e864a956" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/google-tv-pairing-protocol" path="external/google-tv-pairing-protocol" revision="c731915e80d9e2ccb755b97e7fdd280bbea07f70" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/googletest" path="external/googletest" revision="7b3ee2ca4574e4153c22d0a0892340a1908809ad" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/gptfdisk" path="external/gptfdisk" revision="6e8a1efc1877016ea996ee72e1bac86f508bd076" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/guava" path="external/guava" revision="4185a8f244a55149efb00be6157a75c6cbf6502a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/guice" path="external/guice" revision="0ee3093e9b5fff1de81a8bd2c5b684b2301fbcfa" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/hamcrest" path="external/hamcrest" revision="b8abc75725254d186586c0d7d09d23eb2bd0871f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,qcom_msm8x26" name="platform/external/harfbuzz_ng" path="external/harfbuzz_ng" revision="9668921c5e284dd5301ecff4d3a355434fa309dc" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/honggfuzz" path="external/honggfuzz" revision="d1078bd4d8431906b452fa9fef6e5d681a844b08" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/hyphenation-patterns" path="external/hyphenation-patterns" revision="a41e5636de6ca516121f08dbc7f129e2f71fc408" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/icu" path="external/icu" revision="3ddbb3a96332d0a691e86c709dd858e8e37c00f2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/ims" path="external/ims" revision="1660a82d0b241d24ee53223acc631d70079b8e68" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/iproute2" path="external/iproute2" revision="24472e6575e85c3f2767d4ae57a3de3f15ef7838" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/ipsec-tools" path="external/ipsec-tools" revision="16477a409310e8daa3ec5c8ecaa7a2f2d471fb93" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/iptables" path="external/iptables" revision="a577ecb8483df0a80e4556b732d638e0a40d93b8" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/iputils" path="external/iputils" revision="4c2cb2e5a81c64bb5c80cc6841a9b1c931f66beb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/iw" path="external/iw" revision="ec4c3eaa2a75eeea45bcd342c2d4bd2cc0dea49e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/jacoco" path="external/jacoco" revision="5d40d6ce686481ee4a8fa77954c229f0c103d0cf" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/jarjar" path="external/jarjar" revision="fe24ebbd8564283f8e75c942d98fc9c2f18ae498" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/javaparser" path="external/javaparser" revision="b4c1397d5df9370f6358d4f8e9efd27e0f67dec1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/javasqlite" path="external/javasqlite" revision="caf5bec98ef93e197c2cf114f290e51daea18bde" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/javassist" path="external/javassist" revision="f7c4b954072e563b75f6910c25bb689bbf38a3d1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/jcommander" path="external/jcommander" revision="a77201c975f3f0bcd2cc2b95bd0fd63818402a2e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/jdiff" path="external/jdiff" revision="0393b0b86e398b8716aa1805456733d832880d06" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/jemalloc" path="external/jemalloc" revision="f1df06c9b25685e61e991e254dfd9b91a9b58d5b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,pdk-fs,tradefed" name="platform/external/jline" path="external/jline" revision="74812032f8d8eddbef387f18c96de9e5c38b8fdb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/jmdns" path="external/jmdns" revision="0c71647deb7f7835c473fd3dfb45943083e47794" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/jsilver" path="external/jsilver" revision="5eba49af088628bd0d0bb23a992e7f09f0892e11" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/jsmn" path="external/jsmn" revision="460be51a89d82b89159d1ccd67c07199b23ba925" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/json-c" path="external/json-c" revision="1509b55c68721360c2431a46d1a1eaab84846e90" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/jsoncpp" path="external/jsoncpp" revision="1d665bb05acfc7810a05fceb55a8b23ef602ac54" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/jsr305" path="external/jsr305" revision="da800f6cfda5f8ccb277cd5136ad3584c4100e48" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/jsr330" path="external/jsr330" revision="ef3a2d74af63d90085bb3cbb2898ad3586dcac6c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/junit" path="external/junit" revision="9018952fa732cd622284cebdaec3122b2f7bd2e7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/junit-params" path="external/junit-params" revision="4f0b0c84c6d6b1f462849fe7a10fb56309e1f9aa" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/kernel-headers" path="external/kernel-headers" revision="1f2bbe4c0f9e6cdc581f291c55e09a1dc39350b2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/kmod" path="external/kmod" revision="d9a1fb142988334a139175131e167b6c190026eb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/kotlinc" path="external/kotlinc" revision="72c5baa4d1f006c0c1df9c3df7ebf4ebec573c87" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/ksoap2" path="external/ksoap2" revision="9fdc4a6bb2b882bd1d6c822d2ad0c66585d66ba9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libavc" path="external/libavc" revision="7fed8fd71a7a9727dba7c8647a910a781c98802f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libbackup" path="external/libbackup" revision="0731e91b1b15194981c29990c7aa0c28428a379c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libbrillo" path="external/libbrillo" revision="4550d0218311736e463de460fd5c6bcc5176e631" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libcap" path="external/libcap" revision="d8602bf693a5cb6d9613f99f8be7b7262425a2ff" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libcap-ng" path="external/libcap-ng" revision="df51f14448d6c660324f8853c41f48564a8fcc6f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libchrome" path="external/libchrome" revision="ed187412f1f38caf730ed4f23b961ef6e270e0d5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libconstrainedcrypto" path="external/libconstrainedcrypto" revision="d9be68f1362631e4707700e28998c325ab3e2c03" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/external/libcups" path="external/libcups" revision="5ba10651e17ac28e5449619c05ec12e329047efc" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libcxx" path="external/libcxx" revision="84ec2bc49b3d6e51d4f290241a70e5ae2d5fb1ed" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libcxxabi" path="external/libcxxabi" revision="028dc0406ae5d5f4b2968538ae5569ab4a3af58f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libdaemon" path="external/libdaemon" revision="e12941a3c3b44addb0d02b9c869cd8ef8ceda37b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libdivsufsort" path="external/libdivsufsort" revision="fcee868119b5eac60a8cd9fc9ddebb9627ffd172" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libdrm" path="external/libdrm" revision="96799216f90d91a4993cab7227e36b2d33a93054" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libedit" path="external/libedit" revision="67e14dfc833aafa400a3aad8cb329cbaec503445" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libese" path="external/libese" revision="092b6e8f4f8091428693f15071586f2624bb4baa" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libevent" path="external/libevent" revision="becbc79be28cd4f92d14c3f395d562995fc73bf9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libexif" path="external/libexif" revision="eeeee64a7922a7e33d8bc09f66a1a4e6c3e01596" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libffi" path="external/libffi" revision="717327ca882f679b5534384648ecf4748ff238a2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libgsm" path="external/libgsm" revision="bb4b5292111db421e4720a045c7f54afef13b368" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libhevc" path="external/libhevc" revision="9ace1527a2409ea5eb9ea8c91558487b6e5f55f9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libjpeg-turbo" path="external/libjpeg-turbo" revision="92772ec767502071ad78e5522e9e5fb3a0c3249a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libldac" path="external/libldac" revision="83f41c73bb55ffaa0e278fef6664583a4c07d200" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/liblzf" path="external/liblzf" revision="0fdf3f9a85f564f48f6ce72aed9a2642391f2afa" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libmicrohttpd" path="external/libmicrohttpd" revision="fa5e1bc827f2afea8b2fa63e4da8683d3fb74178" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libmojo" path="external/libmojo" revision="62fa7692c36a55708160a2a8f56d6034c7cdde69" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libmpeg2" path="external/libmpeg2" revision="937d92b966ffe6aa90b4740072665f5850c36583" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libmtp" path="external/libmtp" revision="ab31b17c72d1ee81f6961cf15deb50448cc61a34" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libnetfilter_conntrack" path="external/libnetfilter_conntrack" revision="7d547dc585795dc2263b00bdbbb3ff4b4432d312" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libnfnetlink" path="external/libnfnetlink" revision="f637d31fb9a58e8e694cace77c3719e759425e54" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libnl" path="external/libnl" revision="305652174681b382088f8d7be83328613840d772" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libogg" path="external/libogg" revision="2f6fe5555198104e904e2bbf283dbc3b0d71cadb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libopus" path="external/libopus" revision="10ce6fe7ba7f89997ad9277907d763b9a5445a35" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libpcap" path="external/libpcap" revision="95eaa2e2f04f2ecc39b86dd0a5f24025ad435b32" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libphonenumber" path="external/libphonenumber" revision="873bf2217cf1c950ad7bc0667191aa660e4fdb5f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libpng" path="external/libpng" revision="d74efc2eb6fffac4b3ecf1a92c3a08ee2fa36a1a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libtextclassifier" path="external/libtextclassifier" revision="f1ba106511b0e0670c8e889df3afbb23a9224ed5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libunwind" path="external/libunwind" revision="e8fd6a87d14ddf46f99821fa0a9f0100ccaff636" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libunwind_llvm" path="external/libunwind_llvm" revision="88285625fd00833766d5a411d1c0aaa261dd665b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libusb" path="external/libusb" revision="cf2a3883c8b996cf3efed7a5792fa5086109a036" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libusb-compat" path="external/libusb-compat" revision="759481ae400d02fe99488dcdcd653b4f8139a39c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libvncserver" path="external/libvncserver" revision="8cc7a903681c1242897383436d013741d2de4893" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="pdk,qcom-LA.UM.7.3-incoming,vendor" name="platform/external/libvorbis" path="external/libvorbis" revision="69bf3dd8fe497d9a3f7c39e41c405c987c48a488" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libvpx" path="external/libvpx" revision="6b4a57789e2976f0c934f75c7fd5aa3989d38cae" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libvterm" path="external/libvterm" revision="378bbf9352e68351e2a97ed31ce461ac2e46545d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libxaac" path="external/libxaac" revision="a41ae1483993a2c13cf9ee5867908b4556c0e5e7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libxcam" path="external/libxcam" revision="97f8476916e67917026de4c6e43c12d2fa1d68c7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/libxkbcommon" path="external/libxkbcommon" revision="1912cac933e6a0fd3c5eb8909f8fe2f2cbde80b7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="libxml2,mirror-aosp-pie-platform-release,pdk" name="platform/external/libxml2" path="external/libxml2" revision="1cbc3434b0ac860531047421f240a7204cde46ae" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="libyuv,mirror-aosp-pie-platform-release,pdk" name="platform/external/libyuv" path="external/libyuv" revision="78bcb0e4d6f6ff4f465aa2ce548b154a8f7afc59" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/linux-kselftest" path="external/linux-kselftest" revision="d471754d02fd5bfb0e5a1e0d4bb53d19bd632056" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/lisa" path="external/lisa" revision="02ee5d5bdda520cafa8e03eb48bff1356580a3ba" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/littlemock" path="external/littlemock" revision="4dd43c74801149ded3e18eaba7d43ff6dfa192c8" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/lld" path="external/lld" revision="26c9bb3b51a7ac4bc45f73d532a03cfd9982043a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/llvm" path="external/llvm" revision="eabe9bedac8109dd2273ec870f5bb0114af148e7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/lmfit" path="external/lmfit" revision="ff75e29326d9fdff9395b544df6e8efda2e62429" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/ltp" path="external/ltp" revision="fb70c7767eda6ec80117f81c15f17bbad5b41937" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/lz4" path="external/lz4" revision="419ef7d383f939bd538fef859850aa8623a53407" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/lzma" path="external/lzma" revision="db6f69a8a1ba3fedbd403a03667f3dd6460ab9bb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/markdown" path="external/markdown" revision="06a8f8b914d477183f68b84424bce8ff4dae7e84" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/mdnsresponder" path="external/mdnsresponder" revision="b836ea6e7e1bfd2495d6ed0846a85f6a9721b654" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/external/mesa3d" path="external/mesa3d" revision="ac5392bcb034fbbf7c02833af427ddcc50901d36" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/messageformat" path="external/messageformat" revision="7941896999a8a623683b888fd39095f32a7f49b6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/minijail" path="external/minijail" revision="0d212818081ebb9865565458039ada0d6c4ebde7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/mksh" path="external/mksh" revision="a33a63f9d4a5a40b86049b3423ed7d266b9eebc2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/mmc-utils" path="external/mmc-utils" revision="f105db5bd1934f0c3e5f74bbc9a5aaeac7a6bf2b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/mockftpserver" path="external/mockftpserver" revision="3adbe6682586f0253672b4c4631e8c181cbd0285" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/mockito" path="external/mockito" revision="dd85ed517bd4ea380b918fc68c925a65c697cf05" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/mockwebserver" path="external/mockwebserver" revision="53862ae061e5ede04a9c51c4a60541722fc12dc1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/modp_b64" path="external/modp_b64" revision="6f11b5c9b4ffb38dc9375f3cf344da4300a2741a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/mp4parser" path="external/mp4parser" revision="88bd0c6cfa7fcfbbebcc15c2c565f714cb36b065" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/mtpd" path="external/mtpd" revision="5edadcb75b4e54783392e8ccaa8f2046ab6fa34b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/nanohttpd" path="external/nanohttpd" revision="c6783c32331b3fe78ffd5077e7f180995d0e268e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/nanopb-c" path="external/nanopb-c" revision="ace6fa2be426f78d335bc260d4454e7001a887af" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/naver-fonts" path="external/naver-fonts" revision="91e6e9f94d1d769a8f742649674149ba98ce7d45" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/netcat" path="external/netcat" revision="7a4052e339795a7d39eda25dd7633bba101a1d1c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/neven" path="external/neven" revision="4b4d6bbe68a581297580631fa8bb2b4b8b5e8627" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/nfacct" path="external/nfacct" revision="88e80ccb5f2fa69920de799146d1e82d11fc28b3" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/nist-pkits" path="external/nist-pkits" revision="db15a602791f6a47e90645bb0b724376ebb0ef20" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/nist-sip" path="external/nist-sip" revision="2a593361503da0dbb8cfcd2dc523df4ae7eaf284" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/nos/host/android" path="external/nos/host/android" revision="92fc0d119828ce4936c02e7fb43fd1a1b7dbaebe" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/nos/host/generic" path="external/nos/host/generic" revision="b974cc89820f976c13ac5ae1e61b59ef2d40c4bb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/nos/test/system-test-harness" path="external/nos/test/system-test-harness" revision="8c63b7fd9b380caa9727b72b374b8237710492d6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/noto-fonts" path="external/noto-fonts" revision="afdef1ad6f333a65833325e0cd740e22bf9cc455" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/oauth" path="external/oauth" revision="49f3624a6d3307b640a012f15b94d04174473501" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/objenesis" path="external/objenesis" revision="925f6d3014943356d7cb6ac2cd1599f65adb4b52" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/oj-libjdwp" path="external/oj-libjdwp" revision="12e7d6b4c4e09a38df66bbb757dd8f9f76d0ed51" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/okhttp" path="external/okhttp" revision="364f5c310032b843310f322c3480db24a35f3c3f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/one-true-awk" path="external/one-true-awk" revision="b221ebdcd9ade2e830f3fba17bdffbc2747e9aa9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/external/opencv" path="external/opencv" revision="c04ab0df40846f7c0bbb5acd4843ae4d5c3b2c20" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="p-fs-release,pdk" name="platform/external/openssh" path="external/openssh" revision="71a6e69889cd7d4a4ea578a8ddbceb6cebbd1ce3" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/owasp/sanitizer" path="external/owasp/sanitizer" revision="bbfb25464ff30c5a62dce351d719a8c533afb2a3" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/parameter-framework" path="external/parameter-framework" revision="7e4bda0dfab9cc5894003df3bc9cffc222ff438a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/pcre" path="external/pcre" revision="98ab71ee53a87339c1807bf06813024ef559f750" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/pdfium" path="external/pdfium" revision="c8a0db7d7c3e0017de4eeeb69e434b5f3b6ee386" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/perf_data_converter" path="external/perf_data_converter" revision="77162c97e59b1e6b3895a97b3b9dfbe45422ad3f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/perfetto" path="external/perfetto" revision="8a8bff9ae3d25ae4acff8792c31667f10000e349" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/piex" path="external/piex" revision="091e1771e9f25d80b66f1e9384ea4770a337627c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/ply" path="external/ply" revision="2d977f82c407dd320e1a171e90a37b9e15bd4d9e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/ppp" path="external/ppp" revision="90da8c8f15db2c82aece6e4085aaf9c116d481f2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/proguard" path="external/proguard" revision="dc5e6bd29d75591f93d0db40cf07b6299aae4dc5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/protobuf" path="external/protobuf" revision="824412747da66476a94d86ee3b746300aee973f1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/puffin" path="external/puffin" revision="1b591230d50aca64c844d95ac881137f952ebe72" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/Pillow" path="external/python/Pillow" revision="d9c0fcc955e4fe0662cd0580a412a20cb328f039" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/appdirs" path="external/python/appdirs" revision="0d9b51147cd55a9ee45382c534bcfa4df4a2e3fa" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/cachetools" path="external/python/cachetools" revision="ee4588a2a8743a550de2a7e18d306d5f6a436702" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/python/cpython2" path="external/python/cpython2" revision="9845ce23d1eea7f65f5d00f855f0f476a36b4014" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/python/cpython3" path="external/python/cpython3" revision="1fefb61be13ddcb8a082d0e14d7598f8f3b1b9f4" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/dill" path="external/python/dill" revision="01988c5fa063836e457bdb7134d4d300d1276e5e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/enum" path="external/python/enum" revision="6706fcd5d4054a9dcbd517142f2be8c9498fcecc" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/enum34" path="external/python/enum34" revision="ed56821ca06c8ba80bc083069c9f5672cf834e2a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/future" path="external/python/future" revision="fa8e703fd259f8056cb817219041eb0e20c00ada" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/futures" path="external/python/futures" revision="e6c5f3e55ad54f4987ea0e81478858d007211cb0" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/gapic-google-cloud-pubsub-v1" path="external/python/gapic-google-cloud-pubsub-v1" revision="44cde1e4892ce518b1927ab3f8f45a22f0f67a1d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/google-api-python-client" path="external/python/google-api-python-client" revision="6e0c0af3fa414387cd2ecc22ba6cb4eca47f171e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/google-auth" path="external/python/google-auth" revision="51bbd38e9129785729a71abea8ae0bae1ac9784c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/google-auth-httplib2" path="external/python/google-auth-httplib2" revision="c4201f1bd596e5b17b7e461af2dd8b0d676834a6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/google-cloud-core" path="external/python/google-cloud-core" revision="1b76945730adf9762a680dde8facca6acd864df0" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/google-cloud-pubsub" path="external/python/google-cloud-pubsub" revision="0f0dec2c3076169da00aadb6de8f621da301b908" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/google-gax" path="external/python/google-gax" revision="70dddff9a898e0ea662d27451f13f4262c43b1ef" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/googleapis" path="external/python/googleapis" revision="67d384ef2d9bad424bce05c79899a1c6e6baee25" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/grpc-google-iam-v1" path="external/python/grpc-google-iam-v1" revision="6ce59f644bd5e99279b020b6fa9b8851fccb7c50" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/grpcio" path="external/python/grpcio" revision="c059a54af916df11ead84a19bb4e2faca19e3682" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/httplib2" path="external/python/httplib2" revision="90f880038c1d7bd50fa7b0538954b24fd12da231" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/matplotlib" path="external/python/matplotlib" revision="bbaf4f40479b90f583faf080bb472499439ee2fa" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/numpy" path="external/python/numpy" revision="b12e87119e636214f5d41688ec4ea9ba4b4e58b5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/oauth2client" path="external/python/oauth2client" revision="ea7213cdc8de40a4887a68aff85a1729884461d0" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/olefile" path="external/python/olefile" revision="1221d9b12619499cd798e73598a074b8cb6d7b31" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/packaging" path="external/python/packaging" revision="28b23ad183cfe53c9f848e1cd55595dcd11b22f8" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/parse" path="external/python/parse" revision="aebfe77d79bd5f84e82bbb23bc3f0e7ce817064e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/ply" path="external/python/ply" revision="2b3c386a04f92d292ea289ea10d6508a3bae2c2d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/proto-google-cloud-pubsub-v1" path="external/python/proto-google-cloud-pubsub-v1" revision="ea95753aa8bc0d8d7766a36917b488b331dbabee" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/protobuf" path="external/python/protobuf" revision="6e9cbd59578771e8005e4d3ca73c167521f4e4d5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/pyasn1" path="external/python/pyasn1" revision="060cf6916bdf4a137c20fab13ad81f84c99941e2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/pyasn1-modules" path="external/python/pyasn1-modules" revision="52eef53175cb9e051125555c187fd7ac95464654" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/pyparsing" path="external/python/pyparsing" revision="349ddcef3f7641faf4d11327c959da6568b84635" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/requests" path="external/python/requests" revision="f51a28912b8571f0276a633a85578a8ded94d37c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/rsa" path="external/python/rsa" revision="dbe61a7ce8c6b3a1ffbf632590ea05c61231b687" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/scipy" path="external/python/scipy" revision="626da5975f8d3d1ee9de56180b57b6dee8ede15d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/setuptools" path="external/python/setuptools" revision="e493fcf90483ade4b2a5ac331a4f89cb15ae3fd2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/six" path="external/python/six" revision="f91473d8b8dabb218500dd05582fc2d5c5481143" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/external/python/uritemplates" path="external/python/uritemplates" revision="4edb22282e4cfaa9250d3fdb2d2f7be9c0a34fb4" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/rappor" path="external/rappor" revision="9f9abd94c58037124281918c8ecf0a3cf8c3fbdd" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/replicaisland" path="external/replicaisland" revision="d06499599cb5c1ab1f8d93a1ff1f87822f3364e2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/rmi4utils" path="external/rmi4utils" revision="d396cec8d5947849fe3ba17a1a92ba1d89b03b1d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/external/robolectric" path="external/robolectric" revision="60a7220b7fc09bae79ac43628ecaca0d83cc629f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/external/robolectric-shadows" path="external/robolectric-shadows" revision="da5350d79c692db6be2274e0dcb12dab2b00070e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/roboto-fonts" path="external/roboto-fonts" revision="a49bcc0972b3772872e36ca06817e950e26593bf" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/rootdev" path="external/rootdev" revision="6bbf57183ef969e629c7ad5d4aec94a89b11eb08" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/safe-iop" path="external/safe-iop" revision="1f10ecc6aabb295947735f8c14b7b60915613d3d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/external/scapy" path="external/scapy" revision="6e298c87d2b6b858d02f55e01356f4b804aeac12" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/scrypt" path="external/scrypt" revision="1bcd68e1eb76f7ed62002d437f7c26cb1ab6c7dd" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/seccomp-tests" path="external/seccomp-tests" revision="4f2d187cc5514e6cd99fdf418e592d0501cb9ece" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/selinux" path="external/selinux" revision="f67649393ffe347d9b6687795720178af084b464" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,qcom_msm8x26" name="platform/external/sfntly" path="external/sfntly" revision="22f111de4f358d4f37f26186a679a96b34a190b7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/shaderc/spirv-headers" path="external/shaderc/spirv-headers" revision="492abb45bbdfc0c5b9ffd00f16e53ab628305da9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/shflags" path="external/shflags" revision="c4876e01829b8cf110ee33267bb1bad1f8ebb51d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,qcom_msm8x26" name="platform/external/skia" path="external/skia" revision="69a6adb3772fb4361dfa24a31b8ad364eb43589a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/sl4a" path="external/sl4a" revision="96525537e68cb0b06f5158953432d3f3bd13571e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/slf4j" path="external/slf4j" revision="68dedf4cda0627f9fdde25ddee887361dd00928a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/smali" path="external/smali" revision="108e211f529be926296a7113bf530d358b710c12" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/snakeyaml" path="external/snakeyaml" revision="1bc636a306795fc40770bdd73ee01477ce1cb189" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/sonic" path="external/sonic" revision="8e98560ce192d2dc785091726b311dca05d94ef5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/sonivox" path="external/sonivox" revision="95dadfb3cc2f7e91b6fa358e161e7a539738ebc3" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/speex" path="external/speex" revision="52be7646383bfe5cfe258e25645b9113a63f551b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/spirv-llvm" path="external/spirv-llvm" revision="3bf979d401421b917242264b0db66ff61e9a4138" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/sqlite" path="external/sqlite" revision="73cf483a442778aabc18eba42e0509542eb2e53c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/squashfs-tools" path="external/squashfs-tools" revision="d6769b940d6d7b074d2188a78e7a3f0cceee8e05" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/strace" path="external/strace" revision="5e9aa40d5e2d23377abb779a233806fa2199742a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/stressapptest" path="external/stressapptest" revision="425df8dc79256c211847f2873ee37d52418aa84f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/swiftshader" path="external/swiftshader" revision="7296100339e32d978ff64ccdab7ef99c917e2548" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/syslinux" path="external/syslinux" revision="8cdd7c0cd2f07203e49bb1f9fc5e38bf5d1adb5b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/tagsoup" path="external/tagsoup" revision="33167693e133b365838a9950d08b07564052cf1f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/tcpdump" path="external/tcpdump" revision="3eb84b57334dfabfef469348409ec29e5cff68bd" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/tensorflow" path="external/tensorflow" revision="e5a536fbd36ed64a7a63516299a3061944864080" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/testng" path="external/testng" revision="232826a29199755858c2c5ea020117b413cfaf6d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/timezonepicker-support" path="external/timezonepicker-support" revision="99e91a76fd74bad10266623d67cdb98d011f709e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/tinyalsa" path="external/tinyalsa" revision="ed77311b46ed0175af5db1ee3376692b671d8aef" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/tinycompress" path="external/tinycompress" revision="e57182e307665bcfde4c2b8e9829d54b7df15a92" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/tinyxml" path="external/tinyxml" revision="5994c56e84766cc467d1ec1c226a9671da4038f4" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/tinyxml2" path="external/tinyxml2" revision="fc3a54ab2ef7b14ad03c8de3bf6a936f92f23ebe" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/toybox" path="external/toybox" revision="80a75a51166b6b70b8e429af136c122eb9e3ff6b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/tpm2" path="external/tpm2" revision="9395faf6ee41ccfb3f3364bb58727c27a027e35e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/trappy" path="external/trappy" revision="8f957f902b22daa0090516fcdf9ea110a3cc8d5a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/tremolo" path="external/tremolo" revision="f4a3c5fdbcb25f6dd9435cc5fff57727ebd3532a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/turbine" path="external/turbine" revision="39d5e12d0bb57264fee7f456b8868239b5ccbbd9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/unicode" path="external/unicode" revision="04190d74ad26e9d718aa554acd09901f3c902ee6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/universal-tween-engine" path="external/universal-tween-engine" revision="ba3a510260dc676206074055de62e2ac7406fbeb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/v4l2_codec2" path="external/v4l2_codec2" revision="6aa320eab8a55213dcfd4d7b7a07de01a8458dbc" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/v8" path="external/v8" revision="e5b2bf0bbaa6934372669f26124d147b566c6340" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/valgrind" path="external/valgrind" revision="f516c4fb6fa0a42c1448a86dcc99a748dbae86ba" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs,vboot" name="platform/external/vboot_reference" path="external/vboot_reference" revision="3007a4c680f6122ee2f0e361778007dc19221589" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/vixl" path="external/vixl" revision="6bac75dab9071002a00ce71add2aed2a42fbf31e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/vogar" path="external/vogar" revision="c8d647b757ae53a25c134c5d145a89d4a676f61e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/volley" path="external/volley" revision="7c298add104e1267b102ffe07327d8554d50af78" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/vulkan-validation-layers" path="external/vulkan-validation-layers" revision="c6cbc847577543546ae554c1ea6e99dcc51d7c06" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/walt" path="external/walt" revision="9ec429e798243c2ad67d779765dbe97814d5c25e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/wayland" path="external/wayland" revision="8dbabbd708ed0cfabfc5099a84bca9fa98721bbb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/wayland-protocols" path="external/wayland-protocols" revision="71a76984c8b4667caf4f0e5da055f6cae1f598ba" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,qcom_msm8x26" name="platform/external/webp" path="external/webp" revision="b8a8cd5075860c44e6fd5d0d2e529ff2e0417d7d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/webrtc" path="external/webrtc" revision="1199eb57e5a0bef4e438a5a847ff1af165c4feed" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/webview_support_interfaces" path="external/webview_support_interfaces" revision="3809a82525f1a1b617ef68d92632c15a2a623336" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/wpa_supplicant_8" path="external/wpa_supplicant_8" revision="8b8b56b30eb930e2bec6945dcbd806a7ea1ea62d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/wycheproof" path="external/wycheproof" revision="ba3228e3c24d419499d91c7aaabf5ce63b75fdd0" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/x264" path="external/x264" revision="1b633edcbf9847ac9fb46917c73bf8466ae71078" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/xmlrpcpp" path="external/xmlrpcpp" revision="c79d4eae757a81270915c2a7cf01c81b8d42785e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/external/xmlwriter" path="external/xmlwriter" revision="e95d92246ee35273dde2bee8b00485cc14c12be5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/xmp_toolkit" path="external/xmp_toolkit" revision="42ea4dc6d1fc2206a7778029070ed9213e3b0fbf" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/xz-embedded" path="external/xz-embedded" revision="180f9115008b00e7c1a2b35317f2bca709fce8a1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/zlib" path="external/zlib" revision="8a168240263489da42a83bbacf86b282c6fcb0e3" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/zopfli" path="external/zopfli" revision="76d7da2a87daf777c20078f647f78f776d981fd0" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/external/zxing" path="external/zxing" revision="8c79be4cc4084d0f508aefba40203383e6ca342c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/frameworks/av" path="frameworks/av" revision="39a3c0ea3710d2f3091cf84da7d0fc130e126fba" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/base" path="frameworks/base" revision="ee15dd232f0ff46ec5d57ad4d70097e5563eca23" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/frameworks/compile/libbcc" path="frameworks/compile/libbcc" revision="79ec1c11e187864ffe62f8c7840d1a9ba363e9f4" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/frameworks/compile/mclinker" path="frameworks/compile/mclinker" revision="58444cdff5e5b44ec4d40196ae37c5985b48e3b1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/frameworks/compile/slang" path="frameworks/compile/slang" revision="028d50e56dace80ac98b1ca1b50363e6c3396f90" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/data-binding" path="frameworks/data-binding" revision="a53fdf4a28693a8ebbc5d3fef1e44423a560dc90" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/ex" path="frameworks/ex" revision="9e764f4e4363d7809f097ca7e6662e12cb031fdb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform-frameworks-hardware-interfaces" path="frameworks/hardware/interfaces" remote="aosp-caf" />
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/layoutlib" path="frameworks/layoutlib" revision="42000789e38bbd5c2f1c3263a7b2c3f9e13efb95" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/minikin" path="frameworks/minikin" revision="3449fd5cd2630d2816e17bee5e2f4f5da8bd2bf2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/frameworks/ml" path="frameworks/ml" revision="da881d4ff9eb1841a21351034c9283b1609b4c8e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/multidex" path="frameworks/multidex" revision="842eea3f0b0dcfaa05d4252eb229dffc1e621d1b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/frameworks/native" path="frameworks/native" revision="98d1124731a45edd1eba968199b425929a5226d2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/frameworks/opt/bitmap" path="frameworks/opt/bitmap" revision="bbb23bc31518d87eea4b83d08e8d8ed9745c40ed" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/calendar" path="frameworks/opt/calendar" revision="8a1a65aa6e2beddc6f4da0266581b9083b298b99" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/frameworks/opt/car/services" path="frameworks/opt/car/services" revision="de20d4252bfef553c07cf99825f0eacd8da1aad5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/frameworks/opt/car/setupwizard" path="frameworks/opt/car/setupwizard" revision="5c6904a494c4aa4810d98bea49cf2a49a037e8cb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/chips" path="frameworks/opt/chips" revision="09bfbed09a5a2abb34cc05142c715afbe7f85a38" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" revision="a3812cb202b60693d7fdf6cf51bec671bb469963" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/datetimepicker" path="frameworks/opt/datetimepicker" revision="c966dcd415d67a158ca3fb838fc3a225409ccb35" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/frameworks/opt/inputconnectioncommon" path="frameworks/opt/inputconnectioncommon" revision="3baece9b20fa480da46d860acd7320fd9eee3386" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/inputmethodcommon" path="frameworks/opt/inputmethodcommon" revision="990fcb1a6dbb5d1204cc8ec86e4bc3f691f4aeeb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" revision="668ade8a8c0e3fa051fbb1b0fed1db8f54b5e505" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="frameworks_ims,mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" revision="25008609e49ae755cbef5cc472e3fd74c47154aa" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/frameworks/opt/net/lowpan" path="frameworks/opt/net/lowpan" revision="9e7c6bb6a72ae1bdfde8317f1b00eac4dd1c429f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/net/voip" path="frameworks/opt/net/voip" revision="721f757a4fef09790561bc0bc0cfcb721b4c957b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/frameworks/opt/net/wifi" path="frameworks/opt/net/wifi" revision="fbdfd56f38f4028e522827282ed504d04b86df9e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/photoviewer" path="frameworks/opt/photoviewer" revision="4878134b5ca80af60d6129d6ce5ba010e18b8023" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/setupwizard" path="frameworks/opt/setupwizard" revision="d0f2f3fcedc83c0480232541e2cf2c885d7a03b2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/frameworks/opt/telephony" path="frameworks/opt/telephony" revision="514a07a9b7691929c2634110ab38efcf0b0a173a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/timezonepicker" path="frameworks/opt/timezonepicker" revision="cc6af283d274fb88c1fc5fa9857419afb8974b45" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/opt/vcard" path="frameworks/opt/vcard" revision="b1d950204d43a801b802876dd723caa0a092a16f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/frameworks/rs" path="frameworks/rs" revision="d8e9493f47d1d614de5a03e8b8dd345508064999" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/support" path="frameworks/support" revision="e07fc901035fe320a3c76c58deee386fd53e2754" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/frameworks/wilhelm" path="frameworks/wilhelm" revision="842eadd7f91d48e4f401991add3febe294be8e1d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/hardware/akm" path="hardware/akm" revision="54601271d21ad1712befbbac073249b168c31cbd" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/hardware/google/apf" path="hardware/google/apf" revision="e5c185770fe3fcbf7eb13cf4ea0a0ac1da636e5f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/hardware/google/av" path="hardware/google/av" revision="c9c380ebc9aa196fa0491187d8515d12ab611ce6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="easel,mirror-aosp-pie-platform-release,pdk" name="platform/hardware/google/easel" path="hardware/google/easel" revision="0824db9ef0067d85ba76ec088c6c3b175ccaf0ef" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/hardware/google/interfaces" path="hardware/google/interfaces" revision="132432b2efdfcccebf3d1cc3d6ccb24eea61a432" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/hardware/interfaces" path="hardware/interfaces" revision="0bde3397a2ada93ec90a63252985451451d8980c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/hardware/invensense" path="hardware/invensense" revision="d02ee9afcb5565693bb2614405b6a8cf858e4f51" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/hardware/libhardware" path="hardware/libhardware" revision="b162b4026846018080bd298a18c245df52cd13be" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" revision="dc87c8a6b26314ae62cd8ed113a6fb1be02bc6f6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/hardware/nxp/nfc" path="hardware/nxp/nfc" revision="07000aa5f6ebe949f7cfa71156e1611503e3e4d7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/hardware/nxp/secure_element" path="hardware/nxp/secure_element" revision="05ffdd2ab9b0599bce970a5a64bd17d170881328" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project name="platform/hardware/qcom/audio" path="hardware/qcom/audio" revision="7b21b9bd46a16f3e9eb2ed326c714d8968b02720" upstream="refs/heads/audio-hal.lnx.5.0.r6-rel"/>
+  <project name="platform/hardware/qcom/bootctrl" path="hardware/qcom/bootctrl" revision="8858eb9108e6cb4192c0663ef409bd764cb37f28" upstream="refs/heads/android-blast.lnx.3.0.r7-rel"/>
+  <project name="platform/hardware/qcom/bt" path="hardware/qcom/bt" revision="0e5aa196cac82ac684d032691a15b5b4991b0db9" upstream="refs/heads/bt.lnx.4.0.r8-rel"/>
+  <project name="platform/hardware/qcom/camera" path="hardware/qcom/camera" revision="ab94ecb351ff6239dceab73346e62ff60ead5a0b" upstream="refs/heads/camera.lnx.3.1.r5-rel"/>
+  <project name="platform/hardware/qcom/display" path="hardware/qcom/display" revision="c6673894d560508258d4610fb8d25e0a2562f0be" upstream="refs/heads/display.lnx.3.2.r5-rel"/>
+  <project name="platform/hardware/qcom/gps" path="hardware/qcom/gps" revision="d0aa68e550c0ac2cc7760447169f64284861f4ff" upstream="refs/heads/location.lnx.3.9.r7-rel"/>
+  <project name="platform/hardware/qcom/media" path="hardware/qcom/media" revision="2b14ed9df662bf6bce14823814e1da405edf6c6e" upstream="refs/heads/video-userspace.lnx.2.9.1.r5-rel"/>
+  <project name="platform/hardware/qcom/thermal" path="vendor/qcom/opensource/thermal-hal" revision="37aec549907cf8a10e10e1542af41ff95c1bebed" upstream="refs/heads/qvr.lnx.3.0.r21-rel"/>
+  <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" revision="e3d7c36a24db671f446854538c479c5dd17df301" upstream="refs/heads/qvr.lnx.3.0.r21-rel"/>
+  <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" revision="881869c907a42282ab015d21dc03bf7a9327d348" upstream="refs/heads/wlan-aosp.lnx.4.0.r10-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/hardware/ril" path="hardware/ril" revision="dba11b6e6186bb60e03ae03ef38a1b705a1b9198" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/libcore" path="libcore" revision="9c271c2fe5a85fbdb643b097a062cd093cca2904" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/libnativehelper" path="libnativehelper" revision="83ecef023b314d4d1feeed31d148fc2749d78852" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/BasicSmsReceiver" path="packages/apps/BasicSmsReceiver" revision="798bd412a3e2b45f9ece262f24e5b1f1598d444b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/Bluetooth" path="packages/apps/Bluetooth" revision="2d5d179aa1c6addbab3132ade155f08e60fcf777" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Browser2" path="packages/apps/Browser2" revision="1c36af3ff9926814bd717586b00f006f68a8a735" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project name="platform/packages/apps/CMFileManager" path="packages/apps/CMFileManager" revision="00a4cb72aa05701bb1e869bd7d36a97e2ad2f4f2" upstream="refs/heads/android_ui.lnx.3.0.r8-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Calendar" path="packages/apps/Calendar" revision="9ed0944b26bd2c101d05ae168ee77eebae98140c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Camera2" path="packages/apps/Camera2" revision="62f45de00fb2dee2a7a6f5c8947053cffeb6b5b6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Car/Dialer" path="packages/apps/Car/Dialer" revision="f9f9502f24d16b50ed73cda138231eb24e986cfa" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Car/Hvac" path="packages/apps/Car/Hvac" revision="bc01789f44a25d520bfb565bc1d5580d00f4da51" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Car/LatinIME" path="packages/apps/Car/LatinIME" revision="bff4aa7b1dbd95edce83a2d40458932521e5e74b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Car/Launcher" path="packages/apps/Car/Launcher" revision="28ed1a80580dcd04fa6347555d97e0ae169233ae" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Car/LensPicker" path="packages/apps/Car/LensPicker" revision="2572b49141eaf2062e115b9b70bc73399255a804" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Car/LocalMediaPlayer" path="packages/apps/Car/LocalMediaPlayer" revision="96b3cf4b6fcbc7efb0ce70d499f7449cb4d96c5d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Car/Media" path="packages/apps/Car/Media" revision="9a6d02d7b3122e3c0a611d0d4283fdad4615094c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Car/Messenger" path="packages/apps/Car/Messenger" revision="9bc163892cde3e0c0afd0759e48383afcff4b39c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Car/Overview" path="packages/apps/Car/Overview" revision="f9ada7a6db8503ba695d3e577ece5e20d20455b2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Car/Radio" path="packages/apps/Car/Radio" revision="af239cf0bd4b5996b8971ec50db2104b1874eb9d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Car/Settings" path="packages/apps/Car/Settings" revision="1c0cef891a7fd1ced1f87c788846731afc06b27b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Car/Stream" path="packages/apps/Car/Stream" revision="2f778282f7463f406a7557e2ab8ab848a8321ed3" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Car/SystemUpdater" path="packages/apps/Car/SystemUpdater" revision="40e3094b63431fcd47237af14520db29f26f16d9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="p-fs-release,pdk-fs,qcom-LA.UM.7.3-incoming" name="platform/packages/apps/Car/UserManagement" path="packages/apps/Car/UserManagement" revision="9391baedbf4ad645d7c125279a19d7a2b6b285f9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Car/libs" path="packages/apps/Car/libs" revision="602b283cc4c4416503f88e990ed1b73ba7ab801d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/CarrierConfig" path="packages/apps/CarrierConfig" revision="c1d1475cb5959727c984f960d43001add5e745b6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/CellBroadcastReceiver" path="packages/apps/CellBroadcastReceiver" revision="cdda1ba2c1c77b85483c40beb022578fc516eace" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/CertInstaller" path="packages/apps/CertInstaller" revision="f1d1c9f59eff1b50f9079223b3b7367b1a1a11c7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Contacts" path="packages/apps/Contacts" revision="4d7a003d355e351d4c50eff8bf68ed3d2769aec0" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/DeskClock" path="packages/apps/DeskClock" revision="2af89b525a75e98b455528e07050fba95c75726e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/packages/apps/DevCamera" path="packages/apps/DevCamera" revision="90fdbf7460fbd255194455331c6a38a7b8f41dd2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Dialer" path="packages/apps/Dialer" revision="2c9701f7d9dd91b6eb34330980869bc453f59947" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/DocumentsUI" path="packages/apps/DocumentsUI" revision="bdf791d2302eb52fd5c09ab7b59d13abecd3ef5a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Email" path="packages/apps/Email" revision="73014b7d7c3d33cefd16b043fd884cfdb2be329b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/EmergencyInfo" path="packages/apps/EmergencyInfo" revision="a0c25572a5fbcc3d9fd9c3a8a2f6f7efc6b01667" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/ExactCalculator" path="packages/apps/ExactCalculator" revision="f273c297522eb65f3c305d9fe99aa7c8ef6abbdd" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project name="platform/packages/apps/Exchange" path="packages/apps/Exchange" revision="fd4abb641be3a688b5d5e7cc744a72aa2e8d9e21" upstream="refs/heads/android_ui.lnx.3.0.r8-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Gallery" path="packages/apps/Gallery" revision="c15ee0b16c729b123c818b0111c7f5b6abbd1361" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Gallery2" path="packages/apps/Gallery2" revision="54071625c820cab252fe51effa3f5a1d2d2e4eef" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/HTMLViewer" path="packages/apps/HTMLViewer" revision="01917ca67e254e75ec26481e7505392e099f8eaf" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/KeyChain" path="packages/apps/KeyChain" revision="f0950543edf43472d5a4cc76b18975942ff69c0d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Launcher2" path="packages/apps/Launcher2" revision="93c5f64358ef54dc7a23bbce615d9fb35ef6bcab" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" revision="1255e0e1faeac9ba4084a5c769356887828c0d03" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/LegacyCamera" path="packages/apps/LegacyCamera" revision="2d8b5006aa9dc36a740978b1accca0185a09d0d4" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/ManagedProvisioning" path="packages/apps/ManagedProvisioning" revision="6c15a852c27af38ed771c696d81e0cebcc832dc6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Messaging" path="packages/apps/Messaging" revision="fb4dc69ce65d0558472fff33a4d2451cfa00c742" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project name="platform/packages/apps/Mms" path="packages/apps/Mms" revision="1422c558b446a7e790cad61c05ab5f85189dfdbd" upstream="refs/heads/android_ui.lnx.3.0.r8-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Music" path="packages/apps/Music" revision="85490e6b203848b1dd413d8f3ddfed24444e4b74" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/MusicFX" path="packages/apps/MusicFX" revision="e1759342c435f78784baf0c119decda6576ee720" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="apps_nfc,mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Nfc" path="packages/apps/Nfc" revision="7a962eb9d674d232f6b4efcae26d9508937e4a8e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/OneTimeInitializer" path="packages/apps/OneTimeInitializer" revision="7592de2d321004cfe5706bf2083ec3e7b95be6f6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/PackageInstaller" path="packages/apps/PackageInstaller" revision="ec23f182184f85d56198122a635a2f9a3d839476" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/apps/PhoneCommon" path="packages/apps/PhoneCommon" revision="c902606f382bac554f038f64c7297b87603e4621" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Protips" path="packages/apps/Protips" revision="5894fc0597d34ea5ebab4c042f74c564cfd1c5a9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Provision" path="packages/apps/Provision" revision="bad73ad62568ab336ace0b67291b095338cfc1c3" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/QuickSearchBox" path="packages/apps/QuickSearchBox" revision="fccbefd688cd587dea294c90c856edac178e4b37" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/SafetyRegulatoryInfo" path="packages/apps/SafetyRegulatoryInfo" revision="3d36a7b7a37b46d400ee5897dac3362f3ee3cd38" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="apps_se,mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/SecureElement" path="packages/apps/SecureElement" revision="3eb851399daa989870fc9649dce53564144ab5fd" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Settings" path="packages/apps/Settings" revision="1733208e14e27c95f1248b90ffe5683c150b9aec" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/SettingsIntelligence" path="packages/apps/SettingsIntelligence" revision="04063b76ec3231e4eac9f4a2732c2372cda93cfd" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/packages/apps/SmartCardService" path="packages/apps/SmartCardService" revision="29eae320a4bd222b5ff1c092f84f1aebba88d0b7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project name="platform/packages/apps/SnapdragonCamera" path="packages/apps/SnapdragonCamera" revision="dee1ec09298174e6f652a3ddbace18c3316b1d7a" upstream="refs/heads/camera.lnx.3.1.r5-rel"/>
+  <project name="platform/packages/apps/SnapdragonGallery" path="packages/apps/SnapdragonGallery" revision="dcf388153bfdc6b6cd1f75b0c2840ab7852a3cc1" upstream="refs/heads/android_ui.lnx.3.0.r8-rel"/>
+  <project name="platform/packages/apps/SnapdragonMusic" path="packages/apps/SnapdragonMusic" revision="ca143cb45e361b7bbadb9a7692e43cc23ed76599" upstream="refs/heads/android_ui.lnx.3.0.r8-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/SoundRecorder" path="packages/apps/SoundRecorder" revision="e9766515e5d1976a216a8662916b8460eb720a68" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/SpareParts" path="packages/apps/SpareParts" revision="81e684a820030a8290bfbb5d3e3de752751397d6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="apps_stk,mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Stk" path="packages/apps/Stk" revision="bc114deaae00e96db6a194ff3b6ab7d7db9abbfa" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/StorageManager" path="packages/apps/StorageManager" revision="6d5aa25dfa0e472f0882c374ce31db3dbe7cdb38" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/packages/apps/TV" path="packages/apps/TV" revision="d292a3dd09f47e0396262ab1eca218059243f25f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Tag" path="packages/apps/Tag" revision="2416698e0465ae50a70bc62a71834745d763da87" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Terminal" path="packages/apps/Terminal" revision="b1dd20f49f72bc847d8572e6a4c9a3552bf6d9f7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/packages/apps/Test/connectivity" path="packages/apps/Test/connectivity" revision="9faea9ce6818bd1f918a5dcb354da6182d28ac80" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/packages/apps/TimeZoneData" path="packages/apps/TimeZoneData" revision="10c3c9bb74d90f3f77c01ae20c8f764a5c0d61d2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/packages/apps/TimeZoneUpdater" path="packages/apps/TimeZoneUpdater" revision="40995d8fcfea49a7ada22e8c4adc43531a4c442b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/Traceur" path="packages/apps/Traceur" revision="e49755358428b26f4b43b57f0ebcae2bad69eb81" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" revision="087ee10c56517cc3b01136d0e5cd4b4fa19ae0d3" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" revision="e3c40d86badaded889ea7a7c8c221d3ddcbbd4b8" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker" revision="db3426b874c2b6ad67770309b5e26291193a9ace" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/packages/experimental" path="packages/experimental" revision="dce2abdd927523405f046306479e42176df0d875" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" revision="1464df6d50f1d97f9215720d8d9fa47f48937e86" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/inputmethods/OpenWnn" path="packages/inputmethods/OpenWnn" revision="de1751eb5334f05ae3cd1b4bdd93dfc65ce26344" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/providers/ApplicationsProvider" path="packages/providers/ApplicationsProvider" revision="2363ba3adf478a807e7ec6a5fa7ed791d8cc7fbe" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/providers/BlockedNumberProvider" path="packages/providers/BlockedNumberProvider" revision="afab095e2ac7d70bce7e977eb67f4a789f2c1d89" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/providers/BookmarkProvider" path="packages/providers/BookmarkProvider" revision="6961590f9f95282b05a90132d45d586b65974272" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/CalendarProvider" path="packages/providers/CalendarProvider" revision="d3aa405ac45bb08cf7daf7c3fdb3f7b2eb453006" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/providers/CallLogProvider" path="packages/providers/CallLogProvider" revision="b6c2e7583afb3a08cd74bcca4386c0d635cff503" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/ContactsProvider" path="packages/providers/ContactsProvider" revision="3de742a24bb442667898579ff15c7a88b66a75e8" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/DownloadProvider" path="packages/providers/DownloadProvider" revision="2d0c1faac44778757887a0e1dd4bae665cadf3ce" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/MediaProvider" path="packages/providers/MediaProvider" revision="7b211541a28f5cb6dcb073b04afcdba00b54dd28" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/providers/PartnerBookmarksProvider" path="packages/providers/PartnerBookmarksProvider" revision="3e05e45effb47dc8a275e03acb7eb32ded1b817e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/TelephonyProvider" path="packages/providers/TelephonyProvider" revision="f492155aed7f34072dd2b4958d500cfb6ecdfab3" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/providers/TvProvider" path="packages/providers/TvProvider" revision="513c887ec1bfb37e3d585b27fe82fe3a8256be7f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/providers/UserDictionaryProvider" path="packages/providers/UserDictionaryProvider" revision="76966d9dc33acb8c4f0da6fbe3f1fad6865729df" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/screensavers/Basic" path="packages/screensavers/Basic" revision="2aa059d85e0100675e2665f3ae5f60598eee42dc" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/screensavers/PhotoTable" path="packages/screensavers/PhotoTable" revision="bc388308d039f97cf5f58fbd20fa0034ef57a0cd" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/screensavers/WebView" path="packages/screensavers/WebView" revision="37a877d938a378769992c9b619cbb104fbab72f9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/BuiltInPrintService" path="packages/services/BuiltInPrintService" revision="e58dba3ce453a2a187de4be85609067206819b68" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Car" path="packages/services/Car" revision="94d4c431a0d2a376041704f9b63a250a75a47142" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Mms" path="packages/services/Mms" revision="b498edb171996c587a896be5020f2d68547a3807" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/services/NetworkRecommendation" path="packages/services/NetworkRecommendation" revision="9d5f519d01ede690d632929beeb8160f5fd70df8" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="p-fs-release,pdk-cw-fs,pdk-fs,qcom-LA.UM.7.3-incoming" name="platform/packages/services/Rcs" path="packages/services/Rcs" revision="16294256b1b2f2b6c369347122defb1bddcef5ca" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Telecomm" path="packages/services/Telecomm" revision="6cb9d81103e924a9bba67171fc42b9dfebd5b4c8" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/packages/services/Telephony" path="packages/services/Telephony" revision="1a7ad5a6f814cc4c78347c0775205789ad0db0d3" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/packages/wallpapers/LivePicker" path="packages/wallpapers/LivePicker" revision="b65ac0c9c37f4d33dc8ac8322c9b77e676368a33" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/pdk" path="pdk" revision="3d4ac6fadb45864cf1bce638b240ab4f21eb8b69" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="cts,mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/platform_testing" path="platform_testing" revision="973af91a0f13716b8382fba795250341e5bf3a3f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/prebuilts/abi-dumps/ndk" path="prebuilts/abi-dumps/ndk" revision="5d65364297295e4b5e7caa714385a2c30fd591c9" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/prebuilts/abi-dumps/vndk" path="prebuilts/abi-dumps/vndk" revision="90f8669acb30742a88ee3dbcabc2a4ddf92db4a4" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/prebuilts/android-emulator" path="prebuilts/android-emulator" revision="4bd842a22fbdd0b86805cd3fe5f52b43dc46aea2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/build-tools" path="prebuilts/build-tools" revision="3a2f63cee6aec75e2dfbdca4f66f4f648c7c6961" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/checkcolor" path="prebuilts/checkcolor" revision="1be06cb8438d53765dbbebd5abe4e00b7e2417ee" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/checkstyle" path="prebuilts/checkstyle" revision="b5b811b79cc3de8817c15b981270b83e6305cf8f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/clang-tools" path="prebuilts/clang-tools" revision="89f2210159b28c570e33d47330581390c655344b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" revision="602d656c20004480b26aa539f93d266303bafdf7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/prebuilts/deqp" path="prebuilts/deqp" revision="fad64b3c07de70b0109dcc82aed49c8be3d16c73" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/prebuilts/devtools" path="prebuilts/devtools" revision="ae774846ed7bf0861ee1fe1475c810a43d4d8445" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="arm,linux,mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" revision="305ff1a8a4a7a16c71dbd9cbb90100a246926eb6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="arm,linux,pdk,qcom-LA.UM.7.3-incoming,vendor" name="platform/prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" path="prebuilts/gcc/linux-x86/arm/arm-eabi-4.8" revision="26e93f6af47f7bd3a9beb5c102a5f45e19bfa38a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="arm,linux,mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" path="prebuilts/gcc/linux-x86/arm/arm-linux-androideabi-4.9" revision="1ed22c1cf996c264a05affc17fa284ad7c0cb38c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="linux,mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-linux-glibc2.15-4.8" revision="2ccb38af8c940f1feef62ff5986f4bbc5d899e66" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs" name="platform/prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" path="prebuilts/gcc/linux-x86/host/x86_64-w64-mingw32-4.8" revision="e76a9a506d7ad132f107eb2f7c27b6a8ccb68b91" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="linux,mirror-aosp-pie-platform-release,pdk,x86" name="platform/prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" path="prebuilts/gcc/linux-x86/x86/x86_64-linux-android-4.9" revision="9fc96b8b57290766a65ca4021ad4a33fc03b6d85" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/prebuilts/gdb/linux-x86" path="prebuilts/gdb/linux-x86" revision="4adfde8bc82dd39f59e0445588c3e599ada477d2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="linux,mirror-aosp-pie-platform-release,pdk,tradefed" name="platform/prebuilts/go/linux-x86" path="prebuilts/go/linux-x86" revision="07a73a0a113f78777e205b2647e153d8ea609932" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/gradle-plugin" path="prebuilts/gradle-plugin" revision="52c626773599b5968af80c03e9b09109e06335a7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/jdk/jdk8" path="prebuilts/jdk/jdk8" revision="9849e3160f4d6fb699878cb029dcbc6d462e26d6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/jdk/jdk9" path="prebuilts/jdk/jdk9" revision="6d45422516e4f8988d645b023759cf95fa466bf1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/prebuilts/libs/libedit" path="prebuilts/libs/libedit" revision="d32685dba4011664b590b94ad156bc734c2c9bb5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" revision="28ad0c564cc0af06df3935172d6148b085d5b9da" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" revision="3663e31802c077d42afc3d264989ca3f24a721bd" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/misc" path="prebuilts/misc" revision="c1e8c6ce875b43243a6909565f67ca53a4d8c4e2" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/ndk" path="prebuilts/ndk" revision="31684eb7338231708b35dd84d42610fe9a1e6c8b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="linux,mirror-aosp-pie-platform-release,pdk,pdk-cw-fs,pdk-fs" name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" revision="489a03eec1b903740cef0f1368f0172d9e47f67c" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/qemu-kernel" path="prebuilts/qemu-kernel" revision="7ac1467ea29b8d7a9d5d7fb7dbe2d4f7d48dfc61" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/r8" path="prebuilts/r8" revision="aa7b0b5332530fd94f5a052983fee56ee0035bb0" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/sdk" path="prebuilts/sdk" revision="42d951c3160e2898095b6b4bbd8c4871660ad794" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,tools" name="platform/prebuilts/tools" path="prebuilts/tools" revision="5974b240d17fa190cabb7c503379c1936c4acdda" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/prebuilts/vndk/v27" path="prebuilts/vndk/v27" revision="2f3965f49d20307c2e6658e5f761265b3b7ab03b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/sdk" path="sdk" revision="33b15f555af1b85c66d0c908c746b185706dc3ac" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/bt" path="system/bt" revision="2c1b8918ae2b52086fbb1101cb84ad7c617dbeb4" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/ca-certificates" path="system/ca-certificates" revision="40c99a61c93a97365fa8ff05ec8dcbe9075226f6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/chre" path="system/chre" revision="2b47e40554a06a83365c84ead45282111b9942ea" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/connectivity/wificond" path="system/connectivity/wificond" revision="0d165d9033089f44a260fcfe7cf414bcc686ec3d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/connectivity/wifilogd" path="system/connectivity/wifilogd" revision="20cfc76d65b887d9f34917c6a506b6e9cc834d71" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/core" path="system/core" revision="c10ef420846f79ae0c681db39bf54940a0e09c08" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/extras" path="system/extras" revision="eb089e06e8fac1fb53d65cd45f5cccc4ffe723cd" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/gatekeeper" path="system/gatekeeper" revision="0e310c892da7229c57489ebb235dc96d3c5f521a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/hardware/interfaces" path="system/hardware/interfaces" revision="6ba8fd566b965996a606b7b2c0e8d2ee6c3e3926" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/hwservicemanager" path="system/hwservicemanager" revision="a01c1f40701864d482cb04a288d81f706703aa02" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/iot/attestation" path="system/iot/attestation" revision="ef49ac80d9597a0536b4b4040c1280882f6630ac" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/keymaster" path="system/keymaster" revision="8be10ecffc12bfe18338a539d176c5e2a269c096" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/libfmq" path="system/libfmq" revision="c6147492721417ae79663fb736d4ff2027392bb0" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/libhidl" path="system/libhidl" revision="6bfe89089694691022a1abf3cf349de05e7a24b1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/libhwbinder" path="system/libhwbinder" revision="105ebb6531587ed249b69858da5513315875dfc7" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/libufdt" path="system/libufdt" revision="02452b556d71af10c2120cff41826d3d259fb0cb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/libvintf" path="system/libvintf" revision="00c121b485d9dbccd7dbfb1e243605cd12d410da" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/media" path="system/media" revision="ae054fee7629264693c4b01b3f30bf3cda536619" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/netd" path="system/netd" revision="4886014668f354abe3a6e4cd7f61b09e18235b5d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/nfc" path="system/nfc" revision="88857920cdbb5d40aee56155651f7657d52e07a6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/nvram" path="system/nvram" revision="2d958246bbbbe74bfa35b0310b0f0924fdbc5916" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project name="platform/system/qcom" path="vendor/qcom/opensource/softap" revision="a45728fc570e66afda073e00fcb98b74615bcb3f" upstream="refs/heads/wlan-service.lnx.4.0.r7-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/security" path="system/security" revision="7a5c4690824f9a19457faefbc0acda80461e04c1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/sepolicy" path="system/sepolicy" revision="ce8fc6ca686bd47a44479334c774b640725e38a1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/timezone" path="system/timezone" revision="ebfc41aef705e2f03a373c22c3696e1adcbe548d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/tools/aidl" path="system/tools/aidl" revision="39bf72d0664cd53e056252236b22b02b93fc05d6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/tools/hidl" path="system/tools/hidl" revision="8cd87cb75eefa76172c41dc30810a28eb4691b54" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/system/tpm" path="system/tpm" revision="226f4c55c3c4a1a77d4f453caa52582ea9ad0f04" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/update_engine" path="system/update_engine" revision="e1f39a81f3c6c9448d125c3acce03da9409cd317" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/system/vold" path="system/vold" revision="2b8060477629e3cb8bd4b30b6e24baa2aecb2eae" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/test/framework" path="test/framework" revision="b60be97738f1b30bf61ca59a7570d06188c22631" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="p-fs-release,pdk,sts" name="platform/test/sts" path="test/sts" revision="91ba26931867cb5610f30d44fc7e20ebeb359d51" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="cts,mirror-aosp-pie-platform-release,pdk-cw-fs,pdk-fs" name="platform/test/suite_harness" path="test/suite_harness" revision="c8069de4d0ecce705dada9d73e09a879065a0743" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/test/vti/alert" path="test/vti/alert" revision="2270d160e38f0623d708cce36754fe14168dce64" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/test/vti/dashboard" path="test/vti/dashboard" revision="589182a6fef6b10d1ee060e98fa72bab4aa12593" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/test/vti/fuzz_test_serving" path="test/vti/fuzz_test_serving" revision="53fc9e54cf820cf49ebafd757c95ae000c4cad5b" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/test/vti/test_serving" path="test/vti/test_serving" revision="48ec64a90f6d6cf8ffc94ab773b3acd0ba4fc91d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/test/vts" path="test/vts" revision="545b8843b303a4a08bc0a79f25df5bc74397afbb" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/test/vts-testcase/fuzz" path="test/vts-testcase/fuzz" revision="3559f471ad54074047e1a8cdfa4212991c0617c1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/test/vts-testcase/hal" path="test/vts-testcase/hal" revision="c6574c12d0d6792ee1b61e303b0ecd12a332811e" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/test/vts-testcase/hal-trace" path="test/vts-testcase/hal-trace" revision="0cecca8fe157883acca7d57717a089f63a269189" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/test/vts-testcase/kernel" path="test/vts-testcase/kernel" revision="e757cd6ed006173e9805417b82707f641d00c561" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/test/vts-testcase/nbu" path="test/vts-testcase/nbu" revision="6281a955e0888faf606d0523a7148314fee8869f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/test/vts-testcase/performance" path="test/vts-testcase/performance" revision="ba4ce7a8ac3515f4ec5080f968bc3aae70f2f2d5" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/test/vts-testcase/security" path="test/vts-testcase/security" revision="cf04f69ee5980ec94f69074a0dc179a392997e98" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,vts" name="platform/test/vts-testcase/vndk" path="test/vts-testcase/vndk" revision="dd5840dd4aea656b1b3f16cdc215f98d5cf436b0" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,tools,tradefed,vts" name="platform/tools/acloud" path="tools/acloud" revision="d81f7582f760575075828b6332392cfb77c9b6ce" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,tradefed" name="platform/tools/apksig" path="tools/apksig" revision="1c39dc3b83cbf90b35359bbead02c2b2268a14ff" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,tradefed" name="platform/tools/apkzlib" path="tools/apkzlib" revision="3fbef9876b93755ed145c348de93ba36061d77be" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk-fs,tools" name="platform/tools/dexter" path="tools/dexter" revision="3112510b75da4ff7eb009aef30a087b43bb5eabc" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/tools/external/fat32lib" path="tools/external/fat32lib" revision="a004d72da7ab81c796c3aa041b0db2ae08daa5f1" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/tools/external/gradle" path="tools/external/gradle" revision="d3a7dda6ebf25c9e1618dc3b67abf3c9e6e9b9c4" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,nopresubmit,pdk,tradefed" name="platform/tools/loganalysis" path="tools/loganalysis" revision="8cdd237a3d2e4bd60b98fc92e32ed213e595a57f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,tools" name="platform/tools/metalava" path="tools/metalava" revision="42e7e9fd27ef1389dd6c4d583bf9cb7119dbf079" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="adt-infra,cts,developers,mirror-aosp-pie-platform-release,motodev,pdk,tools,tradefed" name="platform/tools/repohooks" path="tools/repohooks" revision="bed96d7e1667067b0a0fda9d22e3926ac8711f75" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform/tools/test/connectivity" path="tools/test/connectivity" revision="2522da07ae39e5de0e44c6af68f89f339ed5dd46" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,tradefed" name="platform/tools/tradefederation" path="tools/tradefederation/core" revision="0784c1fb45c36c80ae6c22badb35214d5982d5aa" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk,tradefed" name="platform/tools/tradefederation/contrib" path="tools/tradefederation/contrib" revision="62223a406e0f751cce49f7a1a4bd0c685fc2b90f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="p-fs-release,pdk,tools,vendor" name="platform/tools/vendor/google_prebuilts/arc" path="tools/vendor/google_prebuilts/arc" revision="e9108f9515417602239c8a1ffcbae703012d3004" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project name="platform/vendor/codeaurora/packages/apps/Dialer" path="vendor/codeaurora/commonsys/packages/apps/Dialer" revision="e6f0ae8951a342f49fad87be2aebd0f685b0a438" upstream="refs/heads/atel-prop.lnx.3.0.r4-rel"/>
+  <project name="platform/vendor/codeaurora/telephony" path="vendor/codeaurora/commonsys/telephony" revision="8081ac3d6be7e46d6a5d35a1a8e019ea093a68a5" upstream="refs/heads/atel-prop.lnx.3.0.r4-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/vendor/google_easel" path="vendor/google_easel" revision="923fb98ae5047f2ad842bc19fb1b60111516970f" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="qcom-LA.UM.7.3-incoming,vendor" name="platform/vendor/google_paintbox" path="vendor/google_paintbox" revision="706b437985a5853cab83f468f552c7a22d413db6" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project name="platform/vendor/nxp/interfaces/opensource/nfc" path="vendor/nxp/opensource/interfaces/nfc" revision="d92305d1b6a47647b91a1b38382a9cd15a952866" upstream="refs/heads/nfc.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/nxp/opensource/external/libnfc-nci" path="vendor/nxp/opensource/commonsys/external/libnfc-nci" revision="4a9549ef9a16c867bd3b352f04e792dec3028124" upstream="refs/heads/nfc.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/nxp/opensource/frameworks" path="vendor/nxp/opensource/commonsys/frameworks" revision="a86cbd7bf540efde1962337acce12a69956002cb" upstream="refs/heads/nfc.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/nxp/opensource/halimpl" path="vendor/nxp/opensource/halimpl" revision="90f0013fbd21f8ceb6e1ebebb5399f6695423b52" upstream="refs/heads/nfc.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/nxp/opensource/hidlimpl" path="vendor/nxp/opensource/hidlimpl" revision="1ec46a868d624d12334450c51344e978c2332566" upstream="refs/heads/nfc.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/nxp/opensource/packages/apps/Nfc" path="vendor/nxp/opensource/commonsys/packages/apps/Nfc" revision="7bd76b8ac326cd4c76d8c5cad2ebb34a3860be6a" upstream="refs/heads/nfc.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/audio" path="vendor/qcom/opensource/audio" revision="63ab9017e37b4198c527dc73f6ecd2ab1f2ec575" upstream="refs/heads/av-aosp-qc.lnx.5.0.r6-rel"/>
+  <project name="platform/vendor/qcom-opensource/bluetooth" path="vendor/qcom/opensource/commonsys/bluetooth" revision="98ff16c9ab85e7f8dd6b5dbc528618d2267bfc5d" upstream="refs/heads/bt-qc.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/bluetooth_ext" path="vendor/qcom/opensource/commonsys/bluetooth_ext" revision="365ac4fde1215a104098e679ee0e924421743235" upstream="refs/heads/bt.lnx.4.0.r8-rel"/>
+  <project name="platform/vendor/qcom-opensource/core-utils" path="vendor/qcom/opensource/core-utils" revision="50e8a3ee3af35d2ce2c8fc6da6a17b5e554f63a2" upstream="refs/heads/qcom-devices.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" revision="a9e0fcd01fc9766fa50517bfc2c47bb67058c767" upstream="refs/heads/qcom-devices.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" path="vendor/qcom/opensource/data-ipa-cfg-mgr" revision="8cb4e8ee222349a8cce3f535240a544f1bafebd6" upstream="refs/heads/data.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/dataservices" path="vendor/qcom/opensource/dataservices" revision="738a58e3bbf834428e31a1a2ffba12ad967fce84" upstream="refs/heads/data.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/dataservices-commonsys" path="vendor/qcom/opensource/commonsys/dataservices" revision="0cb1df40dc3aa65b5f19b904c91924dd1892e524" upstream="refs/heads/data.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/dpm" path="vendor/qcom/opensource/dpm" revision="b22a40fd99fdc221598174784c276534a81b9939" upstream="refs/heads/data.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/dpm-commonsys" path="vendor/qcom/opensource/commonsys/dpm" revision="279fe6c0ae6697744b101e4a8f8b7a1a11846758" upstream="refs/heads/data.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/fm" path="vendor/qcom/opensource/fm" revision="b48f8dad2ad387b774cf0f28b0134b99fb17a275" upstream="refs/heads/fm.lnx.2.9.1.r25-rel"/>
+  <project name="platform/vendor/qcom-opensource/fm-commonsys" path="vendor/qcom/opensource/commonsys/fm" revision="e3bc6675af5811283ea6d6072ef3227a2b96e7a9" upstream="refs/heads/fm.lnx.2.9.1.r25-rel"/>
+  <project name="platform/vendor/qcom-opensource/fst-manager" path="vendor/qcom/opensource/fst-manager" revision="abfab64ad8d2f901306484d66e0c199d9d0fe492" upstream="refs/heads/wigig.lnx.1.9.r23-rel"/>
+  <project name="platform/vendor/qcom-opensource/healthd-ext" path="vendor/qcom/opensource/healthd-ext" revision="0d11297114d8a2cf0f70c78c364d7a737b6a2d5a" upstream="refs/heads/qcom-devices.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/interfaces" path="vendor/qcom/opensource/interfaces" revision="7bd4c76156bbca6fffe9ed47d77969265cd7cabe" upstream="refs/heads/android-vendor-hals.lnx.1.1.r8-rel"/>
+  <project name="platform/vendor/qcom-opensource/location" path="vendor/qcom/opensource/location" revision="2866ad1692eafb87ee8a5e4590d4b8860b1bd497" upstream="refs/heads/location.lnx.3.9.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/mmc-utils" path="vendor/qcom/opensource/mmc-utils" revision="053754b3d2550699c3a70eedbe655268cfeeae6c" upstream="refs/heads/core-technologies.lnx.2.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/power" path="vendor/qcom/opensource/power" revision="58db0ae1606273571db387d779e8e74fe83c7430" upstream="refs/heads/qcom-devices.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/recovery-ext" path="vendor/qcom/opensource/recovery-ext" revision="1109051430b081de37743924723ce33d00beacca" upstream="refs/heads/qcom-devices.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/shortcut-fe" path="shortcut-fe" revision="214ece874ced71fcbeb2fbc0a218b0824be60c34" upstream="refs/heads/data.lnx.4.0.r7-rel"/>
+  <project name="platform-vendor-qcom-opensource-system-bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="aosp-caf" />
+  <project name="platform/vendor/qcom-opensource/thermal-engine" path="vendor/qcom/opensource/thermal-engine" revision="97ae785ae404607728e0c79afb67ea64af906d0a" upstream="refs/heads/qcom-devices.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/time-services" path="vendor/qcom/opensource/time-services" revision="64dbe461c44c8661bd3a5004857337bfccfde2dc" upstream="refs/heads/core-technologies.lnx.2.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/tools" path="vendor/qcom/opensource/tools" revision="dbcab6fa6914e8889da2fbc17474a953992e8f3d" upstream="refs/heads/opensource-tools.lnx.1.0.r36-rel"/>
+  <project name="platform/vendor/qcom-opensource/usb" path="vendor/qcom/opensource/usb" revision="00601fb0559f562ab51e375fa4461007d595abca" upstream="refs/heads/core-technologies.lnx.2.0.r7-rel"/>
+  <project name="platform/vendor/qcom-opensource/wigig" path="vendor/qcom/opensource/wigig" revision="c8ff9b5ca076e7b1a3ab685cce8a4510e487276b" upstream="refs/heads/wigig.lnx.1.9.r23-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/fw-api" path="vendor/qcom/opensource/wlan/fw-api" revision="7600e237ccd8da83f1cec358292c0dc6b96affb5" upstream="refs/heads/wlan-api.lnx.1.1.r46-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qca-wifi-host-cmn" path="vendor/qcom/opensource/wlan/qca-wifi-host-cmn" revision="b5cb3541ac419b492113e7fe422b558a89aa6be3" upstream="refs/heads/wlan-cmn.driver.lnx.1.0.r42-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/qcacld-3.0" path="vendor/qcom/opensource/wlan/qcacld-3.0" revision="99145aab616975406f978c9a20d3d7991b230302" upstream="refs/heads/wlan-cld3.driver.lnx.1.1.r42-rel"/>
+  <project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" path="vendor/qcom/opensource/wlan/utils/sigma-dut" revision="c2f580598e6b7502d6367e6163f9a78e3cd90e2f" upstream="refs/heads/wlan-service.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom/apq8098_latv" path="device/qcom/apq8098_latv" revision="c01b4deb0f1236191ce33a9468d422d81d14730a" upstream="refs/heads/qcom-devices.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom/cobalt" path="device/qcom/msm8998" revision="bcfb7e891409279c9710edc47fcb761469dfc3cb" upstream="refs/heads/qcom-devices.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom/falcon_32" path="device/qcom/sdm660_32" revision="aea5ea58a58ef53e0052063dd90cb0d0f94f141b" upstream="refs/heads/qcom-devices.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom/falcon_64" path="device/qcom/sdm660_64" revision="20fddc3f7b807e3ff83104ad2b9708922f6c88e2" upstream="refs/heads/qcom-devices.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" revision="5f6964d3d104ae380f8ce48487a9901a0838dfc7" upstream="refs/heads/qcom-devices.lnx.4.0.r7-rel"/>
+  <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" revision="4c7166b9fe44d58f31eab52d8ca9d2f3287d1c6c" upstream="refs/heads/wlan-service.lnx.4.0.r7-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="toolchain/binutils" revision="3ccc3ec75f2f1f55af1e4966fd6a22c34af13b3d" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="toolchain/pgo-profiles" revision="1d2b83d41cb9ddf480b390d94b14abe041db043a" upstream="refs/heads/ks-aosp.lnx.1.0.r3-rel"/>
 </manifest>
