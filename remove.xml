@@ -24,7 +24,6 @@
   <remove-project name="device/google/vrservices" />
   <remove-project name="device/google/wahoo" />
   <remove-project name="device/sample" />
-  <remove-project name="kernel/msm-4.9" />
 
   <remove-project name="device/qcom/common" />
   <remove-project name="platform/build" />
