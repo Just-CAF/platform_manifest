@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
   <remote fetch="https://github.com/aosp-caf-cheeseburger/" name="aosp-caf" revision="p" />
+  <remote name="github" fetch="https://github.com" />
+  <remote name="github-ssh" fetch="ssh://git@github.com" />
 
   <include name="LA.UM.7.4.r1-05500-8x98.0.xml" />
   <include name="remove.xml" />
@@ -22,12 +24,16 @@
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
-  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform-frameworks-hardware-interfaces" path="frameworks/hardware/interfaces" remote="aosp-caf" />
   <project name="platform-vendor-qcom-opensource-commonsys-system-bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="aosp-caf" />
-
+  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform-hardware-interfaces" path="hardware/interfaces" remote="aosp-caf" />
+  <project name="platform-hardware-qcom-camera" path="hardware/qcom/camera" remote="aosp-caf" />
+  
   <!-- device tree, kernel -->
   <project name="platform-kernel-oneplus-msm8998" path="kernel/oneplus/msm8998" remote="aosp-caf" revision="lineage-16.0" />
   <project name="platform-device-oneplus-msm8998-common" path="device/oneplus/msm8998-common" remote="aosp-caf" />
   <project name="platform-device-oneplus-cheeseburger" path="device/oneplus/cheeseburger" remote="aosp-caf" />
   <project name="platform-vendor-oneplus-op5" path="vendor/oneplus" remote="aosp-caf" />
+  <project name="platform-vendor-custom" path="vendor/custom" remote="aosp-caf" />
+  
+  <project name="ThankYouMario/proprietary_vendor_qcom_sdclang-6.0_linux-x86" path="vendor/qcom/sdclang-6.0/linux-x86" remote="github" revision="refs/heads/pie" />
 </manifest>

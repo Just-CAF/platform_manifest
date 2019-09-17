@@ -28,6 +28,7 @@
   <remove-project name="device/qcom/common" />
 <!--  <remove-project name="platform/build" />-->
   <remove-project name="platform/build/soong" />
-  <remove-project name="platform/frameworks/hardware/interfaces" />
+  <remove-project name="platform/hardware/interfaces" />
+  <remove-project name="platform/hardware/qcom/camera" />
   <remove-project name="platform/vendor/qcom-opensource/system/bt" />
 </manifest>
