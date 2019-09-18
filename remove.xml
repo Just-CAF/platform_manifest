@@ -25,8 +25,7 @@
   <remove-project name="device/google/wahoo" />
   <remove-project name="device/sample" />
 
-  <remove-project name="device/qcom/common" />
-<!--  <remove-project name="platform/build" />-->
+  <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/hardware/interfaces" />
   <remove-project name="platform/hardware/qcom/camera" />
