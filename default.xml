@@ -32,7 +32,7 @@
 
   
   <!-- device tree, kernel -->
-  <project name="platform-kernel-oneplus-msm8998" path="kernel/oneplus/msm8998" remote="aosp-caf" revision="lineage-16.0" />
+  <!--<project name="platform-kernel-oneplus-msm8998" path="kernel/oneplus/msm8998" remote="aosp-caf" revision="lineage-16.0" />-->
   <project name="platform-device-oneplus-msm8998-common" path="device/oneplus/msm8998-common" remote="aosp-caf" />
   <project name="platform-device-oneplus-cheeseburger" path="device/oneplus/cheeseburger" remote="aosp-caf" />
   <project name="platform-vendor-oneplus-op5" path="vendor/oneplus" remote="aosp-caf" />
