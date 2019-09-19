@@ -28,9 +28,11 @@
   <project groups="mirror-aosp-pie-platform-release,pdk" name="platform-hardware-interfaces" path="hardware/interfaces" remote="aosp-caf" />
   <project name="platform-hardware-qcom-camera" path="hardware/qcom/camera" remote="aosp-caf" />
   <project name="platform-external-ant-wireless-ant_native" path="external/ant-wireless/ant_native" remote="aosp-caf" />
+  <project name="platform-hardware-qcom-media" path="hardware/qcom/media" remote="aosp-caf" />
+
   
   <!-- device tree, kernel -->
-  <!--<<project name="platform-kernel-oneplus-msm8998" path="kernel/oneplus/msm8998" remote="aosp-caf" revision="lineage-16.0" />-->
+  <project name="platform-kernel-oneplus-msm8998" path="kernel/oneplus/msm8998" remote="aosp-caf" revision="lineage-16.0" />
   <project name="platform-device-oneplus-msm8998-common" path="device/oneplus/msm8998-common" remote="aosp-caf" />
   <project name="platform-device-oneplus-cheeseburger" path="device/oneplus/cheeseburger" remote="aosp-caf" />
   <project name="platform-vendor-oneplus-op5" path="vendor/oneplus" remote="aosp-caf" />
