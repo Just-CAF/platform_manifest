@@ -30,6 +30,7 @@
   <project name="platform-external-ant-wireless-ant_native" path="external/ant-wireless/ant_native" remote="aosp-caf" />
   <project name="platform-hardware-qcom-media" path="hardware/qcom/media" remote="aosp-caf" />
   <project name="platform-hardware-qcom-bt" path="hardware/qcom/bt" remote="aosp-caf" />
+  <project name="platform-vendor-qcom-opensource-commonsys-cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" remote="aosp-caf" />
     
   <!-- device tree, kernel -->
   <!--<project name="platform-kernel-oneplus-msm8998" path="kernel/oneplus/msm8998" remote="aosp-caf" revision="lineage-16.0" />-->
