@@ -31,7 +31,10 @@
   <project name="platform-hardware-qcom-media" path="hardware/qcom/media" remote="aosp-caf" />
   <project name="platform-hardware-qcom-bt" path="hardware/qcom/bt" remote="aosp-caf" />
   <project name="platform-vendor-qcom-opensource-commonsys-cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" remote="aosp-caf" />
-    
+  <project name="platform-hardware-libhardware" path="hardware/libhardware" remote="aosp-caf" />
+  <project name="platform-hardware-qcom-audio" path="hardware/qcom/audio" remote="aosp-caf" />
+  <project name="platform-hardware-qcom-camera" paths="hardware/qcom/camera" remote="aosp-caf" />    
+
   <!-- device tree, kernel -->
   <!--<project name="platform-kernel-oneplus-msm8998" path="kernel/oneplus/msm8998" remote="aosp-caf" revision="lineage-16.0" />-->
   <project name="platform-device-oneplus-msm8998-common" path="device/oneplus/msm8998-common" remote="aosp-caf" />
