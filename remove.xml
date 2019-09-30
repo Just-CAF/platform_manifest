@@ -23,7 +23,6 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/hardware/interfaces" />
-  <remove-project name="platform/hardware/qcom/camera" />
   <remove-project name="platform/vendor/qcom-opensource/system/bt" />
   <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/hardware/qcom/bt" />
