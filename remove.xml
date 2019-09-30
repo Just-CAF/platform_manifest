@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!--<manifest>
-  <remove-project name="device/generic/goldfish" />
+<manifest>
+  <!--<remove-project name="device/generic/goldfish" />
   <remove-project name="device/generic/goldfish-opengl" />
   <remove-project name="device/generic/mini-emulator-arm64" />
   <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
