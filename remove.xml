@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<manifest>
+<!--<manifest>
   <remove-project name="device/generic/goldfish" />
   <remove-project name="device/generic/goldfish-opengl" />
   <remove-project name="device/generic/mini-emulator-arm64" />
@@ -35,7 +35,7 @@
   <remove-project name="platform/vendor/qcom-opensource/core-utils" />
   <remove-project name="platform/external/selinux" />
   <remove-project name="device/qcom/sepolicy" />
-  
+-->  
   <!-- include in device tree -->
   <remove-project name="platform/vendor/qcom-opensource/location" />
   <remove-project name="platform/external/ant-wireless/ant_native" />
