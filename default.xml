@@ -7,11 +7,11 @@
   <include name="LA.UM.8.4.r1-04200-8x98.0.xml" />
   <include name="remove.xml" />
 
-<!--  <project name="AOSP-CAF/device_qcom_common" path="device/qcom/common" remote="github" revision="o-mr1" >-->
+  <project name="platform-device-qcom-common" path="device/qcom/common" remote="aosp-caf">
     <!--<copyfile dest="build.sh" src="build.sh"/>-->
     <!--<linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>-->
-<!--  </project>
-  <project groups="mirror-aosp-pie-platform-release,pdk" name="platform-build" path="build/make" remote="aosp-caf">
+  </project>
+  <project name="platform-build" path="build/make" remote="aosp-caf">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
@@ -20,11 +20,11 @@
     <linkfile dest="build/target" src="target"/>
     <linkfile dest="build/tools" src="tools"/>
   </project>
-  <project groups="mirror-aosp-pie-platform-release,pdk,tradefed" name="platform-build-soong" path="build/soong" remote="aosp-caf">
+  <project name="platform-build-soong" path="build/soong" remote="aosp-caf">
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
-  <project name="platform-vendor-qcom-opensource-commonsys-system-bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="aosp-caf" />
+  <!--<project name="platform-vendor-qcom-opensource-commonsys-system-bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="aosp-caf" />
   <project name="platform-hardware-interfaces" path="hardware/interfaces" remote="aosp-caf" />
   <project name="platform-hardware-qcom-camera" path="hardware/qcom/camera" remote="aosp-caf" />
   <project name="platform-external-ant-wireless-ant_native" path="external/ant-wireless/ant_native" remote="aosp-caf" />
