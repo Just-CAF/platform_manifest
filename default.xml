@@ -7,6 +7,7 @@
   <include name="LA.UM.8.4.r1-04200-8x98.0.xml" />
   <include name="remove.xml" />
 
+  <project name="LineageOS/android_prebuilts_tools-lineage" path="prebuilts/tools-lineage" remote="github" revision="lineage-17.0" />
   <project name="platform-device-qcom-common" path="device/qcom/common" remote="aosp-caf">
     <!--<copyfile dest="build.sh" src="build.sh"/>-->
     <!--<linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>-->
