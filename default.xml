@@ -25,22 +25,22 @@
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
-  <!--<project name="platform-vendor-qcom-opensource-commonsys-system-bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="aosp-caf" />
+  <project name="platform-external-libunwind_llvm" path="external/libunwind_llvm" remote="aosp-caf" />
+  <!--<project name="platform-vendor-qcom-opensource-commonsys-system-bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="aosp-caf" />-->
   <project name="platform-hardware-interfaces" path="hardware/interfaces" remote="aosp-caf" />
-  <project name="platform-hardware-qcom-camera" path="hardware/qcom/camera" remote="aosp-caf" />
-  <project name="platform-external-ant-wireless-ant_native" path="external/ant-wireless/ant_native" remote="aosp-caf" />
+  <!--<project name="platform-external-ant-wireless-ant_native" path="external/ant-wireless/ant_native" remote="aosp-caf" />-->
   <project name="platform-hardware-qcom-media" path="hardware/qcom/media" remote="aosp-caf" />
-  <project name="platform-hardware-qcom-bt" path="hardware/qcom/bt" remote="aosp-caf" />
+  <!--<project name="platform-hardware-qcom-bt" path="hardware/qcom/bt" remote="aosp-caf" />-->
   <project name="platform-vendor-qcom-opensource-commonsys-cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" remote="aosp-caf" />
   <project name="platform-hardware-libhardware" path="hardware/libhardware" remote="aosp-caf" />
   <project name="platform-hardware-qcom-audio" path="hardware/qcom/audio" remote="aosp-caf" />
   <project name="platform-hardware-qcom-camera" paths="hardware/qcom/camera" remote="aosp-caf" />    
-  <project name="platform-packages-apps-settings" path="packages/apps/Settings" remote="aosp-caf" />
+  <!--<project name="platform-packages-apps-settings" path="packages/apps/Settings" remote="aosp-caf" />-->
   <project name="platform-bionic" path="bionic" remote="aosp-caf" />
-  <project name="platform-vendor-qcom-opensource-core-utils" path="vendor/qcom/opensource/core-utils" remote="aosp-caf" />
+  <!--<project name="platform-vendor-qcom-opensource-core-utils" path="vendor/qcom/opensource/core-utils" remote="aosp-caf" />-->
   <project name="platform-external-selinux" path="external/selinux" remote="aosp-caf" />
-  <project name="platform-device-qcom-sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />
--->   
+  <!--<project name="platform-device-qcom-sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />-->
+  <project name="platform-frameworks-av" path="frameworks/av" remote="aosp-caf" />
 
   <!-- device tree, kernel -->
   <!--<project name="platform-kernel-oneplus-msm8998" path="kernel/oneplus/msm8998" remote="aosp-caf" revision="lineage-16.0" />-->
