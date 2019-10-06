@@ -29,7 +29,7 @@
   <!--<remove-project name="platform/packages/apps/Settings" />-->
   <!--<remove-project name="platform/vendor/qcom-opensource/core-utils" />-->
   <remove-project name="platform/external/selinux" />
-  <!--<remove-project name="device/qcom/sepolicy" />-->
+  <remove-project name="device/qcom/sepolicy" />
   <remove-project name="platform/system/core" />
 
   <!-- include in device tree -->
