@@ -1,11 +1,26 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://github.com/aosp-caf-cheeseburger/" name="aosp-caf" revision="q" />
+  <remote fetch="https://github.com/aosp-caf-cheeseburger/" 
+	  name="aosp-caf" 
+	  revision="q" />
+  
+  <remote name="lineage" 
+          fetch="https://github.com/LineageOS" 
+          revision="refs/heads/lineage-17.0" />
+
   <remote name="github" fetch="https://github.com" />
   <remote name="github-ssh" fetch="ssh://git@github.com" />
 
   <include name="codeaurora.xml" />
   <include name="remove.xml" />
+
+  <!-- LINEAGEOS ADDITIONS -->
+  <project name="android_external_ant-wireless_ant_native" path="external/ant-wireless/ant_native" remote="lineage" />
+  <project name="android_external_ant-wireless_ant_service" path="external/ant-wireless/ant_service" remote="lineage" />
+  <project name="android_external_ant-wireless_antradio-library" path="external/ant-wireless/antradio-library" remote="lineage" />
+  <project name="android_external_exfat" path="external/exfat" remote="lineage" />
+  <project name="android_external_ntfs-3g" path="external/ntfs-3g" remote="lineage" />
+  <project name="android_prebuilts_tools-lineage" path="prebuilts/tools-lineage" remote="lineage" clone-depth="1" />
 
   <!--<project name="LineageOS/android_prebuilts_tools-lineage" path="prebuilts/tools-lineage" remote="github" revision="lineage-17.0" />
   <project name="platform-device-qcom-common" path="device/qcom/common" remote="aosp-caf">-->
