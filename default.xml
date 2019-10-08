@@ -22,11 +22,10 @@
   <project name="android_external_ntfs-3g" path="external/ntfs-3g" remote="lineage" />
   <project name="android_prebuilts_tools-lineage" path="prebuilts/tools-lineage" remote="lineage" clone-depth="1" />
 
-  <!--<project name="LineageOS/android_prebuilts_tools-lineage" path="prebuilts/tools-lineage" remote="github" revision="lineage-17.0" />
-  <project name="platform-device-qcom-common" path="device/qcom/common" remote="aosp-caf">-->
+  <!--<project name="platform-device-qcom-common" path="device/qcom/common" remote="aosp-caf">-->
     <!--<copyfile dest="build.sh" src="build.sh"/>-->
     <!--<linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>-->
-  <!--</project>
+  <!--</project>-->
   <project name="platform-build" path="build/make" remote="aosp-caf">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
@@ -40,7 +39,7 @@
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
-  <project name="platform-external-libunwind_llvm" path="external/libunwind_llvm" remote="aosp-caf" />
+  <!--<project name="platform-external-libunwind_llvm" path="external/libunwind_llvm" remote="aosp-caf" />
   <project name="platform-vendor-qcom-opensource-commonsys-system-bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="aosp-caf" />
   <project name="platform-hardware-interfaces" path="hardware/interfaces" remote="aosp-caf" />
   <project name="platform-external-ant-wireless-ant_native" path="external/ant-wireless/ant_native" remote="aosp-caf" />
