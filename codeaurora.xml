@@ -60,7 +60,6 @@
     <linkfile dest="Android.bp" src="root.bp" />
     <linkfile dest="bootstrap.bash" src="bootstrap.bash" />
   </project>
-  <project name="platform/compatibility/cdd" path="compatibility/cdd" />
   <project name="platform/cts" path="cts" />
   <project name="platform/dalvik" path="dalvik" />
   <project name="platform/developers/build" path="developers/build" />
