@@ -44,20 +44,21 @@
   <project name="platform-vendor-qcom-opensource-commonsys-system-bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="aosp-caf" />
   <project name="platform-hardware-interfaces" path="hardware/interfaces" remote="aosp-caf" />
   <project name="platform-hardware-qcom-bt" path="hardware/qcom/bt" remote="aosp-caf" />
-  <project name="platform-vendor-qcom-opensource-commonsys-cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" remote="aosp-caf" />
+  <project name="platform-vendor-qcom-opensource-commonsys-cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" remote="aosp-caf" />-->
   <project name="platform-hardware-libhardware" path="hardware/libhardware" remote="aosp-caf" />
-  <project name="platform-packages-apps-settings" path="packages/apps/Settings" remote="aosp-caf" />
+  <!--<project name="platform-packages-apps-settings" path="packages/apps/Settings" remote="aosp-caf" />-->
   <project name="platform-bionic" path="bionic" remote="aosp-caf" />
-  <project name="platform-vendor-qcom-opensource-core-utils" path="vendor/qcom/opensource/core-utils" remote="aosp-caf" />
   <project name="platform-external-selinux" path="external/selinux" remote="aosp-caf" />
-  <project name="platform-device-qcom-sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />
-  <project name="platform-frameworks-av" path="frameworks/av" remote="aosp-caf" />-->
+  <!--<project name="platform-device-qcom-sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />-->
+  <project name="platform-frameworks-av" path="frameworks/av" remote="aosp-caf" />
   <project name="platform-system-core" path="system/core" remote="aosp-caf" />
   <project name="platform-vendor-qcom-opensource-commonsys-cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" remote="aosp-caf" />
   <project name="platform-vendor-qcom-opensource-interfaces" path="vendor/qcom/opensource/interfaces" remote="aosp-caf" />
 
+  <project name="platform-manifest" path="manifest" remote="aosp-caf" revision="q-new" />
+
   <!-- device tree, kernel -->
-  <project name="platform-kernel-oneplus-msm8998" path="kernel/oneplus/msm8998" remote="lineage" revision="lineage-17.0" />
+  <project name="android_kernel_oneplus_msm8998" path="kernel/oneplus/msm8998" remote="lineage" revision="lineage-17.0" />
   <project name="platform-device-oneplus-msm8998-common" path="device/oneplus/msm8998-common" remote="aosp-caf" />
   <project name="platform-device-oneplus-cheeseburger" path="device/oneplus/cheeseburger" remote="aosp-caf" />
   <project name="platform-vendor-oneplus-op5" path="vendor/oneplus" remote="aosp-caf" />
