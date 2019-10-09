@@ -23,10 +23,6 @@
   <project name="android_prebuilts_tools-lineage" path="prebuilts/tools-lineage" remote="lineage" clone-depth="1" />
 
   <!-- JUST CAF ADDITIONS -->
-  <!--<project name="platform-device-qcom-common" path="device/qcom/common" remote="aosp-caf">-->
-    <!--<copyfile dest="build.sh" src="build.sh"/>-->
-    <!--<linkfile dest="vendor/qcom/build/tasks/generate_extra_images.mk" src="generate_extra_images.mk"/>-->
-  <!--</project>-->
   <project name="platform-build" path="build/make" remote="aosp-caf">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
@@ -40,11 +36,7 @@
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
-  <!--<project name="platform-external-libunwind_llvm" path="external/libunwind_llvm" remote="aosp-caf" />
-  <project name="platform-vendor-qcom-opensource-commonsys-system-bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="aosp-caf" />
-  <project name="platform-hardware-interfaces" path="hardware/interfaces" remote="aosp-caf" />
-  <project name="platform-hardware-qcom-bt" path="hardware/qcom/bt" remote="aosp-caf" />
-  <project name="platform-vendor-qcom-opensource-commonsys-cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" remote="aosp-caf" />-->
+  <project name="platform-external-libunwind_llvm" path="external/libunwind_llvm" remote="aosp-caf" />
   <project name="platform-hardware-libhardware" path="hardware/libhardware" remote="aosp-caf" />
   <!--<project name="platform-packages-apps-settings" path="packages/apps/Settings" remote="aosp-caf" />-->
   <project name="platform-bionic" path="bionic" remote="aosp-caf" />
@@ -54,6 +46,8 @@
   <project name="platform-system-core" path="system/core" remote="aosp-caf" />
   <project name="platform-vendor-qcom-opensource-commonsys-cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" remote="aosp-caf" />
   <project name="platform-vendor-qcom-opensource-interfaces" path="vendor/qcom/opensource/interfaces" remote="aosp-caf" />
+  <project name="platform-hardware-qcom-audio" path="hardware/qcom/audio" remote="aosp-caf" />
+  <project name="platform-hardware-qcom-media" path="hardware/qcom/media" remote="aosp-caf" />
 
   <project name="platform-manifest" path="manifest" remote="aosp-caf" revision="q-new" />
 
