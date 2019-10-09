@@ -41,7 +41,7 @@
   <!--<project name="platform-packages-apps-settings" path="packages/apps/Settings" remote="aosp-caf" />-->
   <project name="platform-bionic" path="bionic" remote="aosp-caf" />
   <project name="platform-external-selinux" path="external/selinux" remote="aosp-caf" />
-  <!--<project name="platform-device-qcom-sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />-->
+  <project name="platform-device-qcom-sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />
   <project name="platform-frameworks-av" path="frameworks/av" remote="aosp-caf" />
   <project name="platform-system-core" path="system/core" remote="aosp-caf" />
   <project name="platform-vendor-qcom-opensource-commonsys-cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" remote="aosp-caf" />
