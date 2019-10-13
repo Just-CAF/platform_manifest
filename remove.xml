@@ -45,7 +45,7 @@
   <remove-project name="platform/vendor/qcom/steppe" />
   <remove-project name="platform/vendor/qcom/thulium" />
   <remove-project name="platform/vendor/qcom/wlan" />  
-
+  <remote-project name="platform/vendor/qcom-opensource/power" />
 
   <!-- AOSP-CAF-CHEESEBURGER ADDITIONS -->
   <remove-project name="platform/build" />
