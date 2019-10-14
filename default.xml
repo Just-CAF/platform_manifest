@@ -21,6 +21,7 @@
   <project name="android_external_exfat" path="external/exfat" remote="lineage" />
   <project name="android_external_ntfs-3g" path="external/ntfs-3g" remote="lineage" />
   <project name="android_prebuilts_tools-lineage" path="prebuilts/tools-lineage" remote="lineage" clone-depth="1" />
+  <project name="android_hardware_ril" path="hardware/ril" remote="lineage" />
 
   <!-- JUST CAF ADDITIONS -->
   <project name="platform-build" path="build/make" remote="aosp-caf">
@@ -38,7 +39,7 @@
   </project>
   <project name="platform-external-libunwind_llvm" path="external/libunwind_llvm" remote="aosp-caf" />
   <project name="platform-hardware-libhardware" path="hardware/libhardware" remote="aosp-caf" />
-  <!--<project name="platform-packages-apps-settings" path="packages/apps/Settings" remote="aosp-caf" />-->
+  <project name="platform-packages-apps-settings" path="packages/apps/Settings" remote="aosp-caf" />
   <project name="platform-bionic" path="bionic" remote="aosp-caf" />
   <project name="platform-external-selinux" path="external/selinux" remote="aosp-caf" />
   <project name="platform-device-qcom-sepolicy" path="device/qcom/sepolicy" remote="aosp-caf" />
