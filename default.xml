@@ -52,6 +52,7 @@
   <project name="platform-hardware-qcom-power" path="hardware/qcom/power" remote="aosp-caf" />
 
   <project name="platform-manifest" path="manifest" remote="aosp-caf" revision="q" />
+  <project name="platform-scripts" path="scripts" remote="aosp-caf" />
 
   <!-- device tree, kernel -->
   <project name="android_kernel_oneplus_msm8998" path="kernel/oneplus/msm8998" remote="lineage" revision="lineage-17.0" />
