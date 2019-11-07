@@ -56,6 +56,7 @@
   <remove-project name="platform/system/core" />  
   <remove-project name="platform/vendor/qcom-opensource/interfaces" />
   <remove-project name="platform/frameworks/av" />
+  <remove-project name="platform/frameworks/opt/telephony" />
   <remove-project name="platform/hardware/qcom/media" />
   <remove-project name="platform/hardware/qcom/gps" />
   <remove-project name="platform/hardware/qcom/audio" />
