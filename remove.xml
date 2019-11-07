@@ -71,4 +71,5 @@
   <remove-project name="platform/hardware/ril" />
   <remove-project name="platform/packages/services/telephony" />
   <remove-project name="platform/frameworks/base" />
+  <remove-project name="platform/vendor/codeaurora/commonsys/telephony" />
 </manifest>

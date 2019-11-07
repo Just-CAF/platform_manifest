@@ -49,6 +49,7 @@
   <project name="platform-system-core" path="system/core" remote="aosp-caf" />
   <project name="platform-vendor-qcom-opensource-commonsys-cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" remote="aosp-caf" />
   <project name="platform-vendor-qcom-opensource-interfaces" path="vendor/qcom/opensource/interfaces" remote="aosp-caf" />
+  <project name="platform-vendor-codeaurora-commonsys-telephony" path="vendor/codeaurora/commonsys/telephony" remote="aosp-caf" />
   <project name="platform-hardware-qcom-audio" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="aosp-caf" />
   <project name="platform-hardware-qcom-media" path="hardware/qcom/media" remote="aosp-caf" />
   <project name="platform-hardware-qcom-power" path="hardware/qcom/power" remote="aosp-caf" />
