@@ -47,6 +47,7 @@
   <project name="platform-frameworks-av" path="frameworks/av" remote="aosp-caf" />
   <project name="platform-frameworks-base" path="frameworks/base" remote="aosp-caf" />
   <project name="platform-frameworks-opt-telephony" path="frameworks/opt/telephony" remote="aosp-caf" />
+  <project name="platform-frameworks-opt-net-wifi" path="frameworks/opt/net/wifi" remote="aosp-caf" />
   <project name="platform-system-core" path="system/core" remote="aosp-caf" />
   <project name="platform-vendor-qcom-opensource-commonsys-cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" remote="aosp-caf" />
   <project name="platform-vendor-qcom-opensource-interfaces" path="vendor/qcom/opensource/interfaces" remote="aosp-caf" />
