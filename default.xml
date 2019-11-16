@@ -55,6 +55,7 @@
   <project name="platform-hardware-qcom-audio" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="aosp-caf" />
   <project name="platform-hardware-qcom-media" path="hardware/qcom/media" remote="aosp-caf" />
   <project name="platform-hardware-qcom-power" path="hardware/qcom/power" remote="aosp-caf" />
+  <project name="platform-packages-apps-Messaging" path="packages/apps/Messaging" remote="aosp-caf" />
 
   <project name="platform-manifest" path="manifest" remote="aosp-caf" revision="q" />
   <project name="platform-scripts" path="scripts" remote="aosp-caf" />

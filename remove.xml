@@ -49,7 +49,7 @@
   <remove-project name="platform/vendor/qcom-opensource/usb" />
   <remove-project name="platform/packages/apps/SnapdragonCamera" />
 
-  <!-- AOSP-CAF-CHEESEBURGER ADDITIONS -->
+  <!-- JUST-CAF ADDITIONS -->
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
@@ -74,4 +74,5 @@
   <remove-project name="platform/packages/services/telephony" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/vendor/codeaurora/commonsys/telephony" />
+  <remove-project name="platform/packages/apps/Messaging" />
 </manifest>
