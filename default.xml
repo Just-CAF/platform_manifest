@@ -62,7 +62,7 @@
   <project name="platform-scripts" path="scripts" remote="aosp-caf" />
 
   <!-- device tree, kernel -->
-  <project name="android_kernel_oneplus_msm8998" path="kernel/oneplus/msm8998" remote="lineage" revision="lineage-17.0" />
+  <project name="crdroidandroid/android_kernel_oneplus_msm8998" path="kernel/oneplus/msm8998" remote="github" revision="10.0" />
   <project name="platform-device-oneplus-msm8998-common" path="device/oneplus/msm8998-common" remote="aosp-caf" />
   <project name="platform-device-oneplus-cheeseburger" path="device/oneplus/cheeseburger" remote="aosp-caf" />
   <project name="platform-device-oneplus-dumpling" path="device/oneplus/dumpling" remote="aosp-caf" />
