@@ -54,7 +54,6 @@
   <project name="platform-vendor-codeaurora-telephony" path="vendor/codeaurora/commonsys/telephony" remote="aosp-caf" />
   <project name="platform-hardware-qcom-audio" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="aosp-caf" />
   <project name="platform-hardware-qcom-media" path="hardware/qcom/media" remote="aosp-caf" />
-  <project name="platform-hardware-qcom-power" path="hardware/qcom/power" remote="aosp-caf" />
   <project name="platform-packages-apps-Messaging" path="packages/apps/Messaging" remote="aosp-caf" />
   <project name="platform-prebuilts-clang-host-linux-x86-clang-5900059" path="prebuilts/clang/host/linux-x86/clang-5900059" remote="aosp-caf" />
 
