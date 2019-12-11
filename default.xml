@@ -45,7 +45,7 @@
   <project name="platform-external-selinux" path="external/selinux" remote="aosp-caf" />
   <project name="platform-device-qcom-sepolicy-legacy-um" path="device/qcom/sepolicy-legacy-um" remote="aosp-caf" />
   <project name="platform-frameworks-av" path="frameworks/av" remote="aosp-caf" />
-  <project name="platform-frameworks-base" path="frameworks/base" remote="aosp-caf" />
+  <project name="platform-frameworks-base" path="frameworks/base" remote="aosp-caf" revision="custom" />
   <project name="platform-frameworks-opt-telephony" path="frameworks/opt/telephony" remote="aosp-caf" />
   <project name="platform-frameworks-opt-net-wifi" path="frameworks/opt/net/wifi" remote="aosp-caf" />
   <project name="platform-system-core" path="system/core" remote="aosp-caf" />
@@ -54,7 +54,8 @@
   <project name="platform-vendor-codeaurora-telephony" path="vendor/codeaurora/commonsys/telephony" remote="aosp-caf" />
   <project name="platform-hardware-qcom-audio" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="aosp-caf" />
   <project name="platform-hardware-qcom-media" path="hardware/qcom/media" remote="aosp-caf" />
-  <project name="platform-packages-apps-Messaging" path="packages/apps/Messaging" remote="aosp-caf" />
+  <project name="platform-packages-apps-Messaging" path="packages/apps/Messaging" remote="aosp-caf" revision="custom" />
+  <project name="platform-packages-apps-Dialer" path="packages/apps/Dialer" remote="aosp-caf" revision="custom" />
   <project name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6032204" revision="10.0" path="prebuilts/clang/host/linux-x86/clang-6032204" remote="github" />
 
   <project name="platform-manifest" path="manifest" remote="aosp-caf" revision="q" />
@@ -66,5 +67,5 @@
   <project name="platform-device-oneplus-cheeseburger" path="device/oneplus/cheeseburger" remote="aosp-caf" />
   <project name="platform-device-oneplus-dumpling" path="device/oneplus/dumpling" remote="aosp-caf" />
   <project name="platform-vendor-oneplus-msm8998" path="vendor/oneplus" remote="aosp-caf" />
-  <project name="platform-vendor-custom" path="vendor/custom" remote="aosp-caf" />
+  <project name="platform-vendor-custom" path="vendor/custom" remote="aosp-caf" revision="custom" />
 </manifest>
