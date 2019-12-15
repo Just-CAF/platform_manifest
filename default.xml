@@ -59,7 +59,7 @@
   <project name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6032204" revision="10.0" path="prebuilts/clang/host/linux-x86/clang-6032204" remote="github" />
 
   <project name="platform-manifest" path="manifest" remote="aosp-caf" revision="q" />
-  <project name="platform-scripts" path="scripts" remote="aosp-caf" />
+  <project name="platform-scripts" path="scripts" revision="custom" remote="aosp-caf" />
 
   <!-- device tree, kernel -->
   <project name="crdroidandroid/android_kernel_oneplus_msm8998" path="kernel/oneplus/msm8998" remote="github" revision="10.0" />
