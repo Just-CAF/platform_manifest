@@ -24,7 +24,7 @@
   <project name="android_hardware_ril" path="hardware/ril" remote="lineage" />
 
   <!-- JUST CAF ADDITIONS -->
-  <project name="platform-build" path="build/make" remote="aosp-caf">
+  <project name="platform-build" path="build/make" revision="custom" remote="aosp-caf">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
