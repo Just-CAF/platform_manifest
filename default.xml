@@ -57,7 +57,7 @@
   <project name="platform-packages-apps-Messaging" path="packages/apps/Messaging" remote="aosp-caf" revision="custom" />
   <project name="platform-packages-apps-Dialer" path="packages/apps/Dialer" remote="aosp-caf" revision="custom" />
   <project name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6032204" path="prebuilts/clang/host/linux-x86/clang-6032204" revision="10.0" remote="github" />
-  <project name="ThankYouMario/proprietary_vendor_qcom_sdclang-8.0_linux-x86" path="vendor/qcom/sdclang-8.0" revision="quartz" remote="github" />
+  <project name="ThankYouMario/proprietary_vendor_qcom_sdclang-8.0_linux-x86" path="vendor/qcom/sdclang-8.0/linux-x86" revision="quartz" remote="github" />
 
   <project name="platform-manifest" path="manifest" remote="aosp-caf" revision="q" />
   <project name="platform-scripts" path="scripts" revision="custom" remote="aosp-caf" />
