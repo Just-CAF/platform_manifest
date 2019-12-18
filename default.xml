@@ -41,7 +41,7 @@
   <project name="platform-hardware-libhardware" path="hardware/libhardware" remote="aosp-caf" />
   <project name="platform-packages-apps-settings" path="packages/apps/Settings" remote="aosp-caf" />
   <project name="platform-packages-services-telephony" path="packages/services/Telephony" remote="aosp-caf" />
-  <project name="platform-bionic" path="bionic" remote="aosp-caf" />
+  <project name="platform-bionic" path	="bionic" remote="aosp-caf" />
   <project name="platform-external-selinux" path="external/selinux" remote="aosp-caf" />
   <project name="platform-device-qcom-sepolicy-legacy-um" path="device/qcom/sepolicy-legacy-um" remote="aosp-caf" />
   <project name="platform-frameworks-av" path="frameworks/av" remote="aosp-caf" />
@@ -56,6 +56,7 @@
   <project name="platform-hardware-qcom-media" path="hardware/qcom/media" remote="aosp-caf" />
   <project name="platform-packages-apps-Messaging" path="packages/apps/Messaging" remote="aosp-caf" />
   <project name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6032204" path="prebuilts/clang/host/linux-x86/clang-6032204" revision="10.0" remote="github" />
+  <project name="ThankYouMario/proprietary_vendor_qcom_sdclang-8.0_linux-x86" path="vendor/qcom/sdclang-8.0" revision="quartz" remote="github" />
 
   <project name="platform-manifest" path="manifest" remote="aosp-caf" revision="q" />
   <project name="platform-scripts" path="scripts" remote="aosp-caf" />
