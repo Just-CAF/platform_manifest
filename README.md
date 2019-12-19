@@ -8,7 +8,7 @@ repo init -u git://github.com/aosp-caf-cheeseburger/platform-manifest.git -b q
 ```
 Then to sync up:
 ```
-repo sync
+repo sync -c --no-tags --no-clone-bundle -j$(nproc --all)
 ```
 
 ## Devices
