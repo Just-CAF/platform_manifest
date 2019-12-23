@@ -24,7 +24,7 @@
   <project name="android_hardware_ril" path="hardware/ril" remote="lineage" />
 
   <!-- JUST CAF ADDITIONS -->
-  <project name="platform-build" path="build/make" remote="aosp-caf">
+  <project name="platform_build" path="build/make" remote="aosp-caf">
     <copyfile dest="Makefile" src="core/root.mk"/>
     <linkfile dest="build/CleanSpec.mk" src="CleanSpec.mk"/>
     <linkfile dest="build/buildspec.mk.default" src="buildspec.mk.default"/>
@@ -40,7 +40,7 @@
   <project name="platform-external-libunwind_llvm" path="external/libunwind_llvm" remote="aosp-caf" />
   <project name="platform-hardware-libhardware" path="hardware/libhardware" remote="aosp-caf" />
   <project name="platform-packages-apps-settings" path="packages/apps/Settings" remote="aosp-caf" />
-  <project name="platform-packages-services-telephony" path="packages/services/Telephony" remote="aosp-caf" />
+  <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="aosp-caf" />
   <project name="platform-bionic" path	="bionic" remote="aosp-caf" />
   <project name="platform-external-selinux" path="external/selinux" remote="aosp-caf" />
   <project name="platform-device-qcom-sepolicy-legacy-um" path="device/qcom/sepolicy-legacy-um" remote="aosp-caf" />
@@ -58,15 +58,15 @@
   <project name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6032204" path="prebuilts/clang/host/linux-x86/clang-6032204" revision="10.0" remote="github" />
   <project name="ThankYouMario/proprietary_vendor_qcom_sdclang-8.0_linux-x86" path="vendor/qcom/sdclang-8.0/linux-x86" revision="quartz" remote="github" />
   <project name="proprietary_vendor_qcom_common" path="vendor/qcom/common" remote="aosp-caf" />
+  <project name="platform_vendor_custom" path="vendor/custom" remote="aosp-caf" />
 
-  <project name="platform-manifest" path="manifest" remote="aosp-caf" revision="q" />
+  <project name="platform_manifest" path="manifest" remote="aosp-caf" revision="q" />
   <project name="platform-scripts" path="scripts" remote="aosp-caf" />
 
   <!-- device tree, kernel -->
   <project name="crdroidandroid/android_kernel_oneplus_msm8998" path="kernel/oneplus/msm8998" remote="github" revision="10.0" />
-  <project name="platform-device-oneplus-msm8998-common" path="device/oneplus/msm8998-common" remote="aosp-caf" />
+  <project name="platform_device_oneplus_msm8998-common" path="device/oneplus/msm8998-common" remote="aosp-caf" />
   <project name="platform-device-oneplus-cheeseburger" path="device/oneplus/cheeseburger" remote="aosp-caf" />
-  <project name="platform-device-oneplus-dumpling" path="device/oneplus/dumpling" remote="aosp-caf" />
-  <project name="platform-vendor-oneplus-msm8998" path="vendor/oneplus" remote="aosp-caf" />
-  <project name="platform-vendor-custom" path="vendor/custom" remote="aosp-caf" />
+  <project name="platform_device_oneplus_dumpling" path="device/oneplus/dumpling" remote="aosp-caf" />
+  <project name="proprietary_vendor_oneplus_msm8998" path="vendor/oneplus" remote="aosp-caf" />
 </manifest>
