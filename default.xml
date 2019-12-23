@@ -61,6 +61,7 @@
   <project name="platform_scripts" path="scripts" revision="custom" remote="aosp-caf" />
   <project name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6032204" path="prebuilts/clang/host/linux-x86/clang-6032204" revision="10.0" remote="github" />
   <project name="ThankYouMario/proprietary_vendor_qcom_sdclang-8.0_linux-x86" path="vendor/qcom/sdclang-8.0/linux-x86" revision="quartz" remote="github" />
+  <project name="proprietary_vendor_qcom_common" path="vendor/qcom/common" remote="aosp-caf" />
 
   <!-- device tree, kernel -->
   <project name="crdroidandroid/android_kernel_oneplus_msm8998" path="kernel/oneplus/msm8998" remote="github" revision="10.0" />
