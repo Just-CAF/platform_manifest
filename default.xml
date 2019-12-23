@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-  <remote fetch="https://github.com/Just-CAF/" 
-	  name="aosp-caf" 
+  <remote fetch="https://github.com/Just-CAF/"
+	  name="aosp-caf"
 	  revision="q" />
-  
-  <remote name="lineage" 
-          fetch="https://github.com/LineageOS" 
+
+  <remote name="lineage"
+          fetch="https://github.com/LineageOS"
           revision="refs/heads/lineage-17.0" />
 
   <remote name="github" fetch="https://github.com" />
@@ -57,6 +57,7 @@
   <project name="platform-packages-apps-Messaging" path="packages/apps/Messaging" remote="aosp-caf" />
   <project name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6032204" path="prebuilts/clang/host/linux-x86/clang-6032204" revision="10.0" remote="github" />
   <project name="ThankYouMario/proprietary_vendor_qcom_sdclang-8.0_linux-x86" path="vendor/qcom/sdclang-8.0/linux-x86" revision="quartz" remote="github" />
+  <project name="proprietary_vendor_qcom_common" path="vendor/qcom/common" remote="aosp-caf" />
 
   <project name="platform-manifest" path="manifest" remote="aosp-caf" revision="q" />
   <project name="platform-scripts" path="scripts" remote="aosp-caf" />
