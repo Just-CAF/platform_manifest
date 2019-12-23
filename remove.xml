@@ -75,4 +75,6 @@
   <remove-project name="platform/vendor/codeaurora/telephony" />
   <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/packages/apps/Dialer" />
+  <remove-project name="platform/packages/apps/DeskClock" />
+  <remove-project name="platform/packages/apps/Contacts" />
 </manifest>
