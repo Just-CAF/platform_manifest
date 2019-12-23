@@ -44,7 +44,7 @@
   <remove-project name="platform/vendor/qcom/skunk" />
   <remove-project name="platform/vendor/qcom/steppe" />
   <remove-project name="platform/vendor/qcom/thulium" />
-  <remove-project name="platform/vendor/qcom/wlan" />  
+  <remove-project name="platform/vendor/qcom/wlan" />
   <remove-project name="platform/vendor/qcom-opensource/usb" />
   <remove-project name="platform/packages/apps/SnapdragonCamera" />
 
@@ -52,7 +52,7 @@
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
   <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
-  <remove-project name="platform/system/core" />  
+  <remove-project name="platform/system/core" />
   <remove-project name="platform/vendor/qcom-opensource/interfaces" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/opt/telephony" />
@@ -77,4 +77,5 @@
   <remove-project name="platform/packages/apps/Dialer" />
   <remove-project name="platform/packages/apps/DeskClock" />
   <remove-project name="platform/packages/apps/Contacts" />
+  <remove-project name="platform/vendor/qcom-opensource/power" />
 </manifest>
