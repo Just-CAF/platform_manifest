@@ -4,7 +4,7 @@
 
 To sync and build Just CAF, Android Q:
 ```
-repo init -u git://github.com/aosp-caf-cheeseburger/platform-manifest.git -b q
+repo init -u git://github.com/Just-CAF/platform_manifest.git -b q
 ```
 Then to sync up:
 ```
