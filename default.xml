@@ -34,6 +34,7 @@
     <linkfile dest="build/target" src="target"/>
     <linkfile dest="build/tools" src="tools"/>
   </project>
+  <project name="platform_build_blueprint" path="build/blueprint" remote="aosp-caf" />
   <project name="platform_build_soong" path="build/soong" remote="aosp-caf">
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>

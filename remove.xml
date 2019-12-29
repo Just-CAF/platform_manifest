@@ -75,4 +75,5 @@
   <remove-project name="platform/vendor/codeaurora/telephony" />
   <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/vendor/qcom-opensource/power" />
+  <remove-project name="platform/build/blueprint" />
 </manifest>
