@@ -39,6 +39,7 @@
     <linkfile dest="Android.bp" src="root.bp"/>
     <linkfile dest="bootstrap.bash" src="bootstrap.bash"/>
   </project>
+  <project name="platform_bootable_recovery" path="bootable/recovery" remote="aosp-caf" upstream="caf" />
   <project name="platform_device_qcom_sepolicy-legacy-um" path="device/qcom/sepolicy-legacy-um" remote="aosp-caf" />
   <project name="platform_external_libunwind_llvm" path="external/libunwind_llvm" remote="aosp-caf" upstream="caf"/>
   <project name="platform_external_selinux" path="external/selinux" remote="aosp-caf" upstream="caf"/>

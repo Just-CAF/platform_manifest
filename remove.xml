@@ -51,6 +51,7 @@
   <!-- JUST-CAF ADDITIONS -->
   <remove-project name="platform/build" />
   <remove-project name="platform/build/soong" />
+  <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
   <remove-project name="platform/system/core" />  
   <remove-project name="platform/vendor/qcom-opensource/interfaces" />
