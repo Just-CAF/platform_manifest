@@ -4,7 +4,7 @@
           fetch="http://source.codeaurora.org/quic/la" 
           review="codeaurora.org" />
 
-  <default revision="refs/tags/LA.UM.8.4.r1-04700-8x98.0" remote="caf" sync-j="12" />
+  <default revision="refs/tags/LA.UM.8.4.r1-05000-8x98.0" remote="caf" sync-j="12" />
 
   <project name="abl/tianocore/edk2" path="bootable/bootloader/edk2" />
   <project name="device/amlogic/yukawa" />
