@@ -221,6 +221,7 @@
   <project name="platform/external/libevent" path="external/libevent" />
   <project name="platform/external/libexif" path="external/libexif" />
   <project name="platform/external/libffi" path="external/libffi" />
+  <project name="platform/external/libgav1" path="external/libgav1"/>
   <project name="platform/external/libgsm" path="external/libgsm" />
   <project name="platform/external/libhevc" path="external/libhevc" />
   <project name="platform/external/libjpeg-turbo" path="external/libjpeg-turbo" />
@@ -278,6 +279,7 @@
   <project name="platform/external/nfacct" path="external/nfacct" />
   <project name="platform/external/nist-pkits" path="external/nist-pkits" />
   <project name="platform/external/nist-sip" path="external/nist-sip" />
+  <project name="platform/external/nos/host/generic" path="external/nos/host/generic" />
   <project name="platform/external/noto-fonts" path="external/noto-fonts" />
   <project name="platform/external/oauth" path="external/oauth" />
   <project name="platform/external/objenesis" path="external/objenesis" />
@@ -371,6 +373,7 @@
   <project name="platform/external/shaderc/spirv-headers" path="external/shaderc/spirv-headers" />
   <project name="platform/external/shflags" path="external/shflags" />
   <project name="platform/external/skia" path="external/skia" />
+  <project name="platform/external/skqp" path="external/skqp" />
   <project name="platform/external/sl4a" path="external/sl4a" />
   <project name="platform/external/slf4j" path="external/slf4j" />
   <project name="platform/external/smali" path="external/smali" />
@@ -393,6 +396,7 @@
   <project name="platform/external/tinyalsa" path="external/tinyalsa" />
   <project name="platform/external/tinycompress" path="external/tinycompress" />
   <project name="platform/external/tinyxml" path="external/tinyxml" />
+  <project name="platform/external/toolchain-utils" path="external/toolchain-utils" />
   <project name="platform/external/tinyxml2" path="external/tinyxml2" />
   <project name="platform/external/toybox" path="external/toybox" />
   <project name="platform/external/tremolo" path="external/tremolo" />
@@ -400,6 +404,7 @@
   <project name="platform/external/u-boot" path="external/u-boot" />
   <project name="platform/external/ukey2" path="external/ukey2" />
   <project name="platform/external/unicode" path="external/unicode" />
+  <project name="platform/external/universal-tween-engine" path="external/universal-tween-engine" />
   <project name="platform/external/v4l2_codec2" path="external/v4l2_codec2" />
   <project name="platform/external/v8" path="external/v8" />
   <project name="platform/external/vboot_reference" path="external/vboot_reference" />
@@ -442,6 +447,7 @@
   <project name="platform/frameworks/opt/chips" path="frameworks/opt/chips" />
   <project name="platform/frameworks/opt/colorpicker" path="frameworks/opt/colorpicker" />
   <project name="platform/frameworks/opt/datetimepicker" path="frameworks/opt/datetimepicker" />
+  <project name="platform/frameworks/opt/gamesdk" path="frameworks/opt/gamesdk" />
   <project name="platform/frameworks/opt/net/ethernet" path="frameworks/opt/net/ethernet" />
   <project name="platform/frameworks/opt/net/ike" path="frameworks/opt/net/ike" />
   <project name="platform/frameworks/opt/net/ims" path="frameworks/opt/net/ims" />
@@ -458,6 +464,7 @@
   <project name="platform/hardware/google/av" path="hardware/google/av" />
   <project name="platform/hardware/google/easel" path="hardware/google/easel" />
   <project name="platform/hardware/google/interfaces" path="hardware/google/interfaces" />
+  <project name="platform/hardware/invensense" path="hardware/invensense" />
   <project name="platform/hardware/interfaces" path="hardware/interfaces" />
   <project name="platform/hardware/libhardware" path="hardware/libhardware" />
   <project name="platform/hardware/libhardware_legacy" path="hardware/libhardware_legacy" />
@@ -549,6 +556,7 @@
   <project name="platform/packages/apps/Traceur" path="packages/apps/Traceur" />
   <project name="platform/packages/apps/TvSettings" path="packages/apps/TvSettings" />
   <project name="platform/packages/apps/UnifiedEmail" path="packages/apps/UnifiedEmail" />
+  <project name="platform/packages/apps/UniversalMediaPlayer" path="packages/apps/UniversalMediaPlayer" />
   <project name="platform/packages/apps/WallpaperPicker" path="packages/apps/WallpaperPicker" />
   <project name="platform/packages/apps/WallpaperPicker2" path="packages/apps/WallpaperPicker2" />
   <project name="platform/packages/inputmethods/LatinIME" path="packages/inputmethods/LatinIME" />
@@ -607,6 +615,7 @@
   <project name="platform/prebuilts/manifest-merger" path="prebuilts/manifest-merger" clone-depth="1" />
   <project name="platform/prebuilts/maven_repo/android" path="prebuilts/maven_repo/android" clone-depth="1" />
   <project name="platform/prebuilts/maven_repo/bumptech" path="prebuilts/maven_repo/bumptech" clone-depth="1" />
+  <project name="platform/prebuilts/maven_repo/google-play-service-client-libraries-3p" path="prebuilts/maven_repo/google-play-service-client-libraries-3p" />
   <project name="platform/prebuilts/misc" path="prebuilts/misc" clone-depth="1" />
   <project name="platform/prebuilts/ndk" path="prebuilts/ndk" clone-depth="1" />
   <project name="platform/prebuilts/python/linux-x86/2.7.5" path="prebuilts/python/linux-x86/2.7.5" clone-depth="1" />
@@ -683,6 +692,9 @@
   <project name="platform/tools/asuite" path="tools/asuite" />
   <project name="platform/tools/currysrc" path="tools/currysrc" />
   <project name="platform/tools/dexter" path="tools/dexter" />
+  <project name="platform/tools/external/fat32lib" path="tools/external/fat32lib" />
+  <project name="platform/tools/external/gradle" path="tools/external/gradle" />
+  <project name="platform/tools/external_updater" path="tools/external_updater" />
   <project name="platform/tools/loganalysis" path="tools/loganalysis" />
   <project name="platform/tools/metalava" path="tools/metalava" />
   <project name="platform/tools/ndkports" path="tools/ndkports" />
@@ -740,5 +752,6 @@
   <project name="platform/vendor/qcom/steppe" path="device/qcom/sm6150" />
   <project name="platform/vendor/qcom/thulium" path="device/qcom/msm8996" />
   <project name="platform/vendor/qcom/wlan" path="device/qcom/wlan" />
+  <project name="toolchain/benchmark" path="toolchain/benchmark" />
   <project name="toolchain/pgo-profiles" />
 </manifest>
