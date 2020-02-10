@@ -58,6 +58,7 @@
   <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="aosp-caf" revision="custom" upstream="caf"/>
   <project name="platform_packages_apps_Contacts" path="packages/apps/Contacts" remote="aosp-caf" revision="custom" upstream="caf"/>
   <project name="platform_packages_apps_DeskClock" path="packages/apps/DeskClock" remote="aosp-caf" revision="custom" upstream="caf"/>
+  <project name="platform/packages/apps/Launcher3" path="packages/apps/Launcher3" remote="aosp-caf" revision="custom" upstream="caf"/>
   <project name="platform_system_core" path="system/core" remote="aosp-caf" upstream="caf"/>
   <project name="platform_vendor_qcom-opensource_commonsys_cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" remote="aosp-caf" upstream="caf"/>
   <project name="platform_vendor_qcom-opensource_interfaces" path="vendor/qcom/opensource/interfaces" remote="aosp-caf" upstream="caf"/>
