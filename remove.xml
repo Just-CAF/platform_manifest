@@ -71,6 +71,7 @@
   <remove-project name="platform/external/ant-wireless/ant_native" />
   <remove-project name="platform/external/ant-wireless/ant_service" />
   <remove-project name="platform/packages/apps/Settings" />
+  <remove-project name="platform/packages/apps/SettingsIntelligence" />
   <remove-project name="platform/hardware/ril" />
   <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/frameworks/base" />
