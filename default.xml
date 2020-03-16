@@ -48,6 +48,7 @@
   <project name="platform_frameworks_base" path="frameworks/base" remote="aosp-caf" revision="custom" upstream="caf"/>
   <project name="platform_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="aosp-caf" upstream="caf"/>
   <project name="platform_frameworks_opt_net_wifi" path="frameworks/opt/net/wifi" remote="aosp-caf" upstream="caf"/>
+  <project name="platform_hardware_interfaces" path="hardware/interfaces" remote="aosp-caf" upstream="caf"/>
   <project name="platform_hardware_libhardware" path="hardware/libhardware" remote="aosp-caf" upstream="caf"/>
   <project name="platform_hardware_qcom_audio" path="vendor/qcom/opensource/audio-hal/primary-hal" remote="aosp-caf" upstream="caf"/>
   <project name="platform_hardware_qcom_media" path="hardware/qcom/media" remote="aosp-caf" upstream="caf"/>
