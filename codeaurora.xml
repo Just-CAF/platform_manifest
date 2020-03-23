@@ -479,6 +479,8 @@
   <project name="platform/hardware/qcom/vr" path="hardware/qcom/vr" />
   <project name="platform/hardware/qcom/wlan" path="hardware/qcom/wlan" />
   <project name="platform/hardware/ril" path="hardware/ril" />
+  <project name="platform/hardware/st/nfc" path="hardware/st/nfc" />
+  <project name="platform/hardware/st/secure_element" path="hardware/st/secure_element" />
   <project name="platform/hardware/ti/am57x" path="hardware/ti/am57x" />
   <project name="platform/libcore" path="libcore" />
   <project name="platform/libnativehelper" path="libnativehelper" />
