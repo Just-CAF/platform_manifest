@@ -55,7 +55,7 @@
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="aosp-caf" revision="custom" upstream="caf"/>
   <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="aosp-caf" upstream="caf"/>
   <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="aosp-caf" upstream="caf"/>
-  <project name="platform_packages_apps_JustCAFOptions" path="packages/apps/JustCAFOptions" remote="aosp-caf" revision="custom" upstream="caf"/>
+  <project name="platform_packages_apps_JustCAFOptions" path="packages/apps/JustCAFOptions" remote="aosp-caf" revision="custom"/>
   <project name="platform_packages_apps_Messaging" path="packages/apps/Messaging" remote="aosp-caf" revision="custom" upstream="caf"/>
   <project name="platform_packages_apps_Dialer" path="packages/apps/Dialer" remote="aosp-caf" revision="custom" upstream="caf"/>
   <project name="platform_packages_apps_Contacts" path="packages/apps/Contacts" remote="aosp-caf" revision="custom" upstream="caf"/>
