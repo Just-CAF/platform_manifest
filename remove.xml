@@ -83,5 +83,6 @@
   <remove-project name="platform/packages/apps/Contacts" />
   <remove-project name="platform/packages/apps/Launcher3" />
   <remove-project name="platform/vendor/qcom-opensource/power" />
+  <remove-project name="platform/vendor/qcom-opensource/system/bt" />
   <remove-project name="platform/build/blueprint" />
 </manifest>
