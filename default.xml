@@ -8,6 +8,11 @@
           fetch="https://github.com/LineageOS"
           revision="refs/heads/lineage-17.1" />
 
+  <remote  name="aosp"
+           fetch=".."
+           review="https://android-review.googlesource.com/"
+           revision="master" />
+
   <remote name="github" fetch="https://github.com" />
   <remote name="github-ssh" fetch="ssh://git@github.com" />
 
@@ -70,7 +75,7 @@
   <project name="platform_manifest" path="manifest" remote="aosp-caf" revision="q" />
   <project name="platform_vendor_custom" path="vendor/custom" remote="aosp-caf" revision="custom" />
   <project name="platform_scripts" path="scripts" revision="custom" remote="aosp-caf" />
-  <project name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6032204" path="prebuilts/clang/host/linux-x86/clang-6032204" revision="10.0" remote="github" />
+  <project name="platform/prebuilts/clang/host/linux-x86" path="prebuilts/clang/host/linux-x86" remote="aosp" />  
   <project name="ThankYouMario/proprietary_vendor_qcom_sdclang-8.0_linux-x86" path="vendor/qcom/sdclang-8.0/linux-x86" revision="quartz" remote="github" />
   <project name="proprietary_vendor_qcom_common" path="vendor/qcom/common" remote="aosp-caf" />
 
