@@ -55,6 +55,7 @@
   <remove-project name="platform/bootable/recovery" />
   <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
   <remove-project name="platform/system/core" />
+  <remove-project name="platform/system/bt" />
   <remove-project name="platform/vendor/qcom-opensource/interfaces" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/opt/telephony" />
@@ -77,6 +78,7 @@
   <remove-project name="platform/packages/services/Telephony" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/vendor/codeaurora/telephony" />
+  <remove-project name="platform/packages/apps/Bluetotoh" />
   <remove-project name="platform/packages/apps/Messaging" />
   <remove-project name="platform/packages/apps/Dialer" />
   <remove-project name="platform/packages/apps/DocumentsUI" />
