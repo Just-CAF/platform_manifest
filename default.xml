@@ -55,8 +55,10 @@
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="aosp-caf" upstream="caf"/>
   <project name="platform_packages_apps_SettingsIntelligence" path="packages/apps/SettingsIntelligence" remote="aosp-caf" upstream="caf"/>
   <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="aosp-caf" upstream="caf"/>
+  <project name="platform_packages_apps_Bluetooth" path="packages/apps/Bluetooth" remote="aosp-caf" upstream="caf"/>
   <project name="platform_packages_apps_Messaging" path="packages/apps/Messaging" remote="aosp-caf" upstream="caf"/>
   <project name="platform_packages_apps_DocumentsUI" path="packages/apps/DocumentsUI" remote="aosp-caf" upstream="caf" />
+  <project name="platform_system_bt" path="system/bt" remote="aosp-caf" upstream="caf"/>
   <project name="platform_system_core" path="system/core" remote="aosp-caf" upstream="caf"/>
   <project name="platform_vendor_qcom-opensource_commonsys_cryptfs_hw" path="vendor/qcom/opensource/commonsys/cryptfs_hw" remote="aosp-caf" upstream="caf"/>
   <project name="platform_vendor_qcom_opensource_commonsys_system_bt" path="vendor/qcom/opensource/commonsys/system/bt" remote="aosp-caf" upstream="caf"/>
