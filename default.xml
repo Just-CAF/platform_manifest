@@ -70,6 +70,7 @@
   <project name="platform_packages_apps_Settings" path="packages/apps/Settings" remote="aosp-caf" revision="custom" upstream="caf"/>
   <project name="platform_packages_apps_Terminal" path="packages/apps/Terminal" remote="aosp-caf" upstream="caf"/>
   <project name="platform_packages_services_Telephony" path="packages/services/Telephony" remote="aosp-caf" upstream="caf"/>
+  <project name="platform_prebuilts_gcc_linux-x86_aarch64_aarch64_linux-android-4.9" path="prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9" remote="aosp-caf" />
   <project name="platform_scripts" path="scripts" revision="custom" remote="aosp-caf" />
   <project name="platform_system_bt" path="system/bt" remote="aosp-caf" upstream="caf"/>
   <project name="platform_system_core" path="system/core" remote="aosp-caf" upstream="caf"/>
