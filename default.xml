@@ -24,7 +24,7 @@
   <project name="android_prebuilts_tools-lineage" path="prebuilts/tools-lineage" remote="lineage" clone-depth="1" />
 
   <!-- JUST CAF ADDITIONS -->
-  <project name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6364210" path="prebuilts/clang/host/linux-x86/clang-6364210" revision="10.0" remote="github" />
+  <project name="crdroidandroid/android_prebuilts_clang_host_linux-x86_clang-6443078" path="prebuilts/clang/host/linux-x86/clang-6443078" revision="10.0" remote="github" />
   <project name="platform_bionic" path="bionic" remote="aosp-caf" upstream="caf"/>
   <project name="platform_bootable_recovery" path="bootable/recovery" remote="aosp-caf" upstream="caf"/>
   <project name="platform_build_blueprint" path="build/blueprint" remote="aosp-caf" upstream="caf"/>
