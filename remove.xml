@@ -61,6 +61,7 @@
   <remove-project name="platform/external/json-c" />
   <remove-project name="platform/external/libunwind_llvm" />
   <remove-project name="platform/external/selinux" />
+  <remove-project name="platform/external/chromium-webview" />
   <remove-project name="platform/frameworks/av" />
   <remove-project name="platform/frameworks/base" />
   <remove-project name="platform/frameworks/native" />
