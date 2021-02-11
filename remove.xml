@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+  <!-- Remove unused repos -->
+  <remove-project name="abl/tianocore/edk2"/>
+  <remove-project name="device/amlogic/yukawa" />
+  <remove-project name="device/amlogic/yukawa-kernel" />
+  <remove-project name="device/common" />
+  <remove-project name="device/generic/arm64" />
+  <remove-project name="device/generic/armv7-a-neon" />
+  <remove-project name="device/generic/car" />
+  <remove-project name="device/generic/common" />
+  <remove-project name="device/generic/goldfish" />
+  <remove-project name="device/generic/goldfish-opengl" />
+  <remove-project name="device/generic/mini-emulator-arm64" />
+  <remove-project name="device/generic/mini-emulator-armv7-a-neon" />
+  <remove-project name="device/generic/mini-emulator-x86" />
+  <remove-project name="device/generic/mini-emulator-x86_64" />
+  <remove-project name="device/generic/opengl-transport" />
+  <remove-project name="device/generic/qemu" />
+  <remove-project name="device/generic/trusty" />
+  <remove-project name="device/generic/uml" />
+  <remove-project name="device/generic/x86" />
+  <remove-project name="device/generic/x86_64" />
+  <remove-project name="device/google/atv" />
+  <remove-project name="device/google/contexthub" />
+  <remove-project name="device/google/vrservices" />
+  <remove-project name="device/linaro/poplar" />
+  <remove-project name="device/linaro/poplar-kernel" />
+  <remove-project name="device/qcom/common" />
+  <remove-project name="device/qcom/qssi" />
+  <remove-project name="kernel/msm-4.4" />
+  <remove-project name="kernel/prebuilts/4.19/arm64" />
+  <remove-project name="kernel/tests" />
+  <remove-project name="platform/external/nos/host/generic" />
+  <remove-project name="platform/hardware/qcom/bootctrl" />
+  <remove-project name="platform/hardware/qcom/camera" />
+  <remove-project name="platform/hardware/qcom/gps" />
+  <remove-project name="platform/hardware/qcom/thermal" />
+  <remove-project name="platform/hardware/qcom/vr" />
+  <remove-project name="platform/packages/apps/SnapdragonCamera" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth-commonsys-intf" />
+  <remove-project name="platform/vendor/qcom-opensource/bluetooth_ext" />
+  <remove-project name="platform/vendor/qcom-opensource/dataservices" />
+  <remove-project name="platform/vendor/qcom-opensource/fm-commonsys" />
+  <remove-project name="platform/vendor/qcom-opensource/fst-manager"/>
+  <remove-project name="platform/vendor/qcom-opensource/location" />
+  <remove-project name="platform/vendor/qcom-opensource/packages/apps/Bluetooth" />
+  <remove-project name="platform/vendor/qcom-opensource/recovery-ext" />
+  <remove-project name="platform/vendor/qcom-opensource/shortcut-fe" />
+  <remove-project name="platform/vendor/qcom-opensource/system/bt" />
+  <remove-project name="platform/vendor/qcom-opensource/usb" />
+  <remove-project name="platform/vendor/qcom-opensource/vibrator" />
+  <remove-project name="platform/vendor/qcom-opensource/wlan/fw-api" />
+  <remove-project name="platform/vendor/qcom-opensource/wlan/utils/sigma-dut" />
+  <remove-project name="platform/vendor/qcom/ferrum" />
+  <remove-project name="platform/vendor/qcom/msm8909go" />
+  <remove-project name="platform/vendor/qcom/msmnile" />
+  <remove-project name="platform/vendor/qcom/skunk" />
+  <remove-project name="platform/vendor/qcom/steppe" />
+  <remove-project name="platform/vendor/qcom/thulium" />
+  <remove-project name="platform/vendor/qcom/wlan" />
+
+  <!-- JUST CAF ADDITIONS -->
+  <remove-project name="device/qcom/sepolicy" />
+<!--  <remove-project name="platform/bootable/recovery" />-->
+  <remove-project name="platform/build" />
+  <remove-project name="platform/build/soong" />
+  <remove-project name="platform/hardware/qcom/audio" />
+  <remove-project name="platform/hardware/qcom/display" />
+  <remove-project name="platform/hardware/qcom/media" />
+  <remove-project name="platform/vendor/qcom-opensource/cryptfs_hw" />
+  <remove-project name="platform/vendor/qcom-opensource/data-ipa-cfg-mgr" />
+  <remove-project name="platform/vendor/qcom-opensource/interfaces" />
+</manifest>
